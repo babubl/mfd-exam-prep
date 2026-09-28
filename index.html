@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MFD Exam Drill</title>
+<meta name="description" content="Free practice questions for NISM Series V-A (Mutual Fund Distributors): chapter drills for all 12 chapters and five timed 100-question mock exams.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#F3F5F7; --surface:#FFFFFF; --sunk:#E9EDF1; --ink:#15202B; --muted:#5A6672; --line:#D8DEE4;
+  --accent:#0E5A96; --accent-ink:#FFFFFF; --accent-soft:#E1ECF6;
+  --ok:#1C7A4E; --ok-soft:#DFF2E8; --bad:#B23A2E; --bad-soft:#F8E3E0; --warn:#9A6200;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E141A; --surface:#161F28; --sunk:#1D2833; --ink:#E4EAF0; --muted:#95A2AF; --line:#2A3643;
+    --accent:#5DA8E6; --accent-ink:#0B1621; --accent-soft:#16304A;
+    --ok:#4FC48C; --ok-soft:#12342A; --bad:#F07D70; --bad-soft:#3B1D1A; --warn:#E0A94A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E141A; --surface:#161F28; --sunk:#1D2833; --ink:#E4EAF0; --muted:#95A2AF; --line:#2A3643;
+  --accent:#5DA8E6; --accent-ink:#0B1621; --accent-soft:#16304A;
+  --ok:#4FC48C; --ok-soft:#12342A; --bad:#F07D70; --bad-soft:#3B1D1A; --warn:#E0A94A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:980px;margin:0 auto;display:grid;gap:18px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+h1{font:700 1.7rem/1.1 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);font-size:.85rem;margin-top:4px}
+.mode{display:inline-flex;background:var(--sunk);border-radius:8px;padding:3px}
+.mode button{border:0;background:transparent;color:var(--muted);font:500 .85rem var(--body);padding:6px 12px;border-radius:6px;cursor:pointer}
+.mode button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.sets{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.set{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:7px 11px;font:500 .82rem var(--body);cursor:pointer;display:grid;gap:1px;text-align:left}
+.set small{font:500 .7rem var(--mono);color:var(--muted)}
+.set[aria-current="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.set:disabled{opacity:.45;cursor:not-allowed}
+.set .best{color:var(--ok)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:18px;align-items:start}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.qhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
+.qno{font:500 .8rem var(--mono);color:var(--muted);letter-spacing:.04em}
+.tag{font:500 .72rem var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:999px}
+.stem{font:600 1.08rem/1.45 var(--body);margin:0 0 16px;text-wrap:pretty}
+.opts{display:grid;gap:8px}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:9px;padding:11px 12px;font:15px/1.45 var(--body);cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--accent)}
+.opt .k{font:500 .8rem var(--mono);color:var(--muted);min-width:1.2em;padding-top:2px}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{cursor:default}
+.exp{margin-top:14px;border-left:3px solid var(--ok);background:var(--sunk);padding:10px 12px;border-radius:0 8px 8px 0;font-size:.92rem}
+.exp.no{border-color:var(--bad)}
+.exp b{display:block;margin-bottom:2px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;margin-top:18px}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 .88rem var(--body);padding:8px 14px;border-radius:8px;cursor:pointer}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+aside .card{padding:16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.stat{background:var(--sunk);border-radius:8px;padding:8px}
+.stat b{display:block;font:500 1.1rem var(--mono);font-variant-numeric:tabular-nums}
+.stat span{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.timer{font:500 1.3rem var(--mono);font-variant-numeric:tabular-nums;margin-bottom:10px}
+.timer.low{color:var(--bad)}
+.dots{display:grid;grid-template-columns:repeat(auto-fill,minmax(32px,1fr));gap:5px}
+.dot{aspect-ratio:1;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:6px;font:500 .72rem var(--mono);cursor:pointer;padding:0}
+.dot.ans{background:var(--accent-soft);color:var(--ink);border-color:var(--accent-soft)}
+.dot.ok{background:var(--ok-soft);color:var(--ok);border-color:var(--ok)}
+.dot.no{background:var(--bad-soft);color:var(--bad);border-color:var(--bad)}
+.dot.cur{outline:2px solid var(--ink);outline-offset:1px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:.72rem;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.side-actions{display:grid;gap:8px;margin-top:14px}
+.result h2{font:700 1.4rem var(--display);margin:0 0 6px}
+.bar{position:relative;height:14px;background:var(--sunk);border-radius:999px;margin:18px 0 26px}
+.bar .fill{position:absolute;inset:0 auto 0 0;border-radius:999px;background:var(--accent)}
+.bar .mk{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--ink)}
+.bar .mk span{position:absolute;top:20px;left:50%;transform:translateX(-50%);font:500 .68rem var(--mono);color:var(--muted);white-space:nowrap}
+.big{font:700 2.6rem/1 var(--display);font-variant-numeric:tabular-nums}
+.verdict{font-weight:600}
+.verdict.pass{color:var(--ok)} .verdict.fail{color:var(--bad)}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.05em}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.tw{overflow-x:auto}
+.weak{color:var(--bad);font-weight:600}
+.rev{display:grid;gap:12px;margin-top:10px}
+.rev .item{border:1px solid var(--line);border-radius:10px;padding:12px}
+.rev .item p{margin:4px 0}
+.muted{color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.note{font-size:.82rem;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.opt,.dot,.btn{transition:background-color .12s,border-color .12s}}
+
+.toplinks{display:flex;gap:6px;flex-wrap:wrap}
+.toplinks a{font:500 .8rem var(--body);color:var(--muted);text-decoration:none;padding:4px 8px;border-radius:6px}
+.toplinks a:hover,.toplinks a.on{background:var(--accent-soft);color:var(--ink)}
+.foot{color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:12px;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>MFD Exam Drill</h1>
+      <div class="sub">NISM Series V-A · Nov 2025 workbook · 100 questions · 2 hours · pass 50%</div>
+      <div class="toplinks" style="margin-top:6px"><a href="index.html" class="on">Practice drill</a><a href="notes.html">Quick revision</a></div>
+    </div>
+    <div class="mode" role="group" aria-label="Mode">
+      <button id="m-practice" aria-pressed="true">Practice</button>
+      <button id="m-exam" aria-pressed="false">Exam</button>
+    </div>
+  </header>
+
+  <nav class="sets" id="sets" aria-label="Question sets"></nav>
+
+  <div id="main"></div>
+  <p class="foot">Independent study aid, not affiliated with or endorsed by NISM, SEBI or AMFI. Questions are original, written from the NISM V-A workbook (Nov 2025 edition); actual exam wording will differ. Your scores are saved only in this browser.</p>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+const PLAN = [
+  ['ch1','Ch 1',8],['ch2','Ch 2',6],['ch3','Ch 3',4],['ch4','Ch 4',10],['ch5','Ch 5',10],['ch6','Ch 6',6],
+  ['ch7','Ch 7',8],['ch8','Ch 8',4],['ch9','Ch 9',15],['ch10','Ch 10',7],['ch11','Ch 11',7],['ch12','Ch 12',15],
+  ['mock1','Mock 1',0],['mock2','Mock 2',0],['mock3','Mock 3',0],['mock4','Mock 4',0],['mock5','Mock 5',0]
+];
+const BANK = window.BANK || {};
+const store = {
+  get(k,d){try{const v=localStorage.getItem('mfd:'+k);return v?JSON.parse(v):d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem('mfd:'+k,JSON.stringify(v))}catch(e){}}
+};
+let state = {set:null, mode:'practice', order:[], ans:{}, i:0, done:false, start:0, limit:0, onlyWrong:null};
+let tick=null;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function renderSets(){
+  const best = store.get('best',{});
+  $('#sets').innerHTML = PLAN.map(([id,lab,w])=>{
+    const s=BANK[id]; const cur=state.set&&state.set.id===id;
+    const meta = s ? (s.qs.length+' Qs'+(best[id]!=null?' · <span class="best">best '+best[id]+'%</span>':'')) : 'coming';
+    const wt = w? ' · '+w+'%':'';
+    return `<button class="set" ${s?'':'disabled'} aria-current="${cur}" data-id="${id}">${lab}${wt}<small>${meta}</small></button>`;
+  }).join('');
+  document.querySelectorAll('.set').forEach(b=>b.onclick=()=>{
+    const s=BANK[b.dataset.id];
+    if(s&&s.kind==='mock'&&state.mode!=='exam'){state.mode='exam';syncMode();}
+    load(b.dataset.id);
+  });
+}
+
+function load(id, only){
+  const s=BANK[id]; if(!s) return;
+  clearInterval(tick);
+  const idx = only || s.qs.map((_,i)=>i);
+  state = {set:s, mode:state.mode, order:idx, ans:{}, i:0, done:false, start:Date.now(),
+    limit: state.mode==='exam' ? Math.round(idx.length*72)*1000 : 0, onlyWrong: only||null};
+  store.set('last',id);
+  if(state.mode==='exam') tick=setInterval(()=>{renderSide(); if(remaining()<=0) finish();},1000);
+  renderSets(); render();
+}
+function remaining(){return state.limit - (Date.now()-state.start)}
+function fmt(ms){ms=Math.max(0,ms);const s=Math.floor(ms/1000);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+':':'')+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0')}
+function cur(){return state.set.qs[state.order[state.i]]}
+function isRevealed(k){return state.done || (state.mode==='practice' && state.ans[k]!=null)}
+
+function render(){
+  if(state.done) return renderResult();
+  const q=cur(), k=state.order[state.i], picked=state.ans[k], show=isRevealed(k);
+  const L='ABCD';
+  let opts = q.o.map((o,j)=>{
+    let c='opt'; if(picked===j) c+=' sel';
+    if(show){ if(j===q.a) c+=' right'; else if(picked===j) c+=' wrong'; }
+    return `<button class="${c}" data-j="${j}" ${show?'disabled':''}><span class="k">${L[j]}</span><span>${esc(o)}</span></button>`;
+  }).join('');
+  let exp='';
+  if(show){ const ok=picked===q.a; exp=`<div class="exp ${ok?'':'no'}"><b>${ok?'Correct.':'Answer: '+L[q.a]+'.'}</b>${esc(q.e)}</div>`; }
+  const n=state.order.length;
+  $('#main').innerHTML = `<div class="grid">
+    <section class="card" aria-live="polite">
+      <div class="qhead"><span class="qno">${state.set.short}${state.onlyWrong?' · retry':''} · Q ${state.i+1} / ${n}</span><span class="tag">${esc(q.t)}</span></div>
+      <p class="stem">${esc(q.q)}</p>
+      <div class="opts">${opts}</div>${exp}
+      <div class="nav">
+        <button class="btn" id="prev" ${state.i===0?'disabled':''}>Previous</button>
+        <button class="btn pri" id="next">${state.i===n-1?'Finish':'Next'}</button>
+      </div>
+    </section>
+    <aside id="side"></aside></div>`;
+  document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{state.ans[k]=+b.dataset.j; render();});
+  $('#prev').onclick=()=>{state.i--;render()};
+  $('#next').onclick=()=>{ if(state.i===n-1) finish(); else {state.i++;render()} };
+  renderSide();
+}
+function renderSide(){
+  const el=$('#side'); if(!el) return;
+  const n=state.order.length, answered=Object.keys(state.ans).length;
+  let right=0,wrong=0; state.order.forEach(k=>{const a=state.ans[k]; if(a==null)return; if(a===state.set.qs[k].a)right++; else wrong++;});
+  const pr = state.mode==='practice';
+  const dots=state.order.map((k,i)=>{
+    const a=state.ans[k]; let c='dot';
+    if(a!=null){ c+= pr ? (a===state.set.qs[k].a?' ok':' no') : ' ans'; }
+    if(i===state.i) c+=' cur';
+    return `<button class="${c}" data-i="${i}" aria-label="Question ${i+1}">${i+1}</button>`;
+  }).join('');
+  const rem=remaining();
+  el.innerHTML=`<div class="card">
+    ${pr?'':`<div class="timer ${rem<300000?'low':''}" title="Time left">${fmt(rem)}</div>`}
+    <div class="stats">
+      <div class="stat"><b>${answered}/${n}</b><span>Done</span></div>
+      <div class="stat"><b>${pr?right:'–'}</b><span>Right</span></div>
+      <div class="stat"><b>${pr?wrong:'–'}</b><span>Wrong</span></div>
+    </div>
+    <div class="dots">${dots}</div>
+    <div class="legend">${pr?'<span><i style="background:var(--ok-soft);border:1px solid var(--ok)"></i>right</span><span><i style="background:var(--bad-soft);border:1px solid var(--bad)"></i>wrong</span>':'<span><i style="background:var(--accent-soft)"></i>answered</span>'}</div>
+    <div class="side-actions">
+      <button class="btn pri" id="fin">Submit and see score</button>
+      <button class="btn" id="rst">Restart this set</button>
+    </div>
+    <p class="note">${pr?'Practice: answer shows after each pick.':'Exam: 72 seconds a question, like the real 100 Qs in 2 hours. Answers show at the end.'}</p>
+  </div>`;
+  el.querySelectorAll('.dot').forEach(b=>b.onclick=()=>{state.i=+b.dataset.i;render()});
+  $('#fin').onclick=finish; $('#rst').onclick=()=>load(state.set.id);
+}
+
+function finish(){
+  clearInterval(tick); state.done=true;
+  const n=state.order.length; let right=0;
+  state.order.forEach(k=>{if(state.ans[k]===state.set.qs[k].a)right++});
+  const pct=Math.round(right/n*100);
+  if(!state.onlyWrong){const best=store.get('best',{}); if(best[state.set.id]==null||pct>best[state.set.id]){best[state.set.id]=pct;store.set('best',best);} }
+  state.score={right,n,pct}; renderSets(); render();
+}
+function renderResult(){
+  const {right,n,pct}=state.score, L='ABCD';
+  const topics={}; const isMock=state.set.kind==='mock';
+  state.order.forEach(k=>{const q=state.set.qs[k]; const key=isMock?('Ch '+q.c):q.t; const t=topics[key]||(topics[key]={r:0,n:0,c:q.c}); t.n++; if(state.ans[k]===q.a)t.r++;});
+  const ents=Object.entries(topics);
+  if(isMock) ents.sort((a,b)=>a[1].c-b[1].c); else ents.sort((a,b)=>a[1].r/a[1].n-b[1].r/b[1].n);
+  const rows=ents.map(([t,v])=>{
+    const p=Math.round(v.r/v.n*100);
+    return `<tr><td class="${p<70?'weak':''}">${esc(t)}</td><td class="n">${v.r}/${v.n}</td><td class="n">${p}%</td></tr>`;}).join('');
+  const wrong=state.order.filter(k=>state.ans[k]!==state.set.qs[k].a);
+  const items=wrong.map(k=>{const q=state.set.qs[k]; const a=state.ans[k];
+    return `<div class="item"><span class="tag">${esc(q.t)}</span><p><b>${esc(q.q)}</b></p>
+      <p class="muted">Your answer: ${a==null?'not answered':L[a]+'. '+esc(q.o[a])}</p>
+      <p>Correct: <b>${L[q.a]}. ${esc(q.o[q.a])}</b></p><p class="note">${esc(q.e)}</p></div>`}).join('');
+  const verdict = pct>=90?['pass','Excellent: 90% or above.']:pct>=50?['pass','Pass. Aim for 90% to be exam-safe.']:['fail','Below the 50% pass mark.'];
+  $('#main').innerHTML=`<section class="card result">
+    <h2>${esc(state.set.label)}${state.onlyWrong?' · retry of wrong answers':''}</h2>
+    <div class="row" style="align-items:baseline;gap:14px"><span class="big">${pct}%</span><span class="muted">${right} of ${n} correct</span></div>
+    <p class="verdict ${verdict[0]}">${verdict[1]}</p>
+    <div class="bar" aria-hidden="true"><div class="fill" style="width:${pct}%"></div>
+      <div class="mk" style="left:50%"><span>pass 50</span></div><div class="mk" style="left:90%"><span>target 90</span></div></div>
+    <h3 style="font:700 1.05rem var(--display);margin:8px 0">${isMock?'By chapter':'By topic'} <span class="note">(below 70% in red)</span></h3>
+    <div class="tw"><table><thead><tr><th>${isMock?'Chapter':'Topic'}</th><th style="text-align:right">Right</th><th style="text-align:right">Score</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="row" style="margin-top:16px">
+      ${wrong.length?'<button class="btn pri" id="rw">Retry the '+wrong.length+' I got wrong</button>':''}
+      <button class="btn" id="ra">Restart full set</button>
+    </div>
+    ${wrong.length?'<h3 style="font:700 1.05rem var(--display);margin:22px 0 4px">Review</h3><div class="rev">'+items+'</div>':'<p>Every question correct.</p>'}
+  </section>`;
+  const rw=$('#rw'); if(rw) rw.onclick=()=>load(state.set.id,wrong);
+  $('#ra').onclick=()=>load(state.set.id);
+}
+
+function syncMode(){
+  $('#m-practice').setAttribute('aria-pressed',state.mode==='practice');
+  $('#m-exam').setAttribute('aria-pressed',state.mode==='exam');
+  store.set('mode',state.mode);
+}
+function setMode(m){
+  state.mode=m; syncMode();
+  if(state.set) load(state.set.id);
+}
+$('#m-practice').onclick=()=>setMode('practice');
+$('#m-exam').onclick=()=>setMode('exam');
+state.mode=store.get('mode','practice');
+$('#m-practice').setAttribute('aria-pressed',state.mode==='practice');
+$('#m-exam').setAttribute('aria-pressed',state.mode==='exam');
+const last=store.get('last','ch1');
+load(BANK[last]?last:'ch1');
+})();
+</script>
+</body>
+</html>
