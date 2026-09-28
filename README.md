@@ -4,10 +4,17 @@ Free, open study material for the **NISM Series V-A: Mutual Fund Distributors Ce
 
 **Open the site:** https://babubl.github.io/mfd-exam-prep/
 
-| Page | What it has |
+One app, three tabs:
+
+| Tab | What it has |
 | --- | --- |
-| [Practice drill](index.html) | 534 chapter-wise questions across all 12 chapters (about 25 per 5% of exam weight) and 5 full mock exams of 100 questions each, weighted like the real paper. Practice mode shows the answer after each question; exam mode runs a 2-hour timer and marks at the end. Results show a topic- or chapter-wise breakdown and let you retry only the questions you got wrong. |
-| [Quick revision](notes.html) | One-line, exam-focused facts for every chapter: numbers, limits, timelines, formulas and common traps. Also available as [notes.md](notes.md). |
+| **Learn** | One-line, exam-focused revision notes for all 12 chapters: numbers, limits, timelines, formulas and traps. Mark each chapter as revised, then jump straight to its practice questions. |
+| **Practice** | 534 chapter-wise questions (about 25 per 5% of exam weight) and 5 full mock exams of 100 questions each, weighted like the real paper. Practice mode shows the answer after each question; exam mode runs a 2-hour timer and marks at the end. Retry only the ones you got wrong. |
+| **Progress** | Estimated exam score (latest chapter scores weighted by exam marks), chapters revised, mock history, recent attempts, plus export/import of your progress. |
+
+**Progress saves automatically**: answers, position in a test, the exam timer, scores and history are kept in your browser. Close the tab and come back later to carry on where you left off. To move to another device or browser, use **Export** and **Import** on the Progress tab.
+
+The notes are also available as a single page ([notes.html](notes.html)) and as Markdown ([notes.md](notes.md)).
 
 ## Exam at a glance
 
@@ -32,11 +39,12 @@ Free, open study material for the **NISM Series V-A: Mutual Fund Distributors Ce
 
 Plain static files, no build step and no server:
 
-- `index.html`: the practice drill app
+- `index.html`: the app (Learn, Practice, Progress)
 - `data.js`: all questions (chapter drills and mocks)
-- `notes.html` / `notes.md`: revision notes
+- `notes.js`: chapter notes used by the Learn tab
+- `notes.html` / `notes.md`: the same notes as a standalone page and as Markdown
 
-Scores are stored only in the visitor's browser (localStorage). To run locally, open `index.html` in a browser.
+Progress is stored only in the visitor's browser (localStorage). Nothing is sent to a server. To run locally, open `index.html` in a browser.
 
 ## Disclaimer
 

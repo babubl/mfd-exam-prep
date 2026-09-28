@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>MFD Exam Drill</title>
-<meta name="description" content="Free practice questions for NISM Series V-A (Mutual Fund Distributors): chapter drills for all 12 chapters and five timed 100-question mock exams.">
+<title>MFD Exam Prep</title>
+<meta name="description" content="Free NISM Series V-A (Mutual Fund Distributors) exam prep: chapter-wise revision notes, 534 practice questions and five timed 100-question mock exams, with saved progress.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -111,29 +111,95 @@ td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
 .toplinks a{font:500 .8rem var(--body);color:var(--muted);text-decoration:none;padding:4px 8px;border-radius:6px}
 .toplinks a:hover,.toplinks a.on{background:var(--accent-soft);color:var(--ink)}
 .foot{color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:12px;margin-top:24px}
+
+/* app shell */
+.tabs{display:flex;gap:4px;background:var(--sunk);border-radius:10px;padding:4px;width:max-content;max-width:100%;overflow-x:auto}
+.tabs a{font:600 .9rem var(--body);color:var(--muted);text-decoration:none;padding:8px 16px;border-radius:7px;white-space:nowrap}
+.tabs a[aria-current="page"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.view[hidden]{display:none!important}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.resume{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:10px;padding:10px 14px;font-size:.88rem}
+/* learn */
+.learn{display:grid;grid-template-columns:250px minmax(0,1fr);gap:18px;align-items:start}
+@media (max-width:760px){.learn{grid-template-columns:1fr}}
+.chlist{display:grid;gap:2px;position:sticky;top:12px;min-width:0;max-height:calc(100vh - 24px);overflow-y:auto}
+@media (max-width:760px){.chlist{position:static;display:flex;overflow-x:auto;padding-bottom:4px;max-height:none}.learn .chlist button{white-space:nowrap;width:auto;flex:0 0 auto;border-color:var(--line);background:var(--surface)}.learn .chlist .t,.learn .chlist .mk{display:none}}
+.chlist button{display:flex;justify-content:space-between;gap:8px;align-items:center;text-align:left;border:1px solid transparent;background:transparent;color:var(--ink);font:500 .86rem var(--body);padding:8px 10px;border-radius:8px;cursor:pointer;white-space:normal;min-width:0;width:100%;line-height:1.3}
+.chlist button>span:first-child{flex:1;min-width:0}
+.chlist button:hover{background:var(--surface)}
+.chlist button[aria-current="true"]{background:var(--surface);border-color:var(--accent)}
+.chlist .mk{font:500 .7rem var(--mono);color:var(--muted)}
+.chlist .rd{color:var(--ok)}
+.notes h2{font:700 1.45rem/1.2 var(--display);margin:0 0 4px;text-wrap:balance}
+.notes h3{font:600 .78rem var(--body);text-transform:uppercase;letter-spacing:.07em;color:var(--accent);margin:22px 0 6px}
+.notes ul{padding-left:1.2em;margin:6px 0}
+.notes li{margin:4px 0;line-height:1.55}
+.notes li::marker{color:var(--muted)}
+.notes strong{font-weight:600}
+.notes table{font-size:.86rem;margin:8px 0}
+.notes td,.notes th{border:1px solid var(--line)}
+.notes .formula{font-family:var(--mono);background:var(--sunk);border-radius:8px;padding:10px 12px;overflow-x:auto}
+.notes-foot{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:22px;padding-top:14px}
+.chk{display:inline-flex;gap:8px;align-items:center;font-size:.9rem;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:var(--accent)}
+/* progress */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}
+.kpi b{display:block;font:700 1.8rem/1.1 var(--display);font-variant-numeric:tabular-nums}
+.kpi span{font-size:.78rem;color:var(--muted)}
+.meter{height:8px;background:var(--sunk);border-radius:999px;overflow:hidden;min-width:70px}
+.meter i{display:block;height:100%;background:var(--accent)}
+.meter i.ok{background:var(--ok)} .meter i.no{background:var(--bad)}
+.pill{font:500 .72rem var(--body);padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--muted);white-space:nowrap}
+.pill.ok{background:var(--ok-soft);color:var(--ok)} .pill.no{background:var(--bad-soft);color:var(--bad)}
+.card h3.h{font:700 1.05rem var(--display);margin:0 0 10px}
+.danger{color:var(--bad)}
+.confirm{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bad-soft);border-radius:8px;padding:8px 12px;font-size:.88rem}
+input[type=file]{font-size:.85rem}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <div>
-      <h1>MFD Exam Drill</h1>
+      <h1>MFD Exam Prep</h1>
       <div class="sub">NISM Series V-A · Nov 2025 workbook · 100 questions · 2 hours · pass 50%</div>
-      <div class="toplinks" style="margin-top:6px"><a href="index.html" class="on">Practice drill</a><a href="notes.html">Quick revision</a></div>
     </div>
-    <div class="mode" role="group" aria-label="Mode">
-      <button id="m-practice" aria-pressed="true">Practice</button>
-      <button id="m-exam" aria-pressed="false">Exam</button>
-    </div>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#learn" data-v="learn">Learn</a>
+      <a href="#practice" data-v="practice">Practice</a>
+      <a href="#progress" data-v="progress">Progress</a>
+    </nav>
   </header>
 
-  <nav class="sets" id="sets" aria-label="Question sets"></nav>
+  <section class="view" id="v-learn" hidden>
+    <div class="learn">
+      <nav class="chlist" id="chlist" aria-label="Chapters"></nav>
+      <article class="card notes" id="notes"></article>
+    </div>
+  </section>
 
-  <div id="main"></div>
-  <p class="foot">Independent study aid, not affiliated with or endorsed by NISM, SEBI or AMFI. Questions are original, written from the NISM V-A workbook (Nov 2025 edition); actual exam wording will differ. Your scores are saved only in this browser.</p>
+  <section class="view" id="v-practice" hidden>
+    <div class="toolbar">
+      <nav class="sets" id="sets" aria-label="Question sets" style="flex:1;min-width:0"></nav>
+      <div class="mode" role="group" aria-label="Mode">
+        <button id="m-practice" aria-pressed="true">Practice</button>
+        <button id="m-exam" aria-pressed="false">Exam</button>
+      </div>
+    </div>
+    <div id="resume"></div>
+    <div id="main"></div>
+  </section>
+
+  <section class="view" id="v-progress" hidden>
+    <div id="prog"></div>
+  </section>
+
+  <p class="foot">Independent study aid, not affiliated with or endorsed by NISM, SEBI or AMFI. Questions are original, written from the NISM V-A workbook (Nov 2025 edition); actual exam wording will differ. Progress is saved automatically in this browser on this device; use Export on the Progress tab to move it to another device.</p>
 </div>
 
 <script src="data.js"></script>
+<script src="notes.js"></script>
 <script>
 (function(){
 const PLAN = [
@@ -141,128 +207,194 @@ const PLAN = [
   ['ch7','Ch 7',8],['ch8','Ch 8',4],['ch9','Ch 9',15],['ch10','Ch 10',7],['ch11','Ch 11',7],['ch12','Ch 12',15],
   ['mock1','Mock 1',0],['mock2','Mock 2',0],['mock3','Mock 3',0],['mock4','Mock 4',0],['mock5','Mock 5',0]
 ];
-const BANK = window.BANK || {};
+const BANK = window.BANK || {}, NOTES = window.NOTES || [];
+const PREFIX='mfd:';
 const store = {
-  get(k,d){try{const v=localStorage.getItem('mfd:'+k);return v?JSON.parse(v):d}catch(e){return d}},
-  set(k,v){try{localStorage.setItem('mfd:'+k,JSON.stringify(v))}catch(e){}}
+  ok:(function(){try{localStorage.setItem('mfd:t','1');localStorage.removeItem('mfd:t');return true}catch(e){return false}})(),
+  get(k,d){try{const v=localStorage.getItem(PREFIX+k);return v?JSON.parse(v):d}catch(e){return d}},
+  set(k,v){try{localStorage.setItem(PREFIX+k,JSON.stringify(v))}catch(e){}},
+  del(k){try{localStorage.removeItem(PREFIX+k)}catch(e){}},
+  all(){const o={};try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith(PREFIX))o[k]=localStorage.getItem(k)}}catch(e){}return o}
 };
-let state = {set:null, mode:'practice', order:[], ans:{}, i:0, done:false, start:0, limit:0, onlyWrong:null};
-let tick=null;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today=()=>new Date().toISOString();
+const fdate=iso=>{try{return new Date(iso).toLocaleDateString(undefined,{day:'numeric',month:'short'})+' '+new Date(iso).toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'})}catch(e){return iso}};
+
+/* ---------- routing ---------- */
+let view='practice';
+function show(v){
+  view=['learn','practice','progress'].includes(v)?v:'practice';
+  document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!=='v-'+view);
+  document.querySelectorAll('.tabs a').forEach(a=>a.setAttribute('aria-current',a.dataset.v===view?'page':'false'));
+  if(view==='learn') renderLearn();
+  if(view==='progress') renderProgress();
+  if(view!=='practice'){stopTick();save();} else if(state.set&&!state.done&&state.mode==='exam') startTick();
+  store.set('view',view);
+}
+window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+
+/* ---------- learn ---------- */
+let noteId=store.get('note','intro');
+function renderLearn(){
+  const read=store.get('read',{});
+  $('#chlist').innerHTML=NOTES.map(n=>`<button data-id="${n.id}" aria-current="${n.id===noteId}">
+    <span>${n.n?('Ch '+n.n+'<span class="t"> · '+esc(n.title)+'</span>'):'Start here'}</span>
+    <span class="mk">${read[n.id]?'<span class="rd">✓</span>':''}${n.marks?' '+n.marks:''}</span></button>`).join('');
+  $('#chlist').querySelectorAll('button').forEach(b=>b.onclick=()=>{noteId=b.dataset.id;store.set('note',noteId);renderLearn();window.scrollTo({top:0,behavior:'smooth'})});
+  const n=NOTES.find(x=>x.id===noteId)||NOTES[0]; if(!n) return;
+  const has=BANK[n.id];
+  $('#notes').innerHTML=`<h2>${n.n?'Chapter '+n.n+' · '+esc(n.title):esc(n.title)}</h2>
+    ${n.marks?`<p class="note">${n.marks} marks in the exam · ${has?has.qs.length+' practice questions':''}</p>`:''}
+    ${n.html}
+    <div class="notes-foot">
+      ${n.n?`<label class="chk"><input type="checkbox" id="rdchk" ${read[n.id]?'checked':''}> I've revised this chapter</label>`:'<span></span>'}
+      <div class="row">
+        ${has?`<button class="btn pri" id="goprac">Practise Chapter ${n.n}</button>`:''}
+        ${nextNote(n)?`<button class="btn" id="nextn">Next: ${nextNote(n).n?'Chapter '+nextNote(n).n:''}</button>`:''}
+      </div>
+    </div>`;
+  const rc=$('#rdchk'); if(rc) rc.onchange=()=>{const r=store.get('read',{}); if(rc.checked) r[n.id]=today(); else delete r[n.id]; store.set('read',r); renderLearn();};
+  const gp=$('#goprac'); if(gp) gp.onclick=()=>{location.hash='practice'; open(n.id);};
+  const nx=$('#nextn'); if(nx) nx.onclick=()=>{noteId=nextNote(n).id;store.set('note',noteId);renderLearn();window.scrollTo({top:0,behavior:'smooth'})};
+}
+function nextNote(n){const i=NOTES.indexOf(n);return NOTES[i+1]}
+
+/* ---------- practice state (persisted per set) ---------- */
+let state={set:null,mode:store.get('mode','practice'),order:[],ans:{},i:0,done:false,elapsed:0,resumedAt:0,limit:0,onlyWrong:null};
+let tick=null;
+const sessKey=id=>'sess:'+id;
+function save(){
+  if(!state.set) return;
+  store.set(sessKey(state.set.id),{order:state.order,ans:state.ans,i:state.i,done:state.done,mode:state.mode,
+    elapsed:elapsedNow(),limit:state.limit,onlyWrong:state.onlyWrong,score:state.score||null,updated:today()});
+}
+function elapsedNow(){return state.elapsed+(state.resumedAt?Date.now()-state.resumedAt:0)}
+function remaining(){return state.limit-elapsedNow()}
+function startTick(){clearInterval(tick); state.elapsed=elapsedNow(); state.resumedAt=Date.now();
+  tick=setInterval(()=>{renderSide(); if(remaining()<=0) finish(); else if(Math.floor(elapsedNow()/1000)%10===0) save();},1000);}
+function stopTick(){clearInterval(tick); if(state.resumedAt){state.elapsed=elapsedNow(); state.resumedAt=0;}}
+
+function fresh(id,only){
+  const s=BANK[id]; stopTick();
+  if(state.set&&state.set.id!==id) save();
+  const idx=only||s.qs.map((_,i)=>i);
+  state={set:s,mode:state.mode,order:idx,ans:{},i:0,done:false,elapsed:0,resumedAt:0,
+    limit:state.mode==='exam'?idx.length*72*1000:0,onlyWrong:only||null};
+  store.set('last',id);
+  if(state.mode==='exam') startTick();
+  save(); renderSets(); renderResume(); render();
+}
+function open(id){
+  const s=BANK[id]; if(!s) return;
+  if(state.set&&state.set.id!==id){stopTick();save();}
+  const saved=store.get(sessKey(id),null);
+  if(saved&&saved.order&&saved.order.every(k=>k<s.qs.length)){
+    stopTick();
+    state={set:s,mode:saved.mode||state.mode,order:saved.order,ans:saved.ans||{},i:saved.i||0,done:!!saved.done,
+      elapsed:saved.elapsed||0,resumedAt:0,limit:saved.limit||0,onlyWrong:saved.onlyWrong||null,score:saved.score,resumed:!saved.done&&Object.keys(saved.ans||{}).length>0,updated:saved.updated};
+    syncMode(false);
+    store.set('last',id);
+    if(!state.done&&state.mode==='exam'&&view==='practice') startTick();
+    renderSets(); renderResume(); render();
+  } else fresh(id);
+}
+function renderResume(){
+  const el=$('#resume');
+  if(state.resumed&&!state.done){
+    el.innerHTML=`<div class="resume"><span>Picked up where you left off: ${Object.keys(state.ans).length} of ${state.order.length} answered${state.updated?' · saved '+fdate(state.updated):''}.</span><button class="btn" id="startover">Start over</button></div>`;
+    $('#startover').onclick=()=>fresh(state.set.id);
+  } else el.innerHTML='';
+}
 
 function renderSets(){
-  const best = store.get('best',{});
-  $('#sets').innerHTML = PLAN.map(([id,lab,w])=>{
+  const best=store.get('best',{});
+  $('#sets').innerHTML=PLAN.map(([id,lab,w])=>{
     const s=BANK[id]; const cur=state.set&&state.set.id===id;
-    const meta = s ? (s.qs.length+' Qs'+(best[id]!=null?' · <span class="best">best '+best[id]+'%</span>':'')) : 'coming';
-    const wt = w? ' · '+w+'%':'';
-    return `<button class="set" ${s?'':'disabled'} aria-current="${cur}" data-id="${id}">${lab}${wt}<small>${meta}</small></button>`;
+    const sv=store.get(sessKey(id),null); const inprog=sv&&!sv.done&&Object.keys(sv.ans||{}).length>0;
+    const meta=s?(s.qs.length+' Qs'+(inprog?' · <span class="best" style="color:var(--warn)">in progress</span>':best[id]!=null?' · <span class="best">best '+best[id]+'%</span>':'')):'';
+    return `<button class="set" ${s?'':'disabled'} aria-current="${cur}" data-id="${id}">${lab}${w?' · '+w+'%':''}<small>${meta}</small></button>`;
   }).join('');
   document.querySelectorAll('.set').forEach(b=>b.onclick=()=>{
     const s=BANK[b.dataset.id];
-    if(s&&s.kind==='mock'&&state.mode!=='exam'){state.mode='exam';syncMode();}
-    load(b.dataset.id);
+    const sv=store.get(sessKey(b.dataset.id),null);
+    if(s&&s.kind==='mock'&&!sv&&state.mode!=='exam'){state.mode='exam';syncMode();}
+    open(b.dataset.id);
   });
 }
-
-function load(id, only){
-  const s=BANK[id]; if(!s) return;
-  clearInterval(tick);
-  const idx = only || s.qs.map((_,i)=>i);
-  state = {set:s, mode:state.mode, order:idx, ans:{}, i:0, done:false, start:Date.now(),
-    limit: state.mode==='exam' ? Math.round(idx.length*72)*1000 : 0, onlyWrong: only||null};
-  store.set('last',id);
-  if(state.mode==='exam') tick=setInterval(()=>{renderSide(); if(remaining()<=0) finish();},1000);
-  renderSets(); render();
-}
-function remaining(){return state.limit - (Date.now()-state.start)}
-function fmt(ms){ms=Math.max(0,ms);const s=Math.floor(ms/1000);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+':':'')+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0')}
 function cur(){return state.set.qs[state.order[state.i]]}
-function isRevealed(k){return state.done || (state.mode==='practice' && state.ans[k]!=null)}
+function isRevealed(k){return state.done||(state.mode==='practice'&&state.ans[k]!=null)}
 
 function render(){
   if(state.done) return renderResult();
-  const q=cur(), k=state.order[state.i], picked=state.ans[k], show=isRevealed(k);
-  const L='ABCD';
-  let opts = q.o.map((o,j)=>{
-    let c='opt'; if(picked===j) c+=' sel';
+  const q=cur(),k=state.order[state.i],picked=state.ans[k],show=isRevealed(k),L='ABCD';
+  const opts=q.o.map((o,j)=>{let c='opt'; if(picked===j) c+=' sel';
     if(show){ if(j===q.a) c+=' right'; else if(picked===j) c+=' wrong'; }
-    return `<button class="${c}" data-j="${j}" ${show?'disabled':''}><span class="k">${L[j]}</span><span>${esc(o)}</span></button>`;
-  }).join('');
-  let exp='';
-  if(show){ const ok=picked===q.a; exp=`<div class="exp ${ok?'':'no'}"><b>${ok?'Correct.':'Answer: '+L[q.a]+'.'}</b>${esc(q.e)}</div>`; }
+    return `<button class="${c}" data-j="${j}" ${show?'disabled':''}><span class="k">${L[j]}</span><span>${esc(o)}</span></button>`;}).join('');
+  let exp=''; if(show){const ok=picked===q.a; exp=`<div class="exp ${ok?'':'no'}"><b>${ok?'Correct.':'Answer: '+L[q.a]+'.'}</b>${esc(q.e)}</div>`;}
   const n=state.order.length;
-  $('#main').innerHTML = `<div class="grid">
+  $('#main').innerHTML=`<div class="grid">
     <section class="card" aria-live="polite">
       <div class="qhead"><span class="qno">${state.set.short}${state.onlyWrong?' · retry':''} · Q ${state.i+1} / ${n}</span><span class="tag">${esc(q.t)}</span></div>
       <p class="stem">${esc(q.q)}</p>
       <div class="opts">${opts}</div>${exp}
-      <div class="nav">
-        <button class="btn" id="prev" ${state.i===0?'disabled':''}>Previous</button>
-        <button class="btn pri" id="next">${state.i===n-1?'Finish':'Next'}</button>
-      </div>
-    </section>
-    <aside id="side"></aside></div>`;
-  document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{state.ans[k]=+b.dataset.j; render();});
-  $('#prev').onclick=()=>{state.i--;render()};
-  $('#next').onclick=()=>{ if(state.i===n-1) finish(); else {state.i++;render()} };
+      <div class="nav"><button class="btn" id="prev" ${state.i===0?'disabled':''}>Previous</button>
+        <button class="btn pri" id="next">${state.i===n-1?'Finish':'Next'}</button></div>
+    </section><aside id="side"></aside></div>`;
+  document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{state.ans[k]=+b.dataset.j; save(); render(); renderSets();});
+  $('#prev').onclick=()=>{state.i--;save();render()};
+  $('#next').onclick=()=>{ if(state.i===n-1) finish(); else {state.i++;save();render()} };
   renderSide();
 }
 function renderSide(){
-  const el=$('#side'); if(!el) return;
-  const n=state.order.length, answered=Object.keys(state.ans).length;
+  const el=$('#side'); if(!el||!state.set) return;
+  const n=state.order.length,answered=Object.keys(state.ans).length,pr=state.mode==='practice';
   let right=0,wrong=0; state.order.forEach(k=>{const a=state.ans[k]; if(a==null)return; if(a===state.set.qs[k].a)right++; else wrong++;});
-  const pr = state.mode==='practice';
-  const dots=state.order.map((k,i)=>{
-    const a=state.ans[k]; let c='dot';
-    if(a!=null){ c+= pr ? (a===state.set.qs[k].a?' ok':' no') : ' ans'; }
-    if(i===state.i) c+=' cur';
-    return `<button class="${c}" data-i="${i}" aria-label="Question ${i+1}">${i+1}</button>`;
-  }).join('');
+  const dots=state.order.map((k,i)=>{const a=state.ans[k]; let c='dot'; if(a!=null) c+=pr?(a===state.set.qs[k].a?' ok':' no'):' ans'; if(i===state.i) c+=' cur';
+    return `<button class="${c}" data-i="${i}" aria-label="Question ${i+1}">${i+1}</button>`;}).join('');
   const rem=remaining();
   el.innerHTML=`<div class="card">
     ${pr?'':`<div class="timer ${rem<300000?'low':''}" title="Time left">${fmt(rem)}</div>`}
-    <div class="stats">
-      <div class="stat"><b>${answered}/${n}</b><span>Done</span></div>
-      <div class="stat"><b>${pr?right:'–'}</b><span>Right</span></div>
-      <div class="stat"><b>${pr?wrong:'–'}</b><span>Wrong</span></div>
-    </div>
+    <div class="stats"><div class="stat"><b>${answered}/${n}</b><span>Done</span></div>
+      <div class="stat"><b>${pr?right:'–'}</b><span>Right</span></div><div class="stat"><b>${pr?wrong:'–'}</b><span>Wrong</span></div></div>
     <div class="dots">${dots}</div>
     <div class="legend">${pr?'<span><i style="background:var(--ok-soft);border:1px solid var(--ok)"></i>right</span><span><i style="background:var(--bad-soft);border:1px solid var(--bad)"></i>wrong</span>':'<span><i style="background:var(--accent-soft)"></i>answered</span>'}</div>
-    <div class="side-actions">
-      <button class="btn pri" id="fin">Submit and see score</button>
-      <button class="btn" id="rst">Restart this set</button>
-    </div>
-    <p class="note">${pr?'Practice: answer shows after each pick.':'Exam: 72 seconds a question, like the real 100 Qs in 2 hours. Answers show at the end.'}</p>
+    <div class="side-actions"><button class="btn pri" id="fin">Submit and see score</button><button class="btn" id="rst">Restart this set</button></div>
+    <p class="note">${pr?'Practice: answer shows after each pick.':'Exam: 72 seconds a question, like 100 Qs in 2 hours. The timer pauses if you leave this tab.'} Progress saves automatically.</p>
   </div>`;
-  el.querySelectorAll('.dot').forEach(b=>b.onclick=()=>{state.i=+b.dataset.i;render()});
-  $('#fin').onclick=finish; $('#rst').onclick=()=>load(state.set.id);
+  el.querySelectorAll('.dot').forEach(b=>b.onclick=()=>{state.i=+b.dataset.i;save();render()});
+  $('#fin').onclick=finish; $('#rst').onclick=()=>fresh(state.set.id);
 }
+function fmt(ms){ms=Math.max(0,ms);const s=Math.floor(ms/1000);const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return (h?h+':':'')+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0')}
 
 function finish(){
-  clearInterval(tick); state.done=true;
+  stopTick(); state.done=true;
   const n=state.order.length; let right=0;
   state.order.forEach(k=>{if(state.ans[k]===state.set.qs[k].a)right++});
   const pct=Math.round(right/n*100);
-  if(!state.onlyWrong){const best=store.get('best',{}); if(best[state.set.id]==null||pct>best[state.set.id]){best[state.set.id]=pct;store.set('best',best);} }
-  state.score={right,n,pct}; renderSets(); render();
+  state.score={right,n,pct};
+  // chapter breakdown for history
+  const byCh={}; state.order.forEach(k=>{const q=state.set.qs[k]; const c=q.c||+state.set.id.replace('ch',''); const t=byCh[c]||(byCh[c]={r:0,n:0}); t.n++; if(state.ans[k]===q.a)t.r++;});
+  const hist=store.get('hist',[]);
+  hist.push({id:state.set.id,pct,right,n,mode:state.mode,retry:!!state.onlyWrong,date:today(),mins:Math.round(elapsedNow()/60000),byCh});
+  store.set('hist',hist.slice(-300));
+  if(!state.onlyWrong){const best=store.get('best',{}); if(best[state.set.id]==null||pct>best[state.set.id]){best[state.set.id]=pct;store.set('best',best);}}
+  state.resumed=false; save(); renderSets(); renderResume(); render();
 }
 function renderResult(){
-  const {right,n,pct}=state.score, L='ABCD';
-  const topics={}; const isMock=state.set.kind==='mock';
+  const {right,n,pct}=state.score||{right:0,n:state.order.length,pct:0},L='ABCD',isMock=state.set.kind==='mock';
+  const topics={};
   state.order.forEach(k=>{const q=state.set.qs[k]; const key=isMock?('Ch '+q.c):q.t; const t=topics[key]||(topics[key]={r:0,n:0,c:q.c}); t.n++; if(state.ans[k]===q.a)t.r++;});
-  const ents=Object.entries(topics);
-  if(isMock) ents.sort((a,b)=>a[1].c-b[1].c); else ents.sort((a,b)=>a[1].r/a[1].n-b[1].r/b[1].n);
-  const rows=ents.map(([t,v])=>{
-    const p=Math.round(v.r/v.n*100);
-    return `<tr><td class="${p<70?'weak':''}">${esc(t)}</td><td class="n">${v.r}/${v.n}</td><td class="n">${p}%</td></tr>`;}).join('');
+  const ents=Object.entries(topics); if(isMock) ents.sort((a,b)=>a[1].c-b[1].c); else ents.sort((a,b)=>a[1].r/a[1].n-b[1].r/b[1].n);
+  const rows=ents.map(([t,v])=>{const p=Math.round(v.r/v.n*100);
+    return `<tr><td class="${p<70?'weak':''}">${esc(t)}</td><td class="n">${v.r}/${v.n}</td><td class="n">${p}%</td>${isMock?`<td>${p<70?`<button class="btn" data-learn="ch${v.c}" style="padding:4px 10px;font-size:.78rem">Revise Ch ${v.c}</button>`:''}</td>`:''}</tr>`;}).join('');
   const wrong=state.order.filter(k=>state.ans[k]!==state.set.qs[k].a);
-  const items=wrong.map(k=>{const q=state.set.qs[k]; const a=state.ans[k];
+  const items=wrong.map(k=>{const q=state.set.qs[k],a=state.ans[k];
     return `<div class="item"><span class="tag">${esc(q.t)}</span><p><b>${esc(q.q)}</b></p>
       <p class="muted">Your answer: ${a==null?'not answered':L[a]+'. '+esc(q.o[a])}</p>
       <p>Correct: <b>${L[q.a]}. ${esc(q.o[q.a])}</b></p><p class="note">${esc(q.e)}</p></div>`}).join('');
-  const verdict = pct>=90?['pass','Excellent: 90% or above.']:pct>=50?['pass','Pass. Aim for 90% to be exam-safe.']:['fail','Below the 50% pass mark.'];
+  const verdict=pct>=90?['pass','Excellent: 90% or above.']:pct>=50?['pass','Pass. Aim for 90% to be exam-safe.']:['fail','Below the 50% pass mark.'];
+  const chId=isMock?null:state.set.id;
   $('#main').innerHTML=`<section class="card result">
     <h2>${esc(state.set.label)}${state.onlyWrong?' · retry of wrong answers':''}</h2>
     <div class="row" style="align-items:baseline;gap:14px"><span class="big">${pct}%</span><span class="muted">${right} of ${n} correct</span></div>
@@ -270,33 +402,104 @@ function renderResult(){
     <div class="bar" aria-hidden="true"><div class="fill" style="width:${pct}%"></div>
       <div class="mk" style="left:50%"><span>pass 50</span></div><div class="mk" style="left:90%"><span>target 90</span></div></div>
     <h3 style="font:700 1.05rem var(--display);margin:8px 0">${isMock?'By chapter':'By topic'} <span class="note">(below 70% in red)</span></h3>
-    <div class="tw"><table><thead><tr><th>${isMock?'Chapter':'Topic'}</th><th style="text-align:right">Right</th><th style="text-align:right">Score</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="tw"><table><thead><tr><th>${isMock?'Chapter':'Topic'}</th><th style="text-align:right">Right</th><th style="text-align:right">Score</th>${isMock?'<th></th>':''}</tr></thead><tbody>${rows}</tbody></table></div>
     <div class="row" style="margin-top:16px">
       ${wrong.length?'<button class="btn pri" id="rw">Retry the '+wrong.length+' I got wrong</button>':''}
       <button class="btn" id="ra">Restart full set</button>
+      ${chId&&NOTES.find(x=>x.id===chId)?`<button class="btn" data-learn="${chId}">Revise this chapter</button>`:''}
     </div>
     ${wrong.length?'<h3 style="font:700 1.05rem var(--display);margin:22px 0 4px">Review</h3><div class="rev">'+items+'</div>':'<p>Every question correct.</p>'}
   </section>`;
-  const rw=$('#rw'); if(rw) rw.onclick=()=>load(state.set.id,wrong);
-  $('#ra').onclick=()=>load(state.set.id);
+  const rw=$('#rw'); if(rw) rw.onclick=()=>fresh(state.set.id,wrong);
+  $('#ra').onclick=()=>fresh(state.set.id);
+  document.querySelectorAll('[data-learn]').forEach(b=>b.onclick=()=>{noteId=b.dataset.learn;store.set('note',noteId);location.hash='learn';});
 }
-
-function syncMode(){
+function syncMode(persist=true){
   $('#m-practice').setAttribute('aria-pressed',state.mode==='practice');
   $('#m-exam').setAttribute('aria-pressed',state.mode==='exam');
-  store.set('mode',state.mode);
+  if(persist) store.set('mode',state.mode);
 }
 function setMode(m){
-  state.mode=m; syncMode();
-  if(state.set) load(state.set.id);
+  if(state.mode===m) return; state.mode=m; syncMode();
+  if(!state.set) return;
+  if(state.done||!Object.keys(state.ans).length){ fresh(state.set.id); return; }
+  // switch mode mid-set without losing answers
+  if(m==='exam'){ if(!state.limit) state.limit=state.order.length*72*1000; startTick(); } else stopTick();
+  save(); render();
 }
 $('#m-practice').onclick=()=>setMode('practice');
 $('#m-exam').onclick=()=>setMode('exam');
-state.mode=store.get('mode','practice');
-$('#m-practice').setAttribute('aria-pressed',state.mode==='practice');
-$('#m-exam').setAttribute('aria-pressed',state.mode==='exam');
+document.addEventListener('visibilitychange',()=>{ if(document.hidden){ stopTick(); save(); } else if(view==='practice'&&state.set&&!state.done&&state.mode==='exam') startTick(); });
+window.addEventListener('pagehide',()=>{stopTick();save();});
+
+/* ---------- progress ---------- */
+let confirmReset=false;
+function renderProgress(){
+  const best=store.get('best',{}), hist=store.get('hist',[]), read=store.get('read',{});
+  const chs=PLAN.filter(p=>p[2]);
+  // readiness: weight-averaged latest non-retry score per chapter (chapter drills and mock chapter slices)
+  const latestCh={};
+  hist.filter(h=>!h.retry).forEach(h=>{ Object.entries(h.byCh||{}).forEach(([c,v])=>{ latestCh[c]={pct:Math.round(v.r/v.n*100),date:h.date}; }); });
+  let wsum=0,wcov=0; chs.forEach(([id,,w])=>{const c=id.replace('ch',''); if(latestCh[c]){wsum+=latestCh[c].pct*w; wcov+=w;}});
+  const readiness=wcov?Math.round(wsum/wcov):null;
+  const mocks=hist.filter(h=>h.id.startsWith('mock')&&!h.retry);
+  const answered=Object.keys(store.all()).filter(k=>k.startsWith(PREFIX+'sess:')).reduce((s,k)=>{try{return s+Object.keys(JSON.parse(localStorage.getItem(k)).ans||{}).length}catch(e){return s}},0);
+  const nRead=chs.filter(([id])=>read[id]).length;
+  const rowsCh=chs.map(([id,lab,w])=>{const s=BANK[id], c=id.replace('ch',''), att=hist.filter(h=>h.id===id&&!h.retry), l=latestCh[c];
+    const p=l?l.pct:null, cls=p==null?'':p>=70?'ok':'no';
+    return `<tr><td>${lab} · ${esc((NOTES.find(n=>n.id===id)||{}).title||'')}</td><td class="n">${w}</td>
+      <td>${read[id]?'<span class="pill ok">Revised</span>':'<span class="pill">Not yet</span>'}</td>
+      <td class="n">${att.length}</td><td class="n">${best[id]!=null?best[id]+'%':'–'}</td>
+      <td style="min-width:110px"><div class="row" style="align-items:center;gap:6px;flex-wrap:nowrap"><div class="meter" style="flex:1"><i class="${cls}" style="width:${p||0}%"></i></div><span class="n" style="font-family:var(--mono);font-size:.8rem">${p==null?'–':p+'%'}</span></div></td></tr>`;}).join('');
+  const rowsMock=PLAN.filter(p=>p[0].startsWith('mock')).map(([id,lab])=>{const att=hist.filter(h=>h.id===id&&!h.retry); const last=att[att.length-1];
+    const sv=store.get(sessKey(id),null); const inprog=sv&&!sv.done&&Object.keys(sv.ans||{}).length>0;
+    return `<tr><td>${lab}</td><td>${inprog?'<span class="pill" style="color:var(--warn)">In progress</span>':att.length?`<span class="pill ${last.pct>=90?'ok':last.pct>=50?'':'no'}">${last.pct>=50?'Pass':'Fail'}</span>`:'<span class="pill">Not taken</span>'}</td>
+      <td class="n">${att.length}</td><td class="n">${best[id]!=null?best[id]+'%':'–'}</td><td class="n">${last?last.pct+'%':'–'}</td><td class="note">${last?fdate(last.date)+(last.mins?' · '+last.mins+' min':''):''}</td></tr>`;}).join('');
+  const recent=hist.slice(-12).reverse().map(h=>`<tr><td class="note">${fdate(h.date)}</td><td>${esc((BANK[h.id]||{}).short||h.id)}${h.retry?' · retry':''}</td><td>${h.mode==='exam'?'Exam':'Practice'}</td><td class="n">${h.right}/${h.n}</td><td class="n">${h.pct}%</td></tr>`).join('');
+  $('#prog').innerHTML=`
+    ${store.ok?'':'<p class="card danger">Your browser is blocking storage (private mode or cookies disabled), so progress cannot be saved on this device.</p>'}
+    <div class="kpis">
+      <div class="kpi"><b>${readiness==null?'–':readiness+'%'}</b><span>Estimated exam score: your latest score in each chapter, weighted by exam marks${wcov&&wcov<100?' ('+wcov+'% of syllabus attempted)':''}</span></div>
+      <div class="kpi"><b>${nRead}/12</b><span>Chapters revised</span></div>
+      <div class="kpi"><b>${mocks.length}</b><span>Mock exams completed${mocks.length?' · best '+Math.max(...mocks.map(m=>m.pct))+'%':''}</span></div>
+      <div class="kpi"><b>${answered}</b><span>Questions answered (saved sessions)</span></div>
+    </div>
+    <section class="card" style="margin-top:16px"><h3 class="h">Chapters</h3>
+      <div class="tw"><table><thead><tr><th>Chapter</th><th style="text-align:right">Marks</th><th>Notes</th><th style="text-align:right">Attempts</th><th style="text-align:right">Best drill</th><th>Latest score</th></tr></thead><tbody>${rowsCh}</tbody></table></div>
+      <p class="note">Latest score counts both chapter drills and that chapter's questions inside mocks. Green = 70% or above.</p></section>
+    <section class="card" style="margin-top:16px"><h3 class="h">Mock exams</h3>
+      <div class="tw"><table><thead><tr><th>Mock</th><th>Status</th><th style="text-align:right">Attempts</th><th style="text-align:right">Best</th><th style="text-align:right">Last</th><th>When</th></tr></thead><tbody>${rowsMock}</tbody></table></div></section>
+    <section class="card" style="margin-top:16px"><h3 class="h">Recent attempts</h3>
+      ${recent?`<div class="tw"><table><thead><tr><th>When</th><th>Set</th><th>Mode</th><th style="text-align:right">Right</th><th style="text-align:right">Score</th></tr></thead><tbody>${recent}</tbody></table></div>`:'<p class="note">No completed attempts yet. Finish a chapter drill or mock and it appears here.</p>'}</section>
+    <section class="card" style="margin-top:16px"><h3 class="h">Your data</h3>
+      <p class="note" style="margin-top:0">Progress lives in this browser only. Export it to keep a backup or move it to another device, then Import it there.</p>
+      <div class="row" style="align-items:center">
+        <button class="btn" id="exp">Export progress</button>
+        <label class="btn" style="display:inline-flex;gap:6px;align-items:center">Import<input type="file" id="imp" accept="application/json,.json" style="display:none"></label>
+        ${confirmReset?`<div class="confirm">Delete all saved progress on this device? <button class="btn" id="rsy">Yes, delete</button><button class="btn" id="rsn">Cancel</button></div>`:'<button class="btn danger" id="rs">Reset all progress</button>'}
+      </div><p class="note" id="impmsg"></p></section>`;
+  $('#exp').onclick=()=>{
+    const blob=new Blob([JSON.stringify({app:'mfd-exam-prep',version:1,exported:today(),data:store.all()},null,1)],{type:'application/json'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='mfd-progress-'+new Date().toISOString().slice(0,10)+'.json'; document.body.appendChild(a); a.click(); a.remove();
+  };
+  $('#imp').onchange=e=>{const f=e.target.files[0]; if(!f) return; const r=new FileReader();
+    r.onload=()=>{try{const j=JSON.parse(r.result); if(j.app!=='mfd-exam-prep'||!j.data) throw 0;
+      Object.entries(j.data).forEach(([k,v])=>{if(k.startsWith(PREFIX)) localStorage.setItem(k,v)});
+      $('#impmsg').textContent='Imported. Your progress is restored.'; state.set=null; open(store.get('last','ch1')); renderProgress();
+    }catch(err){$('#impmsg').textContent='That file is not an MFD Exam Prep export. Choose the .json file you exported.'}};
+    r.readAsText(f);};
+  const rs=$('#rs'); if(rs) rs.onclick=()=>{confirmReset=true;renderProgress();};
+  const rsn=$('#rsn'); if(rsn) rsn.onclick=()=>{confirmReset=false;renderProgress();};
+  const rsy=$('#rsy'); if(rsy) rsy.onclick=()=>{Object.keys(store.all()).forEach(k=>{try{localStorage.removeItem(k)}catch(e){}}); confirmReset=false; stopTick(); state.set=null; fresh('ch1'); renderProgress();};
+}
+
+/* ---------- boot ---------- */
+syncMode(false);
 const last=store.get('last','ch1');
-load(BANK[last]?last:'ch1');
+view=(location.hash.slice(1))||store.get('view','learn');
+open(BANK[last]?last:'ch1');
+show(view);
+if(!location.hash) history.replaceState(null,'','#'+view);
 })();
 </script>
 </body>
