@@ -1,6 +1,6 @@
 # MFD Exam Prep: NISM Series V-A
 
-Free, open study material for the **NISM Series V-A: Mutual Fund Distributors Certification Examination** (workbook edition: November 2025, for exams from 15 January 2026).
+Free, open study material for the **NISM Series V-A: Mutual Fund Distributors Certification Examination** (workbook edition: March 2026, revised, reflecting the SEBI (Mutual Funds) Regulations, 2026).
 
 **Open the site:** https://babubl.github.io/mfd-exam-prep/
 
