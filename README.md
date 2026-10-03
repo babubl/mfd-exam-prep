@@ -4,10 +4,11 @@ Free, open study material for the **NISM Series V-A: Mutual Fund Distributors Ce
 
 **Open the site:** https://babubl.github.io/mfd-exam-prep/
 
-One app, three tabs:
+One app, four tabs:
 
 | Tab | What it has |
 | --- | --- |
+| **Home** | What NISM V-A is, the exam format, who needs it, the steps from exam to ARN, how distributors earn, and the syllabus by marks, all from the March 2026 workbook. A checklist card fills in from your progress. |
 | **Learn** | One-line, exam-focused revision notes for all 12 chapters: numbers, limits, timelines, formulas and traps. Mark each chapter as revised, then jump straight to its practice questions. |
 | **Practice** | 534 chapter-wise questions (about 25 per 5% of exam weight) and 5 full mock exams of 100 questions each, weighted like the real paper. Practice mode shows the answer after each question; exam mode runs a 2-hour timer and marks at the end. Retry only the ones you got wrong. |
 | **Progress** | Estimated exam score (latest chapter scores weighted by exam marks), chapters revised, mock history, recent attempts, plus export/import of your progress. |

@@ -156,21 +156,216 @@ td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
 .danger{color:var(--bad)}
 .confirm{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bad-soft);border-radius:8px;padding:8px 12px;font-size:.88rem}
 input[type=file]{font-size:.85rem}
+
+/* home */
+.home{display:grid;gap:44px;padding-top:6px}
+.home h2{font:700 1.5rem/1.15 var(--display);margin:0 0 6px;letter-spacing:-.01em;text-wrap:balance}
+.home .lede{color:var(--muted);margin:0 0 18px;max-width:62ch}
+.home p{max-width:68ch}
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:32px;align-items:center}
+@media (max-width:820px){.hero{grid-template-columns:1fr}}
+.hero h2{font:700 clamp(2rem,5.4vw,3.15rem)/1.02 var(--display);letter-spacing:-.025em;margin:0 0 16px}
+.hero p.lead{font-size:1.06rem;line-height:1.6;margin:0 0 22px;max-width:56ch}
+.hero .row{gap:10px}
+.btn.lg{padding:11px 18px;font-size:.95rem;border-radius:9px}
+.cred{--c-bg:#0C3B63;--c-ink:#F2F7FC;--c-mut:#A9C3DA;--c-line:rgba(255,255,255,.16);--c-ok:#7FD8A8;
+  background:var(--c-bg);color:var(--c-ink);border-radius:16px;padding:22px 22px 18px;position:relative;overflow:hidden;
+  box-shadow:0 18px 40px -22px rgba(12,59,99,.65)}
+:root[data-theme="dark"] .cred{--c-bg:#123E66}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .cred{--c-bg:#123E66}}
+.cred::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;
+  border:28px solid rgba(255,255,255,.06)}
+.cred .who{font:700 1.15rem/1.2 var(--display);margin:0}
+.cred .role{font-size:.86rem;color:var(--c-mut);margin:2px 0 16px}
+.cred .arn{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--c-line);border-bottom:1px solid var(--c-line);padding:10px 0;margin-bottom:12px}
+.cred .arn b{font:500 1.05rem var(--mono);letter-spacing:.06em}
+.cred .arn span{font-size:.78rem;color:var(--c-mut)}
+.cred ol{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.cred li{display:grid;grid-template-columns:20px 1fr auto;gap:8px;align-items:center;font-size:.88rem}
+.cred li i{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--c-mut);display:inline-block}
+.cred li.done i{background:var(--c-ok);border-color:var(--c-ok)}
+.cred li small{font:500 .78rem var(--mono);color:var(--c-mut)}
+.cred .fine{font-size:.72rem;color:var(--c-mut);margin:14px 0 0}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.fig{background:var(--surface);padding:16px 18px}
+.fig b{display:block;font:700 1.4rem/1.15 var(--display);white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.fig .from{font-size:.8rem;color:var(--muted);margin-top:2px}
+.fig p{font-size:.88rem;margin:8px 0 0}
+.src{font-size:.78rem;color:var(--muted);margin-top:8px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:18px}
+.fact{border-left:3px solid var(--accent);padding:2px 0 2px 12px}
+.fact b{display:block;font:700 1.35rem/1.15 var(--display)}
+.fact span{font-size:.84rem;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.home ul.plain{padding-left:1.1em;margin:6px 0}
+.home ul.plain li{margin:5px 0}
+.steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:0;max-width:760px}
+.steps>li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;position:relative;padding-bottom:22px}
+.steps>li::before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+  font:700 1rem/36px var(--display);text-align:center;position:relative;z-index:1}
+.steps>li:not(:last-child)::after{content:"";position:absolute;left:17px;top:38px;bottom:2px;width:2px;background:var(--line)}
+.steps>li:last-child::before{background:var(--accent);color:var(--accent-ink)}
+.steps h3{font:700 1.05rem/1.3 var(--display);margin:6px 0 4px}
+.steps p{margin:0;color:var(--ink);font-size:.93rem}
+.steps p+p{margin-top:4px}
+.aside{background:var(--sunk);border-radius:12px;padding:14px 16px;font-size:.9rem;margin-top:6px;max-width:760px}
+.aside p{margin:0}
+.aside p+p{margin-top:6px}
+.calc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.calc .eq{font:500 1rem var(--mono);margin:6px 0}
+.calc .eq b{font-weight:600;color:var(--accent)}
+.syl{display:grid;gap:6px;max-width:820px}
+.syl button{display:grid;grid-template-columns:52px minmax(0,1fr) 120px 34px;gap:10px;align-items:center;text-align:left;
+  border:0;background:transparent;color:var(--ink);font:500 .9rem var(--body);padding:6px 8px;border-radius:8px;cursor:pointer}
+.syl button:hover{background:var(--surface)}
+.syl .cn{font:500 .8rem var(--mono);color:var(--muted)}
+.syl .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.syl .br{height:10px;background:var(--sunk);border-radius:999px;overflow:hidden}
+.syl .br i{display:block;height:100%;background:var(--accent);border-radius:999px}
+.syl .mk2{font:600 .9rem var(--display);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:520px){.syl button{grid-template-columns:40px minmax(0,1fr) 34px}.syl .br{display:none}}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.how .card{padding:16px}
+.how h3{font:700 1.02rem var(--display);margin:0 0 4px}
+.how p{font-size:.9rem;margin:0 0 12px;color:var(--muted)}
+blockquote.close{margin:0;border-left:3px solid var(--accent);padding:6px 0 6px 18px;max-width:62ch}
+blockquote.close p{font:600 1.25rem/1.4 var(--display);margin:0 0 6px;max-width:none}
+blockquote.close cite{font-style:normal;font-size:.84rem;color:var(--muted)}
+.h1link{color:inherit;text-decoration:none}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <div>
-      <h1>MFD Exam Prep</h1>
+      <h1><a class="h1link" href="#home">MFD Exam Prep</a></h1>
       <div class="sub">NISM Series V-A · March 2026 workbook · 100 questions · 2 hours · pass 50%</div>
     </div>
     <nav class="tabs" aria-label="Sections">
+      <a href="#home" data-v="home">Home</a>
       <a href="#learn" data-v="learn">Learn</a>
       <a href="#practice" data-v="practice">Practice</a>
       <a href="#progress" data-v="progress">Progress</a>
     </nav>
   </header>
+
+
+  <section class="view home" id="v-home" hidden>
+    <div class="hero">
+      <div>
+        <h2>The certificate that lets you sell mutual funds in India</h2>
+        <p class="lead">SEBI requires everyone who sells or distributes mutual funds to hold a valid NISM Series V-A certificate. Pass it, register with AMFI, and you can serve investors in an industry that has grown about sevenfold in eleven years.</p>
+        <div class="row" id="hero-cta"></div>
+      </div>
+      <div class="cred" aria-label="Your progress towards becoming a mutual fund distributor">
+        <p class="who">You, soon</p>
+        <p class="role">AMFI-registered Mutual Fund Distributor</p>
+        <div class="arn"><b>ARN-</b><span>issued after you pass</span></div>
+        <ol id="cred-list"></ol>
+        <p class="fine">Your checklist, filled in from your progress on this site.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Why this is worth your time</h2>
+      <p class="lede">More Indians invest through mutual funds every year, and most of them need someone to guide them through it. These are the workbook's own figures.</p>
+      <div class="figs">
+        <div class="fig"><b>Rs 82.03 lakh cr</b><div class="from">from Rs 11.89 lakh cr in March 2015</div><p>Industry assets in February 2026, growing about 19.3% a year.</p></div>
+        <div class="fig"><b>27.39 crore</b><div class="from">from 4.8 crore in March 2010</div><p>Investor folios in March 2026.</p></div>
+        <div class="fig"><b>Rs 32,087 cr</b><div class="from">from Rs 8,055 cr in March 2019</div><p>Money flowing in through SIPs in March 2026 alone.</p></div>
+        <div class="fig"><b>Rs 15.11 lakh cr</b><div class="from">built up month by month</div><p>Assets held through SIPs in March 2026.</p></div>
+      </div>
+      <p class="src">Source: NISM Series V-A workbook (March 2026), Chapter 2.</p>
+    </section>
+
+    <section>
+      <h2>About the exam</h2>
+      <p class="lede">NISM, the National Institute of Securities Markets, runs certification exams under the SEBI (Certification of Associated Persons in the Securities Markets) Regulations, 2007. Series V-A sets the common minimum knowledge for everyone who sells mutual funds.</p>
+      <div class="facts">
+        <div class="fact"><b>100 questions</b><span>1 mark each</span></div>
+        <div class="fact"><b>2 hours</b><span>about 72 seconds a question</span></div>
+        <div class="fact"><b>50% to pass</b><span>aim for 90% to be safe</span></div>
+        <div class="fact"><b>No negative marks</b><span>never leave a question blank</span></div>
+      </div>
+      <div class="two">
+        <div>
+          <h3 style="font:700 1.05rem var(--display);margin:0 0 4px">Who needs it</h3>
+          <ul class="plain">
+            <li>Individual mutual fund distributors</li>
+            <li>Employees of firms that sell and distribute mutual funds, such as banks and distribution companies</li>
+            <li>AMC employees, especially those in sales and distribution</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font:700 1.05rem var(--display);margin:0 0 4px">What you'll be able to do</h3>
+          <ul class="plain">
+            <li>Explain how mutual funds work, how they are structured and how schemes differ</li>
+            <li>Evaluate schemes and recommend suitable products to investors</li>
+            <li>Handle the legal, accounting, valuation and tax side of mutual funds</li>
+          </ul>
+        </div>
+      </div>
+      <div class="aside" style="margin-top:16px">
+        <p>Register for the exam at <a href="https://www.nism.ac.in" target="_blank" rel="noopener">www.nism.ac.in</a>. Test-centre computers have Microsoft Excel or LibreOffice Calc for calculations.</p>
+        <p>The March 2026 workbook applies to exams taken on or after 4 June 2026. This site follows that edition.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>From exam to your first client</h2>
+      <p class="lede">The workbook (Chapter 6) sets out these steps for an individual distributor.</p>
+      <ol class="steps">
+        <li><div><h3>Pass NISM Series V-A</h3><p>This is mandatory for anyone who sells or distributes mutual fund products.</p></div></li>
+        <li><div><h3>Complete Know Your Distributor (KYD)</h3><p>Submit a self-attested PAN and address proof at a CAMS Point of Service, show the originals, and give a biometric impression of your right index finger. You'll get an acknowledgement.</p></div></li>
+        <li><div><h3>Get your ARN from AMFI</h3><p>AMFI allots an AMFI Registration Number (ARN). You must be at least 18, and since 1 October 2024 applications are online only, through amfiindia.com.</p></div></li>
+        <li><div><h3>Empanel with AMCs</h3><p>With your ARN you can empanel with any number of fund houses, or work as an agent under a distributor who is already empanelled. You can't earn commission without one of these.</p></div></li>
+        <li><div><h3>Start serving investors</h3><p>Quote your ARN and EUIN on every Regular Plan transaction, follow the AMFI code of conduct, and renew your NISM certificate and AMFI registration on time.</p></div></li>
+      </ol>
+      <div class="aside">
+        <p><b>Joining a bank or distribution firm?</b> You still pass V-A, then get an Employee Unique Identification Number (EUIN) from AMFI and work under the firm's ARN.</p>
+        <p>Firms that sell mutual funds can also offer Specialized Investment Funds (SIFs), if they meet SEBI's extra eligibility rules.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How distributors earn</h2>
+      <div class="two">
+        <div>
+          <p style="margin-top:0">Distributors are paid <b>trail commission</b>: a percentage of the client's money, worked out on daily net assets and paid monthly or quarterly. Unlike insurance, where agent commission stops after a few years, trail continues for as long as the client stays invested.</p>
+          <p>SEBI now allows only trail commission, paid in money. Upfront commission and transaction charges have been withdrawn.</p>
+          <p>AMCs also pay an <b>extra commission</b> for bringing in new investors (a new PAN) from smaller towns beyond the top 30 cities, and new women investors anywhere. It's 1% of the first lump sum or of the first year's SIPs, up to Rs 2,000.</p>
+        </div>
+        <div class="calc">
+          <p style="margin:0;font-weight:600">The workbook's example</p>
+          <p class="eq">Rs 10,00,000 × 1% ÷ 365 ≈ <b>Rs 27 a day</b></p>
+          <p style="font-size:.88rem;margin:6px 0 0;color:var(--muted)">As the client's investments grow, so does the trail. Rates here are for illustration only.</p>
+          <p style="font-size:.88rem;margin:12px 0 0">Your job is to understand the investor; the fund manager's job is to understand the market. You describe yourself as an <b>AMFI-registered Mutual Fund Distributor</b>. Words like "adviser" are reserved for SEBI-registered investment advisers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What the paper covers</h2>
+      <p class="lede">Twelve chapters, weighted unevenly. Chapters 9 and 12 alone carry 30 marks. Select a chapter to open its notes.</p>
+      <div class="syl" id="syl"></div>
+    </section>
+
+    <section>
+      <h2>How to use this site</h2>
+      <div class="how">
+        <div class="card"><h3>Learn</h3><p>One-line notes for every chapter, updated to the March 2026 workbook. Tick each chapter as you revise it.</p><button class="btn" data-go="learn">Open the notes</button></div>
+        <div class="card"><h3>Practise</h3><p>534 chapter questions with the answer and reason shown after each one.</p><button class="btn" data-go="practice">Practise a chapter</button></div>
+        <div class="card"><h3>Take mocks</h3><p>Five 100-question exams on a 2-hour timer, weighted like the real paper.</p><button class="btn" data-go="mock">Start Mock 1</button></div>
+      </div>
+    </section>
+
+    <blockquote class="close">
+      <p>"Certification creates quality market professionals and catalyzes greater investor participation in the markets."</p>
+      <cite>NISM, About NISM Certifications</cite>
+    </blockquote>
+  </section>
 
   <section class="view" id="v-learn" hidden>
     <div class="learn">
@@ -222,14 +417,16 @@ const today=()=>new Date().toISOString();
 const fdate=iso=>{try{return new Date(iso).toLocaleDateString(undefined,{day:'numeric',month:'short'})+' '+new Date(iso).toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'})}catch(e){return iso}};
 
 /* ---------- routing ---------- */
-let view='practice';
+let view='home';
 function show(v){
-  view=['learn','practice','progress'].includes(v)?v:'practice';
+  view=['home','learn','practice','progress'].includes(v)?v:'home';
   document.querySelectorAll('.view').forEach(e=>e.hidden=e.id!=='v-'+view);
   document.querySelectorAll('.tabs a').forEach(a=>a.setAttribute('aria-current',a.dataset.v===view?'page':'false'));
+  if(view==='home') renderHome();
   if(view==='learn') renderLearn();
   if(view==='progress') renderProgress();
-  if(view!=='practice'){stopTick();save();} else if(state.set&&!state.done&&state.mode==='exam') startTick();
+  if(view!=='practice'){stopTick();save();}
+  if(view==='home') window.scrollTo({top:0}); else if(state.set&&!state.done&&state.mode==='exam') startTick();
   store.set('view',view);
 }
 window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
@@ -259,6 +456,36 @@ function renderLearn(){
   const nx=$('#nextn'); if(nx) nx.onclick=()=>{noteId=nextNote(n).id;store.set('note',noteId);renderLearn();window.scrollTo({top:0,behavior:'smooth'})};
 }
 function nextNote(n){const i=NOTES.indexOf(n);return NOTES[i+1]}
+
+
+/* ---------- home ---------- */
+function goLearn(id){noteId=id;store.set('note',id);location.hash='learn';}
+function goMock(){const sv=store.get(sessKey('mock1'),null); if(!sv&&state.mode!=='exam'){state.mode='exam';syncMode();} open('mock1'); location.hash='practice';}
+function renderHome(){
+  const read=store.get('read',{}), best=store.get('best',{}), hist=store.get('hist',[]);
+  const chs=PLAN.filter(p=>p[2]), nRead=chs.filter(([id])=>read[id]).length;
+  const mocks=hist.filter(h=>h.id.startsWith('mock')&&!h.retry), bestMock=mocks.length?Math.max(...mocks.map(m=>m.pct)):null;
+  const drills=chs.filter(([id])=>best[id]!=null).length;
+  const items=[
+    [nRead===12,'Revise all 12 chapters',nRead+'/12'],
+    [drills===12,'Practise every chapter',drills+'/12'],
+    [bestMock!=null&&bestMock>=90,'Score 90% in a mock',bestMock==null?'not yet':bestMock+'%'],
+    [false,'Pass NISM Series V-A',''],
+    [false,'Complete KYD and get your ARN','']];
+  $('#cred-list').innerHTML=items.map(([d,t,v])=>`<li class="${d?'done':''}"><i aria-hidden="true"></i><span>${t}${d?'<span class="vh"> (done)</span>':''}</span><small>${v}</small></li>`).join('');
+  const lastId=store.get('last',null), sv=lastId?store.get(sessKey(lastId),null):null;
+  const inprog=sv&&!sv.done&&Object.keys(sv.ans||{}).length>0&&BANK[lastId];
+  const started=nRead||hist.length||inprog;
+  $('#hero-cta').innerHTML=(inprog?`<button class="btn pri lg" data-go="resume">Continue ${esc(BANK[lastId].short)}</button>`:started?`<button class="btn pri lg" data-go="learn">Continue revising</button>`:`<button class="btn pri lg" data-go="ch1">Start with Chapter 1</button>`)
+    +`<button class="btn lg" data-go="mock">Try a mock exam</button>`;
+  const max=Math.max(...chs.map(c=>c[2]));
+  $('#syl').innerHTML=chs.map(([id,lab,w])=>{const n=NOTES.find(x=>x.id===id)||{};
+    return `<button data-ch="${id}" aria-label="${lab}, ${esc(n.title||'')}, ${w} marks"><span class="cn">${lab}</span><span class="nm">${esc(n.title||'')}</span><span class="br" aria-hidden="true"><i style="width:${w/max*100}%"></i></span><span class="mk2">${w}</span></button>`;}).join('');
+  $('#syl').querySelectorAll('button').forEach(b=>b.onclick=()=>goLearn(b.dataset.ch));
+  document.querySelectorAll('#v-home [data-go]').forEach(b=>b.onclick=()=>{const g=b.dataset.go;
+    if(g==='ch1') goLearn('ch1'); else if(g==='learn') location.hash='learn'; else if(g==='practice'){location.hash='practice';}
+    else if(g==='mock') goMock(); else if(g==='resume'){open(lastId);location.hash='practice';}});
+}
 
 /* ---------- practice state (persisted per set) ---------- */
 let state={set:null,mode:store.get('mode','practice'),order:[],ans:{},i:0,done:false,elapsed:0,resumedAt:0,limit:0,onlyWrong:null};
@@ -496,7 +723,7 @@ function renderProgress(){
 /* ---------- boot ---------- */
 syncMode(false);
 const last=store.get('last','ch1');
-view=(location.hash.slice(1))||store.get('view','learn');
+view=(location.hash.slice(1))||'home';
 open(BANK[last]?last:'ch1');
 show(view);
 if(!location.hash) history.replaceState(null,'','#'+view);
