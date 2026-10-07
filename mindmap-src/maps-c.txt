@@ -1,0 +1,377 @@
+@ch9|9|15|Investor Services|NFOs, plans and options, who can invest, payments, cut-off times, KYC, SIP/SWP/STP, nomination, transmission and service timelines.
+Investor Services
+  NFO and plans
+    Idea from CIO (objective) and CMO (market interest)
+    SID approved by trustees + AMC Board, filed with SEBI
+    NFO open min 3 working days, max 15 days (ELSS exempt)
+    Allot or refund in 5 business days; late = 15% p.a., paid by AMC
+    Open-ended re-opens within 5 business days of allotment
+    NFO price Rs 10: units = amount ÷ 10
+    Demat credit 2 working days; SoA 5 business days
+    ASBA: money only blocked, debited on allotment
+    Trustees can reject any application without reason
+    Direct vs Regular
+      Direct: lower TER, no commission, separate NAV
+      Write "Direct" in the ARN box
+      Only these two plans can differ by expense
+    SIF: Rs 10 lakh minimum at PAN level
+  Options and bonus
+    IDCW payout
+      Cash to bank, units unchanged
+      NAV falls to ex-dividend NAV
+      Cum-dividend NAV: between announcement and payout
+    IDCW reinvestment
+      Units at ex-dividend NAV: Rs 2 × 100 units at NAV 20 = 10 units
+      Still taxed at slab in the year
+    Growth: no dividend, NAV holds all gains
+    Workbook: NAV 10 → 12, Re 1 dividend, reinvest at 11 = 9.09 units
+    Bonus 1:3: 1 free per 3 held; NAV falls, value unchanged
+  Investors and the form
+    Individuals: up to 3 joint holders
+    Minors: guardian (natural or court-appointed); no joint holders
+    HUF via the Karta
+    NRI / PIO / OCI: repatriable or non-repatriable
+    QFI: FATF member + IOSCO MMOU signatory
+    FPI: direct (demat) or indirect (UCR)
+    First holder gets all benefits
+    PoA holder can do all except nominate
+    Joint holders can't be added; deleted only on death
+    KYC address overrides the form
+    First holder's bank details mandatory
+    Demat applicants: details match DP; payout to demat bank account
+    Nomination: opt in or opt out; optional for joint folios
+  Payments
+    Modes
+      NACH (NPCI) replaced ECS
+      UPI via VPA; AEPS via Aadhaar + fingerprint; USSD *99#
+      OTM: folio level, on NACH, 3–4 weeks to register
+      Credit cards not allowed
+    Limits
+      E-wallet + cash: Rs 50,000 per investor per MF per FY
+      Cash only for resident individuals, sole proprietors, minors
+    Cheques: not post-dated (except SIP), not stale (>3 months), local / at-par
+    NRI: repatriable from NRE / FCNR; non-repatriable also NRO
+    Third-party: only 3 exceptions
+      Parent / relative for a minor, up to Rs 50,000
+      Employer payroll
+      Custodian for FPI
+    Bank accounts: 5 individuals, 10 non-individuals; one default
+    Instant Access: liquid / overnight; lower of Rs 50,000 or 90% per day
+    Redemption by amount or units, FIFO; demat via DP
+    Two-factor authentication mandatory; broker pool accounts gone
+  Cut-off times
+    Equity and debt purchase: 3 pm, NAV of day funds available
+    Liquid / overnight purchase: 1:30 pm, NAV of day before receipt
+    Equity / debt redemption: 3 pm, same day; after = next day
+    Liquid redemption: 3 pm, NAV of day before next business day
+    Overnight redemption: 3 pm; online 7 pm
+    Not for NFOs and international schemes
+    Time stamp at OPoA; tamper-proof machines; web server time online
+  KYC
+    Everyone: joint holders, NRIs, PoA holder, guardian (not minor)
+    PAN exempt
+      Govt and court officials, Sikkim residents, UN bodies
+      Micro-SIP + lump sum ≤ Rs 50,000 a year (PEKRN)
+    KRA: one KYC across market; IPV mandatory
+    CERSAI: Central KYC Records Registry; KYC Identifier
+    Aadhaar e-KYC via KUA / sub-KUA
+    Online: eSign, DigiLocker, OTP, penny drop
+    UBO
+      Company >25%
+      Partnership >15%
+      Trust ≥15% + settlor + trustees
+      Not for listed companies
+    FATCA / CRS change within 30 days
+  Systematic transactions
+    SIP = rupee cost averaging; average cost below average NAV
+    SWP: 1% load at NAV 10 = 101.0101 units for Rs 1,000
+    STP = SWP from source + SIP into target
+      Scheme minimums don't apply; loads and tax do
+      0.25% load on Rs 1 lakh = Rs 99,750
+    DTP: needs IDCW option; invested next business day after record date
+    SIP registration 15–30 days
+    Top-up: +Rs 500 = 3,000 then 3,500; +10% = 2,750 then 3,025
+    Minor's SIP only till majority
+    Triggers are one-time: stop-loss, appreciation, date, market level
+  Non-financial transactions
+    Nomination
+      Up to 10 nominees; % totals 100 or equal split
+      Only individuals; not minor's folio or PoA holder
+      Nominee: individual (even minor / NRI), govt body, religious / charitable trust
+      Not: other trusts, society, company, firm, Karta
+      Nominee holds in trust for legal heirs
+      Demat follows demat nomination
+    Pledge: all sign, out of lock-in, pledgee's NOC to sell
+    Changes
+      Name, address, PAN, contact: via KRA
+      Bank, holding mode, nomination: each MF
+      Guardian change: new KYC + old guardian's NOC
+    Transmission
+      Joint holder dies: survivor by name deletion, as owner
+      Single holder: nominee; no nominee: legal heirs
+      Needs KYC, death certificate, indemnity
+    Minor turns major
+      Folio frozen; SIP / SWP / STP stop
+      MAM form: PAN, KYC, bank proof, attested signature
+      New demat account needed
+    NRI returns: resident account (RFC), new demat, update KRA
+    Change of Karta: indemnity from all co-parceners
+  Statements and service levels
+    SoA each month with a transaction
+    No transaction in 6 months: annual statement
+    CAS monthly with a transaction; half-yearly if none; matched by PAN
+    Unit certificate in 5 working days
+    Portfolio statement within 10 days of half-year
+    Delay interest borne by the AMC
+    MITRA: tracing inactive / unclaimed folios (CAMS + KFintech)
+    DigiLocker holds MF statements, with nominee access
+    Voluntary debit freeze (Mar 2026), first on MF Central
+
+@ch10|10|7|Risk, Return and Performance of Funds|Risk factors, what drives equity and debt returns, return maths, risk measures, credit events, gating and side-pocketing.
+Risk, Return and Performance of Funds
+  Risk factors in the SID
+    Standard
+      Past performance no guarantee
+      Name says nothing about quality
+      Sponsor liable only to initial contribution
+    General
+      Liquidity, interest rate, reinvestment
+      Political, economic, foreign currency (AMC doesn't manage)
+      Settlement / counterparty, exchange transactions
+    Equity and derivatives
+      Large → mid → small: more volatility and liquidity risk
+      Derivatives are leveraged
+      Counterparty, market liquidity, model, basis risk
+      Short selling: counterparty + illiquid borrowed stock
+      Securities lending: counterparty failure
+    Debt
+      Rating migration: AAA → AA+ = price falls
+      Reinvestment, term structure, credit
+      Floaters: spread and basis risk
+      Corporate bond repo: counterparty risk, cut by over-collateralisation
+      Money market: liquid but thin secondary market
+    Securitisation
+      Originator sells to an SPV (trust), which issues PTCs
+      Lower LTV safer; more seasoning better; DPD buckets
+      Credit enhancement: rated above originator; non-recourse
+      Risks: prepayment, originator bankruptcy, co-mingling
+      MFs mostly buy AA and above
+  Systematic vs unsystematic
+    Systematic = market, non-diversifiable (inflation)
+    Unsystematic = company-specific, diversifiable (a strike)
+    Investors rewarded only for systematic risk
+    Manager can cut it only by holding cash
+  Equity returns
+    Security selection and market timing
+    Fundamental: long term; technical ("chartists"): short term
+    Ratios
+      EPS = PAT ÷ shares
+      P/E = price ÷ EPS; forward P/E uses projected EPS
+      PEG: 1 fair, <1 cheap, >1 expensive
+      P/BV = price ÷ book value per share
+      Dividend yield = DPS ÷ price; falls in bull markets
+    Growth stocks: high P/E, low yield, fall more
+    Value stocks: below intrinsic value, long horizon
+    EIC: Economy, Industry, Company
+    Top-down (economy first) vs bottom-up (stock first)
+  Debt, gold and real estate returns
+    Debt: interest rates and credit spreads
+    Instruments
+      T-bills: RBI for GoI
+      CDs: banks 7 days–1 yr; FIs 1–3 yrs
+      CP: companies, up to 1 yr
+      Govt bonds; company debentures
+    Credit spread = corporate − gilt yield
+    Raters: CRISIL, ICRA, CARE, India Ratings
+    YTM if held to maturity; HPR = interest + gain / loss
+    Floater: base + spread, holds value
+    Rates up: shorten duration or floaters; down: go long
+    9.5% coupon at 8.5% yield: premium
+    Gold: global price + rupee (weaker rupee helps); passive
+    Real estate: local asset; no MF schemes now; REITs growing
+  Measuring returns
+    Simple: 12 → 15 = 25%
+    Annualised = simple × 12 ÷ months: 5% in 6 m = 10%
+    CAGR = (end ÷ start)^(1/n) − 1; n = days ÷ 365
+      Rs 1,000 → 4,000 in 2 yrs = 100%
+      Rs 10,000 at 10% for 3 yrs = 13,310
+    Dividends: reinvestment method at ex-dividend NAV
+    Investor return ≠ scheme return: loads, taxes, timing
+    <1 yr absolute; >1 yr CAGR
+    Rolling returns remove start / end-date bias
+    No promised returns except assured-return schemes (named guarantor)
+  Risk from the investor's view
+    Low risk ≠ zero risk: credit events in 2018 and 2019
+    Redemptions raise bad paper share: 5% → 10%
+    Arbitrage using views: not risk-free
+    Winding-up schemes listed (Clause 37(d))
+    Real estate funds less risky than direct property
+  Risk measures
+    Variance: fluctuation vs own average
+    SD = √variance = total risk; ≥30 observations
+      Annualise: ×√52 weekly, ×√12 monthly, ×√252 daily
+    Beta (CAPM): systematic risk; equity only
+      0.8 moves 8% when market moves 10%
+    Modified duration: rate sensitivity, professionals' measure
+    WAM: 70% × 4 + 30% × 1 = 3.1 yrs; for lay investors
+    Credit rating: G-secs and cash have no credit risk
+  Credit events, gating, side-pocketing
+    Credit event = default, delay or downgrade
+    Gating
+      Only market-wide crises, never one bad security
+      Max 10 working days in 90 days
+      AMC Board + trustees; SEBI told at once
+      First Rs 2 lakh of every redemption paid
+    Segregated portfolio (Dec 2018)
+      Optional; triggered by downgrade
+      Unrated: only on actual default (7 Nov 2019)
+      Trustees approve; from credit-event day; press release
+      Equal units; no subscription or redemption; listed in 10 working days
+      New investors get main portfolio only
+      No management fee; TER only on recovery; excess legal cost on AMC
+    Mitigants: hold longer; match holding period to maturity
+
+@ch11|11|7|Mutual Fund Scheme Performance|Benchmark rules and TRI, benchmarks for every category, two-tier benchmarks, Sharpe, Treynor, alpha, information ratio and tracking error.
+Mutual Fund Scheme Performance
+  Benchmark rules
+    Match objective, asset allocation and strategy
+    Run by an independent agency, transparently
+    Past returns never a basis
+    Index fund benchmark = the index it tracks
+    Chosen by AMC with trustees; in the SID; change justified
+  TRI
+    Since 1 Feb 2018 (was PRI)
+    Adds dividends / interest
+    Fewer schemes seem to beat it; gap ~1.5–2.5%
+    Before TRI existed: composite CAGR
+  Equity benchmarks
+    Depends on type, universe, concentration
+    Sectoral: e.g. Bankex
+    Fewer stocks: Sensex 30 / Nifty 50
+    Multi cap: Nifty 500 Multicap 50:25:25 / BSE 500
+    Large cap: NIFTY 100 / BSE 100
+    Large & mid: NIFTY LargeMidcap 250
+    Mid cap: Midcap 150
+    Small cap: NIFTY Smallcap 250 / BSE 250 SmallCap
+    ELSS, flexi cap, dividend yield: NIFTY 500 / BSE 500
+  Debt benchmarks
+    From CRISIL, ICICI Securities, NSE (AMFI-recommended)
+    I-Bex: Si-Bex 1–3 yrs, Mi-Bex 3–7, Li-Bex >7
+    Overnight: NIFTY 1D Rate / CRISIL Liquid Overnight
+    Liquid: NIFTY Liquid A-I / CRISIL Liquid Debt A-I
+    Money market: Money Market A-I
+    Ultra short: Ultra Short Duration Debt A-I
+    Low duration: Low Duration Debt A-I
+    Short duration: Short Duration Debt A-II
+  Hybrid and other benchmarks
+    Hybrid = blend, e.g. 65% Sensex + 35% I-Bex
+    Conservative: Hybrid Composite Debt 15:85
+    Balanced, BAF: 50:50
+    Aggressive: 65:35
+    Arbitrage: NIFTY 50 Arbitrage
+    Gold ETF: price of gold
+    International: local index (S&P 500, Shanghai Composite)
+  Two-tier benchmarks
+    SEBI Oct 2021, effective 1 Jan 2022
+    Tier 1 = category; Tier 2 = manager's style
+    Debt and equity schemes; all TRI
+    Single benchmark: hybrid / solution, sectoral, index / ETF
+    FoF: single-fund uses underlying's; multi-fund uses broad index
+    Debt Tier 1 follows PRC from 1 Apr 2022
+  Performance measures
+    Relative return ignores risk
+    Sharpe = (Rs − Rf) ÷ SD
+      Total risk; (7 − 5) ÷ 0.5 = 4
+      Compare like with like
+    Treynor = (Rs − Rf) ÷ Beta
+      Systematic risk; (8 − 5) ÷ 1.2 = 2.5
+      For diversified equity
+    Alpha = actual − beta-expected return; positive = outperformance
+    Information Ratio
+      Excess over Tier-1 ÷ SD of excess return
+      Only mandatory measure; daily on AMC and AMFI sites (Jan 2025)
+    Tracking error = SD of excess returns
+      Index fund: ideally zero
+      Active fund: lower = more consistent
+    Risk-free rate = T-bill return
+    "Calculations are arithmetic; evaluation is an art"
+  Where to find performance
+    SID: updated twice a year
+    Factsheet: monthly, not mandatory; ad rules apply
+    Product label: objective, asset class, horizon, risk-o-meter
+    Discrete annual returns show consistency
+    AMFI site; Morningstar, Value Research
+    Macro: high deficit = rates up; oil moves currency
+
+@ch12|12|15|Mutual Fund Scheme Selection|Matching funds to investors, risk ladders across categories, choosing by structure and strategy, picking within a category, options and conduct rules.
+Mutual Fund Scheme Selection
+  Investor fit
+    Step 1: set goals
+    Step 2: situation and risk appetite (need + ability + willingness)
+    Growth → equity; income → debt; parking → liquid
+    Equity needs a long horizon
+    Age alone is a poor guide; use horizon to each goal
+    Core and satellite
+      Core: long-term goals (diversified, large, mid cap)
+      Satellite: sector, long gilt, gold
+      Moderate investor: 80% core / 20% satellite
+  Risk ladders (low → high)
+    Overall: liquid → debt → hybrid → equity
+    Interest rate: overnight → liquid → ultra-short → low → short → medium → medium-long → long
+    Credit: gilt → banking & PSU → corporate bond → credit risk
+    Equity: large → large & mid → multi → mid → small
+    Concentration: diversified → focused → thematic → sector
+    Hybrid: arbitrage → conservative → equity savings → dynamic → multi-asset → balanced → aggressive
+    Product labelling (2013): consult an adviser if unsure
+  Structure and style
+    Passive: no selection risk, low cost, still falls with index
+    Active: higher cost; must beat benchmark
+    Index or value for low-risk equity; growth for extra return
+    Open-ended: liquidity at NAV less load; cash drag, flow pressure
+    Close-ended: exchange exit at a discount; converges near maturity
+    Close-ended can hold illiquid or long-gestation stocks
+  Equity choices
+    Focused: riskier than diversified, safer than sector
+    Sector: timing-dependent, satellite
+    Thematic (MNC, PSU, infra): between diversified and sector
+    "Diversification is protection against ignorance"
+    Mid / small caps shine in recoveries, fail in downturns
+    Growth wins in bull markets; value in falls or long periods
+    International: equity + currency; stronger dollar helps; satellite
+  Debt, hybrid and gold choices
+    FMP: horizon = maturity; check credit; exit via exchange
+    TMFs replacing FMPs: G-secs, SDLs, AAA PSU; liquid via AMC
+    Short duration: when rates expected to rise
+    Liquid: savings-account alternative, up to 91 days
+    Floater NAV steady; duration-managed funds volatile
+    Hybrid: judge equity and debt separately
+    "Conservative" refers only to equity allocation
+    Be cautious with dynamic asset allocation
+    Gold ETF tracks gold; gold sector fund holds miners (more volatile)
+  Choosing within a category
+    True to label portfolio
+    Consistent outperformance, downside protection, rolling periods
+    Look-back
+      Equity ≥5 yrs
+      Long-term debt ≥3 yrs
+      Liquid: 7 days, 15 days, 1 month
+    Fund age matters where returns diverge (multi cap)
+    Size helps large cap; hurts mid cap and sector
+    Portfolio turnover = lower of buys or sells ÷ avg net assets
+      10,000 ÷ 5,000 = 200%, avg holding 6 months
+      Judge against style: too short for value
+    Costs matter most in debt and index funds
+    Star ratings: past only, no predictive power
+    Target top 3–5 (small categories) or top 10–15%
+  Options
+    IDCW payout: not assured; slab tax
+    SWP better for regular income (capital gains tax)
+    IDCW suits only tax-exempt investors
+    Growth compounds pre-tax
+    Book gains or losses to set off
+  Do's, don'ts and conduct
+    Do: suitability (PFUTP), stick to allocation, know objective
+    Do: watch taxes and loads; written, consistent method
+    Don't chase past performance
+    Fourth Schedule: equitable treatment of all unitholders
+    Social media: registered name + number on home page and every video

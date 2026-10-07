@@ -252,7 +252,7 @@ blockquote.close cite{font-style:normal;font-size:.84rem;color:var(--muted)}
       <a href="#learn" data-v="learn">Learn</a>
       <a href="#practice" data-v="practice">Practice</a>
       <a href="#progress" data-v="progress">Progress</a>
-      <a href="mindmap.html">Mind map</a>
+      <a href="mindmap.html">Mind maps</a>
     </nav>
   </header>
 
@@ -448,12 +448,12 @@ function renderLearn(){
   const has=BANK[n.id];
   $('#notes').innerHTML=`<h2>${n.n?'Chapter '+n.n+' · '+esc(n.title):esc(n.title)}</h2>
     ${n.marks?`<p class="note">${n.marks} marks in the exam · ${has?has.qs.length+' practice questions':''}</p>`:''}
-    ${n.id==='ch3'?`<a class="mmcall" href="mindmap.html"><b>See the whole structure as a mind map</b><span>Sponsor, trustees, AMC, custodian, RTA, CRISIL and ICRA, NMF-II, BSE StAR MF and more, all in one picture.</span></a>`:''}
+    ${n.n?`<a class="mmcall" href="mindmap.html#${n.id}"><b>See Chapter ${n.n} as a mind map</b><span>${n.id==='ch3'?'Sponsor, trustees, AMC, custodian, RTA, CRISIL and ICRA, NMF-II, BSE StAR MF and more, all in one picture.':'Every rule and number in this chapter on one page, branch by branch. Open a branch to test your recall.'}</span></a>`:''}
     ${n.html}
     <div class="notes-foot">
       ${n.n?`<label class="chk"><input type="checkbox" id="rdchk" ${read[n.id]?'checked':''}> I've revised this chapter</label>`:'<span></span>'}
       <div class="row">
-        ${n.id==='ch3'?'<a class="btn" href="mindmap.html" style="text-decoration:none">Open mind map</a>':''}
+        ${n.n?`<a class="btn" href="mindmap.html#${n.id}" style="text-decoration:none">Open mind map</a>`:''}
         ${has?`<button class="btn pri" id="goprac">Practise Chapter ${n.n}</button>`:''}
         ${nextNote(n)?`<button class="btn" id="nextn">Next: ${nextNote(n).n?'Chapter '+nextNote(n).n:''}</button>`:''}
       </div>

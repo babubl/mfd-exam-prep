@@ -1,0 +1,164 @@
+Mutual Fund (a Trust)
+  Legal base
+    SEBI (Mutual Funds) Regulations, 2026
+    Registration granted under Regulation 3
+    Indian Trusts Act, 1882 governs the trust
+    Trust deed registered under Indian Registration Act, 1908
+    MF = trust raising money by selling units, under one or more schemes
+      Invests in securities, money market, gold, silver and other assets SEBI allows
+  Regulators
+    SEBI
+      Registers the mutual fund
+      Prior approval: trustees, AMC, change in AMC control
+      Gives observations on SID/SAI (vets, never approves)
+      Complaints via SCORES
+    RBI
+      Money market, forex, overseas investment rules
+    Stock exchanges
+      Listing, trading and margin rules for listed units
+  Sponsor
+    Creates the trust; main person behind the MF
+    Applies to SEBI for registration
+    Invests in the AMC's capital
+    Eligibility
+      ≥ 5 years in financial services
+      Positive net worth in each of last 5 years
+      Net profit in each of last 5 years
+      Average net profit ≥ Rs 10 crore (5 yrs)
+      Liquid net worth > capital contribution to AMC
+      Fit and proper; sound track record
+    Must keep AMC net worth ≥ Rs 50 crore at all times
+    Liability limited to initial contribution
+    Categories (AMFI): banks, institutions, private sector (Indian, foreign, JV)
+  Trustees
+    Form
+      Individuals = Board of Trustees
+      Or a Trustee Company (acts via its Board of Directors)
+    Composition
+      At least 2/3 independent directors
+      Independent = not associate of sponsor, AMC or trustee company
+      Prior SEBI approval to appoint
+    Eligibility (Regulation 11)
+      Fit and proper (Schedule II, Intermediaries Regulations 2008)
+      Not a director, officer or employee of an AMC
+      Not a trustee of another mutual fund
+      Gives SEBI any information it asks for
+    Duties (6 heads)
+      Appoint and terminate the AMC
+      Conflicts of interest and broker empanelment
+      Regulatory compliance
+      Oversight for investor interests
+      Additional oversight
+      Due diligence on matters SEBI specifies
+    Sign Investment Management Agreement with AMC
+    Appoint custodian and scheme auditor
+    Can remove AMC by majority (with SEBI + unitholder approval)
+  Asset Management Company (AMC)
+    Appointment and rules
+      Appointed by sponsor or trustees, with SEBI approval
+      Net worth ≥ Rs 50 crore (from 1 Jan 2024)
+      ≥ 50% directors not associates of sponsor or trustees
+      Directors: finance experience; fit and proper
+      Director appointment needs trustee approval
+      AMC directors (incl. Chairman) can't sit on any MF trustee board
+      No one can be a director of more than one AMC
+      Change of control: trustees + SEBI approval
+        Letter to each unitholder
+        Ads: English national daily + regional language
+        Exit at NAV, no load, ≥ 30 days
+      Removal: majority of trustees or 75% of unitholders
+    Fund management
+      Analysts: find opportunities
+      Fund managers: decide; own scheme performance
+      Dealers: place orders with brokers
+    Compliance Officer
+      Signs due diligence certificate on SID
+      Reports to AMC head
+      Flags non-compliance directly to trustees
+    Operations and customer service
+      Front office and back office
+      RTA liaison: records, allotment, statements
+      Custody team: settlement with custodian
+      Fund accounting: books and daily NAV
+    Risk management (SEBI RMF)
+      Investment risk
+      Compliance risk
+      Operational risk
+      Cyber security
+    Sales and marketing
+      Branding, advertising, events
+      Distributor relationships and training
+    Support functions
+      Finance / Accounts (AMC's own books)
+      Administration
+      HRD
+      IT / technology
+  Service providers
+    Custodian
+      Appointed by trustees
+      SEBI (Custodian) Regulations, 1996
+      Holds assets; settles trades
+      Tracks corporate actions: dividend, bonus, rights
+      Not if sponsor holds ≥ 50% voting rights or directors
+    Registrar and Transfer Agent (RTA)
+      Appointed by AMC; optional (can be in-house)
+      Must register with SEBI
+      Folios, purchases, redemptions, account statements
+      Offices act as Investor Service Centres
+      CAMS and KFintech (QRTAs; run MITRA)
+    Fund accountant
+      Calculates NAV
+      No SEBI registration needed; in-house or outsourced
+    Auditors
+      Scheme auditor: appointed by trustees
+      AMC auditor: appointed by AMC
+      The two must be different
+    Collecting bankers and payment aggregators
+      Appointed by AMC
+      Payment gateways, wallets, payment banks
+    KYC Registration Agencies (KRAs)
+      SEBI KRA Regulations, 2011
+      One KYC across the securities market (PMLA)
+      Central KYC Records Registry: CERSAI
+    Valuation agencies
+      At least 2, for non-traded or thinly traded debt
+      CRISIL and ICRA (appointed by AMFI)
+      AMCs use their valuation level
+    Credit rating agencies
+      CRISIL, ICRA, CARE, India Ratings (Fitch)
+      Define corporate bond and credit risk funds
+      FMP: invest only at proposed rating or better
+    Depositories and DPs
+      NSDL and CDSL
+      DP is like a bank branch; depository like head office
+      ETF units must be held in demat
+  Distribution and platforms
+    Distributors
+      NISM Series V-A + ARN from AMFI
+      KYD: PAN, address proof, biometrics at CAMS PoS
+      Employees: EUIN under the firm's ARN
+      New cadre (limited schemes): NISM V-B
+      Individuals, banks, NBFCs, brokers, national distributors
+      Can be empanelled with many AMCs
+    Stock exchange platforms
+      BSE StAR MF
+      NSE NMF-II
+      Order routing only; AMC handles settlement
+    MF Utilities (MFU)
+      AMFI industry initiative
+      One CAN, one form, many AMCs
+    Execution Only Platforms (direct plans)
+      Category 1: AMFI-registered, agent of AMCs
+      Category 2: SEBI stock broker, agent of investor
+    AMC websites and apps; RTA interoperable platform
+  AMFI
+    Association of all registered AMCs
+    Issues ARN; can cancel it for code violations
+    Code of Ethics (AMCs) and AGNI code (distributors)
+    Investor awareness; represents industry to SEBI, RBI, Govt
+    Not a regulator, not an SRO
+  Unitholders (investors)
+    Beneficiaries of the trust
+    Own the scheme's assets proportionately
+    Can sue trustees, not the trust (notional entity)
+    75% can remove the AMC or wind up a scheme

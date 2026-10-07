@@ -1,0 +1,452 @@
+@ch4|4|10|Legal and Regulatory Framework|Regulators, SEBI reforms, investment restrictions, the advertisement code, investor rights, grievances and the MFD code of conduct.
+Legal and Regulatory Framework
+  Regulators
+    RBI: banks, money market
+    SEBI: securities (regulates MFs)
+    IRDAI: insurance
+    PFRDA: pension
+    All under the Ministry of Finance
+    AMFI is not a regulator
+    RBI rules also apply: money market, overseas investment, forex
+  SEBI
+    Preamble: protect investors, develop and regulate the market
+    MF Regulations 1996 → replaced by MF Regulations 2026
+    "Securities" defined in Sec 2(h), SCRA 1956
+    Reforms
+      Benchmark = Total Return Index (TRI), not Price Return Index
+      Debt PRC matrix: Macaulay duration × Credit Risk Value (1 Dec 2021)
+      Segregated portfolio after the 2018 credit crisis
+      2008 crisis: no premature FMP redemption; "liquid plus" name banned
+  Investment restrictions
+    Regulation 39: permitted investments
+      Securities, money market instruments
+      Privately placed debentures
+      Securitised debt (asset / mortgage backed)
+      Gold, silver; anything else SEBI specifies
+    Regulation 41
+      Follow the Sixth Schedule (except gold / silver ETFs)
+      Settle only in demat
+      No carry-forward deals
+      Derivatives and short selling only on a recognised exchange
+      Inter-scheme transfers only on SEBI's conditions
+    Sixth Schedule
+      Equity and debt only if listed or to be listed
+      Except unlisted G-secs, money market (not CPs), unlisted NCDs as allowed
+      Unrated debt on SEBI's conditions
+    Fund of funds rules
+      Scheme may invest in another MF scheme with no fees
+      No scheme can invest in a FoF
+      FoF can't invest in another FoF; holds only MF units
+    Gold / silver ETFs
+      Only gold / silver or related instruments
+      May use exchange-traded commodity derivatives
+      Idle money in short-term bank deposits
+    Delivery basis only; securities held in the MF's name
+    Idle money: short-term deposits of scheduled commercial banks
+    SIF (Regulation 51): same instruments as Reg 39 + Sixth Schedule
+  Advertisement code
+    Fifth Schedule of MF Regulations 2026
+    Banned
+      Testimonials, rankings, celebrities, projections
+      Unfair comparisons
+    Standard warning
+      "Mutual Fund investments are subject to market risks, read all scheme related documents carefully."
+      No words added or removed
+      Audio-visual: 14 words, visual + voice-over, ≥5 seconds
+      Vernacular ad: warning in the vernacular
+    Performance ads
+      <6 months: no performance
+      6–12 months: simple annualised 6-month return
+      >3 years: CAGR 1, 3, 5 yrs + since inception + Rs 10,000 point-to-point
+      Say regular or direct
+      Overnight, liquid, money market: simple annualised 7, 15, 30 days
+      Same fund manager's schemes; >6 = count + top 3 and bottom 3
+    Additional benchmark
+      Equity, balanced, aggressive, BAF, multi-asset, retirement, children's: Sensex / Nifty
+      Debt ≤1 yr and arbitrage: 1-yr T-bill
+      Other debt, conservative hybrid, equity savings: 10-yr GoI
+    IDCW ads
+      Rs per unit + face value + prevailing NAV
+      Just below: NAV falls by payout and statutory levy
+    Celebrity endorsement
+      Industry level only, prior SEBI approval
+      Paid from investor education pool; never for a scheme or AMC brand
+    SIF branding
+      Distinct brand, logo, website / page
+      MF brand for 5 yrs: "brought to you by"; MF font no bigger
+    Unverified market news: only after Compliance Officer approval
+  Investor rights
+    Ownership
+      Proportionate beneficial ownership
+      Unit certificate or demat; demat freely transferable (except ELSS lock-in)
+      Can pledge units
+      Up to 10 nominees; no % = equal split
+    Switch distributor or go direct: written request, no NOC
+    Can inspect: Trust Deed, IMA, Custodial and RTA agreements, AMC Memorandum & Articles
+    Fundamental attribute change
+      Written communication (email / SMS) + AMC website
+      Exit at NAV, no load, ≥30 days
+    75% of unitholders can remove the AMC or wind up a scheme
+    Sue the trustees, not the trust (notional entity)
+    Caveat emptor; prospective investor has no such rights
+    Unclaimed money
+      Within 3 yrs: prevailing NAV
+      After 3 yrs: NAV at end of year 3
+      Separate liquid plan; max fee 0.50% p.a.; no exit load
+    Debt trades disclosed daily, 15-day lag
+    Recovered illiquid security: within 2 yrs to old investors, else Investor Education Fund
+    Complaint status: annual report, MF site, AMFI site
+  Grievances and codes
+    AMC resolves complaints in 21 calendar days
+    SCORES: SEBI's online system; physical complaints scanned and uploaded
+    Cyber framework CSCRF (CERT-In): Anticipate, Withstand, Contain, Recover, Evolve
+    Fourth Schedule: SEBI code for AMCs and trustees
+    AMFI Code of Ethics (ACE): higher, more explicit standards
+    AGNI: AMFI Guidelines & Norms for Intermediaries
+    Breach process
+      Explanation within 3 weeks
+      Warning letter
+      2nd proven violation: ARN cancelled, all AMCs told
+      Appeal to AMFI allowed
+  MFD code (Appendix 3)
+    Fiduciary: investor's interest is paramount
+    Never
+      Rebates or pass-back, gifts, inducements
+      Churning or splitting applications
+      Indicative portfolio, yield or assured returns
+      Own contact details on a client form
+      Deal in direct plans
+      Share client data with group companies for cross-selling
+      Call yourself adviser, wealth manager, consultant (unless SEBI RIA)
+    Always
+      Disclose all commissions and group conflicts
+      Add the EUIN
+      Use AMC-provided material; logo only with written approval
+      Check suitability: financial status, experience, objectives
+      Sub-distributors hold a valid ARN
+      Refund clawback commissions
+      Report moral turpitude or arrest to AMC and AMFI
+      Tagline "AMFI-registered Mutual Fund Distributor", font ≥12
+
+@ch5|5|10|Scheme Related Information|SID, SAI and KIM, fundamental attributes, update deadlines and every disclosure: NAV, TER, risk-o-meter, portfolio, results and reports.
+Scheme Related Information
+  Mandatory documents
+    Scheme related documents = SID + SAI (+ KIM)
+    Caveat emptor: investor presumed to have read them
+    SEBI format, same sequence; SEBI vets with observations, never approves
+    Drafts on SEBI site; finals on AMFI and MF sites
+    Contract: offer = documents; acceptance = form + payment; completes on allotment
+  SID
+    Details of one scheme
+    Cover page: name, type, face value, NFO dates, AMC and trustee
+    Disclaimer: AMC Due Diligence Certificate; SEBI hasn't approved it
+    Risk-o-meter + suitability on front page
+    Standard risks: sponsor not liable beyond initial contribution
+    Eligible investors: NFO and Ongoing Offer section
+    Objective can be primary + secondary
+  SAI
+    Statutory info on the MF / AMC; one SAI for all schemes
+    Legally part of the SID
+    Constituents, condensed financials (last 3 FYs), valuation norms
+    How to apply, modes of transaction, nomination, pledge, tax
+    Printed copy on request; all SAIs on AMFI site
+  KIM and addendum
+    KIM = summary of SID + SAI
+    Every application form must carry a KIM
+    Performance 1, 3, 5 yrs and since inception
+    Addendum = interim change; part of the documents; goes with KIM
+  Fundamental attributes
+    Type of scheme
+    Investment objective + min / max asset allocation
+    Terms of issue: liquidity, fees and expenses, safety net
+    To change (Reg 22(9)(c))
+      Written communication (email / SMS) to each unitholder
+      Details on AMC website
+      Exit at prevailing NAV, no exit load
+  Update timelines
+    SID: within 6 months of launch half-year; then 1 month after each half-year
+    Fundamental change: addendum now; SID revised after ≥30-day exit window
+    Other changes: addendum to website, distributors and ISCs
+    SAI: within 3 months of FY end
+    KIM: every half-year, within 1 month; filed electronically
+  NAV and expense disclosure
+    NAV every business day on AMC and AMFI sites
+    Liquid and overnight: also Sundays and holidays
+    Close-ended: at least weekly
+    TER daily (except IDFs), Format 7E, machine-readable
+    TER = BER + brokerage + transaction cost + statutory levies
+    BER under Regulation 66(7); direct plan BER lower
+    BER change: email / SMS + website ≥3 working days before
+    Expense item >10% of total disclosed in accounts
+    Scheme dashboard: AUM, TER, manager, benchmark, exit load, portfolio
+  Risk-o-meter
+    6 levels
+      Low: Irish Green
+      Low to Moderate: Chartreuse
+      Moderate: Neon Yellow
+      Moderately High: Caramel
+      High: Dark Orange
+      Very High: Red
+    Reviewed monthly; change = notice-cum-addendum + email / SMS
+    Scheme and benchmark risk-o-meter shown together
+    Commodity score (15-yr annualised volatility, quarterly)
+      <10% = 3
+      10–15% = 4
+      15–20% = 5
+      >20% = 6
+    Only a first step, not the sole basis for decisions
+    SIF Risk-Band: 5 levels, set at NFO, monthly, published in 10 days
+  Portfolio and reports
+    Portfolio: monthly and half-yearly, with ISIN, within 10 days
+    Debt schemes: fortnightly, within 5 days, plus yield
+    SIF: every alternate month, within 10 days; ISID has scenario analysis
+    Unaudited half-yearly results: within 1 month, email / SMS to unitholders
+    Annual report: within 4 months; ad in English + Hindi dailies
+    Factsheet: voluntary; monthly is AMFI best practice
+    Derivatives only to hedge, no open positions
+
+@ch6|6|6|Fund Distribution and Channel Management|Channels, transaction platforms, becoming a distributor, trail commission, disclosure and due diligence, nomination and change of distributor.
+Fund Distribution and Channel Management
+  Channels
+    Distributor analyses the investor; fund manager analyses the market
+    Individuals, banks, national / regional distributors, NBFCs, brokers, post offices, direct, online
+    LIC and UTI built the individual agent force
+    Employee model = fixed cost; sub-agent model = variable cost
+    Multinational banks entered first; PSU banks give non-urban reach
+    Distribution companies and banks = institutional distributors
+  Platforms
+    Paper forms: OPOAs
+    Stock exchanges: NSE NMF-II, BSE StAR MF
+      AMFI-registered trading members signed up with the MF
+      Limited purpose membership for distributors
+      DPs can only process redemptions
+      Order routing only: don't replace RTAs; AMC settles
+      Investors can use directly (26 Feb 2020)
+      SIP, STP, SWP, switch; units to demat
+    MF Utilities
+      CAN needs KYC; investor may hold several
+      One form, one payment, many schemes
+      MFU bank / nomination overrides folio
+    RTA interoperable platform: since 31 Dec 2021
+    MFCentral (CAMS + KFintech)
+      Consolidated view of demat + non-demat folios
+      Service requests and transactions
+      CAS, unclaimed amounts, family portfolio
+    New-age apps (Groww, Kuvera, Paytm Money, Coin): direct plans too
+  Becoming a distributor
+    NISM V-A
+      CPE exemption: age ≥50 or ≥10 yrs experience on 31 May 2010
+    KYD: PAN + address proof at CAMS PoS, right index finger
+    New cadre (V-B) exempt from KYD biometrics
+    ARN: minimum age 18; online only from 1 Oct 2024
+    Employees: EUIN under firm's ARN
+    Empanelment: compulsory, no standard form, AMC can end anytime
+  Commission
+    Full trail only (Master Circular 20 Mar 2026)
+      No upfront; no upfronting of trail; monetary only
+      AMC pays (Regulation 66(6))
+    Trail on daily net assets, paid monthly or quarterly
+    Daily trail = AUM × rate ÷ 365 (Rs 10 lakh at 1% = Rs 27.40)
+    No commission on self-investment
+    Transaction charges withdrawn (Aug 2025)
+    Additional commission (Nov 2025)
+      New PAN from B-30, or new women investors (Top 30 + B-30)
+      Lump sum: 1%, max Rs 2,000, if held ≥1 yr
+      SIP: 1% of first year, max Rs 2,000
+      From 2 bps investor education pool; clawback; no dual incentive
+    GST
+      From July 2017; threshold Rs 20 lakh
+      Unregistered distributor: recipient pays (reverse charge)
+  Disclosure and due diligence
+    Trigger (any one)
+      >20 locations
+      >Rs 100 cr AUM (non-institutional)
+      >Rs 1 cr commission a year
+      >Rs 50 lakh from one AMC
+    Yearly: inflows, average AUM, AUM / gross inflows, sponsor associate?
+    Turnover >2× industry average: extra due diligence
+    Checks: business model, penalties, associates, suitability separate from sales
+  Advisory vs execution only
+    Advice is incidental to distribution: no RIA needed
+    Can't call himself adviser or planner
+    Only two types: advisory or execution only
+    Unsuitable + execution only: written warning + written confirmation
+    Mis-selling under PFUTP 2003
+  Distributor nomination
+    Commission to nominee until ARN change or AUM nil
+    Nominee needs no ARN; receives as trustee for legal heirs
+    ARN valid on date of death; no new business or SIPs
+    AUM transfer: valid ARN + KYD; clients told; 15 days to object
+  Change of distributor
+    Investor change: no commission to either (unless old ceased business)
+    New distributor may get trail after 12-month cooling-off
+    Distributor-initiated only for
+      Name / legal status change
+      Merger / acquisition within group
+      Family AUM consolidation
+      Transfer of business
+      Entire AUM, valid KYD ARN, old ARN surrendered
+
+@ch7|7|8|NAV, TER and Pricing of Units|Valuation principles, the NAV formula, every TER slab, AT1/AT2 limits, IDCW rules, loads and segregated portfolios.
+NAV, TER and Pricing of Units
+  Valuation
+    Seventh Schedule; aim = fair to entering, exiting, staying investors
+    10 principles; they prevail over the Guidelines
+    Principle 1: realisable value, in good faith
+    Policy
+      Approved by AMC Board; new security type needs a method first
+      Independent auditor review at least yearly
+      Disclosed in SAI and website
+      AMC responsible; may deviate (report to Boards, tell investors)
+    Traded equity: last close on principal exchange
+    Not traded today: other exchange or previous day within 30 days
+    Non-traded (no trade 30 days)
+      Good faith, AMC Board methods; trustees review
+      Earnings capitalisation ± book value, less illiquidity discount
+    Convertibles: debt and equity parts separately
+    Warrants: share value − exercise price − discount
+    Debt: trade prices from all public platforms
+    Gold ETF: LBMA AM fixing, 995.0 fineness
+    Silver ETF: LBMA AM fixing, 999.0 fineness
+  NAV
+    NAV = net assets ÷ units outstanding
+    Net assets = total assets − liabilities other than to unitholders
+    Example: Rs 217 cr ÷ 20 cr units = Rs 10.85
+    Includes unrealised gains
+    Accrual principle: count when due, not when paid
+    Short-term borrowing for liquidity ≤6 months
+    Mark to market stops dilution
+      Issue below NAV lowers NAV for existing investors
+      Redeem below NAV raises it
+  Expenses and TER
+    All expenses paid from the scheme, within base limits
+    Allowed: distribution, brokerage, RTA, trustee, audit, custodian, insurance, listing, storage of gold / silver
+    Above limits: borne by AMC, trustees or sponsor
+    Equity-oriented for TER: ≥65% equity
+    Open-ended slabs (equity / other)
+      First Rs 500 cr: 2.10 / 1.85
+      Next 250: 1.90 / 1.65
+      Next 1,250: 1.60 / 1.40
+      Next 3,000: 1.50 / 1.25
+      Next 5,000: 1.40 / 1.15
+      Next 40,000: −0.05% per Rs 5,000 cr
+      Balance: 0.95 / 0.70
+    Index fund / ETF: ≤0.90%
+    FoF
+      Into liquid / index / ETF: 0.90%
+      ≥65% in equity schemes: 2.10%
+      Others: 1.85%
+      Own layer ≤2× underlying TER
+    Close-ended / interval: equity 1.00%, others 0.80%
+    Brokerage on top: ≤0.06% cash, ≤0.02% derivatives
+    Total = base + brokerage + transaction cost + levies; nothing else but exit load
+    Old extra 0.05% for exit-load schemes: gone
+  AT1 and AT2 bonds
+    MF ≤10% of one issuer's bonds
+    Scheme ≤10% of assets; ≤5% in one issuer
+    AT1 deemed maturity: 100 yrs from issue
+    AT2: contractual maturity
+    AT1 valued on yield to call
+    Close-ended debt schemes can't buy perpetuals
+  IDCW
+    Only from distributable surplus
+      Valuation gains ignored
+      Valuation losses deducted
+    Trustees decide amount and record date
+    Monthly-or-more payouts can be delegated to AMC officials
+    Notice within 1 day; record date 5 calendar days later
+    No notice for daily-to-monthly payouts in liquid / debt
+    Late payment: interest from record date
+    May include capital (equalisation reserve); split disclosed
+  Loads and pricing
+    Entry load banned: sale price = NAV (+ stamp duty)
+    Exit load: price = NAV × (1 − load)
+      Rs 11 with 1% load = Rs 10.89
+    No distinction by amount; changes only prospective
+    None on bonus or IDCW-reinvestment units
+    Credited back to the scheme
+    Rs 25,000 at NAV 43.21 = 578.570 units
+  Accounting
+    Scheme accounts separate from AMC, different auditors
+    NAV decimals: 4 for index, liquid, debt; ≥2 for equity, balanced
+    Fractional units allowed; exchanges trade whole units
+    Segregated portfolio
+      No management fee
+      Other TER only pro-rata on recovery
+      NAV declared daily
+      Unrated debt: only on actual default
+
+@ch8|8|4|Taxation|What decides the tax, the rate table, grandfathering, IDCW, stamp duty and STT, loss set-off, ELSS, TDS and GST.
+Taxation
+  Scheme and options
+    Scheme income exempt: Sec 10(23D), MFs are trusts
+    Growth: capital gains only
+    IDCW: dividend + capital gains
+    Joint holding: taxed in first holder's hands
+  What decides the tax
+    Type of income, holding period
+    Type of scheme, type of investor
+    Purchase date (1 Apr 2023) and redemption date (23 Jul 2024)
+    Equity-oriented for tax: >65% listed Indian equity
+    FoF in equity MFs = non-equity
+    Holding periods: 12 months (listed, equity funds) or 24 months
+  Tax rates (STCG / LTCG)
+    Equity-oriented (incl. hybrid >65% equity)
+      20% / 12.5% after 12 months
+      Rs 1.25 lakh LTCG exempt per FY
+    Debt-oriented (hybrid >65% debt): slab rate
+    Hybrid 35–65% equity: slab / 12.5% after 24 months
+    Other MFs (FoFs, international): slab / 12.5% after 24 months
+    Equity and Gold ETFs: slab / 12.5% after 12 months (as printed)
+    Debt ETFs: slab rate
+    Exemption examples
+      Rs 90,000 gain: no tax
+      Rs 1.35 lakh gain: tax on Rs 10,000
+    Grandfathering
+      Gains up to 31 Jan 2018 exempt
+      Cost = higher of actual cost or 31 Jan 2018 NAV
+      Cost 1 lakh, Jan-18 value 2 lakh: sold 1.8 lakh = 0; 2.2 lakh = Rs 20,000
+  IDCW
+    DDT abolished (Budget Feb 2020)
+    From April 2020: taxed at investor's slab
+    Tax-exempt investors pay nil
+    IDCW cuts NAV by more than the post-tax receipt
+    Growth more tax-efficient: deferral
+    From 1 Apr 2021: split into income and capital distribution
+  Stamp duty and STT
+    Stamp duty (1 Jul 2020)
+      0.005% on issue: purchase, SIP, STP, switch-in, reinvestment
+      0.015% on transfer
+      Units allotted after stamp duty
+    STT
+      Only equity-oriented funds, on sale / redemption
+      None on purchase; none on debt funds
+      Redemption to MF: 0.001%
+      Exchange delivery sale: 0.001%
+      Non-delivery: 0.025%
+      Paid by the seller
+  Losses
+    No set-off against salary or other heads
+    STCL against STCG or LTCG
+    LTCL only against LTCG
+    Carry forward up to 8 years
+    Bonus stripping
+      Bought ≤3 months before record date, sold ≤9 months after
+      Loss disallowed; becomes cost of bonus units
+  ELSS (Tax Saver)
+    80C up to Rs 1.5 lakh (individual / HUF)
+    Old Tax Regime only
+    3-year lock-in from each SIP and each reinvestment
+    Benefit to the first holder
+    New regime: just an equity fund with lock-in
+    Old retirement funds: 80C with 5-year lock-in
+  TDS
+    No TDS on redemption for residents
+    IDCW to residents: 10% if > Rs 10,000 a year
+    NRIs: lower of Income Tax Act or DTAA rate
+  GST and expenses
+    GST on management fee: over and above TER
+    GST on other fees, brokerage: within TER
+    From 1 Apr 2026: BER + brokerage + statutory levies
+    GST on exit load deducted from the load
+    GST on distributor commission can't hit the scheme
