@@ -139,6 +139,10 @@ td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
 .notes table{font-size:.86rem;margin:8px 0}
 .notes td,.notes th{border:1px solid var(--line)}
 .notes .formula{font-family:var(--mono);background:var(--sunk);border-radius:8px;padding:10px 12px;overflow-x:auto}
+.mmcall{display:grid;gap:2px;margin:12px 0 4px;padding:12px 14px;border:1px solid var(--accent);background:var(--accent-soft);border-radius:10px;color:var(--ink);text-decoration:none}
+.mmcall b{font:600 .95rem var(--display);color:var(--accent)}
+.mmcall span{font-size:.86rem;color:var(--muted)}
+.mmcall:hover{border-color:var(--ink)}
 .notes-foot{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:22px;padding-top:14px}
 .chk{display:inline-flex;gap:8px;align-items:center;font-size:.9rem;cursor:pointer}
 .chk input{width:18px;height:18px;accent-color:var(--accent)}
@@ -248,6 +252,7 @@ blockquote.close cite{font-style:normal;font-size:.84rem;color:var(--muted)}
       <a href="#learn" data-v="learn">Learn</a>
       <a href="#practice" data-v="practice">Practice</a>
       <a href="#progress" data-v="progress">Progress</a>
+      <a href="mindmap.html">Mind map</a>
     </nav>
   </header>
 
@@ -443,10 +448,12 @@ function renderLearn(){
   const has=BANK[n.id];
   $('#notes').innerHTML=`<h2>${n.n?'Chapter '+n.n+' · '+esc(n.title):esc(n.title)}</h2>
     ${n.marks?`<p class="note">${n.marks} marks in the exam · ${has?has.qs.length+' practice questions':''}</p>`:''}
+    ${n.id==='ch3'?`<a class="mmcall" href="mindmap.html"><b>See the whole structure as a mind map</b><span>Sponsor, trustees, AMC, custodian, RTA, CRISIL and ICRA, NMF-II, BSE StAR MF and more, all in one picture.</span></a>`:''}
     ${n.html}
     <div class="notes-foot">
       ${n.n?`<label class="chk"><input type="checkbox" id="rdchk" ${read[n.id]?'checked':''}> I've revised this chapter</label>`:'<span></span>'}
       <div class="row">
+        ${n.id==='ch3'?'<a class="btn" href="mindmap.html" style="text-decoration:none">Open mind map</a>':''}
         ${has?`<button class="btn pri" id="goprac">Practise Chapter ${n.n}</button>`:''}
         ${nextNote(n)?`<button class="btn" id="nextn">Next: ${nextNote(n).n?'Chapter '+nextNote(n).n:''}</button>`:''}
       </div>

@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mutual Fund Structure Map · MFD Exam Prep</title>
+<meta name="description" content="Interactive mind map of every player in an Indian mutual fund: SEBI, sponsor, trustees, AMC, custodian, RTA, CRISIL and ICRA, NSDL and CDSL, BSE StAR MF, NSE NMF-II, MF Utilities and AMFI. NISM V-A Chapter 3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: left-to-right tree from "Mutual Fund (Trust)" outward; each first-level branch keeps its own hue down to the leaves. Outline view for phones and revision. */
+:root{
+  --bg:#F3F5F7; --surface:#FFFFFF; --sunk:#E9EDF1; --ink:#15202B; --muted:#5A6672; --line:#C9D1D9;
+  --accent:#0E5A96; --accent-ink:#FFFFFF; --accent-soft:#E1ECF6;
+  --b1:#0E5A96; --b2:#7A3E9D; --b3:#1C7A4E; --b4:#B4531F; --b5:#A1295C; --b6:#2F6F7E; --b7:#8A6A00; --b8:#4B5BB0; --b9:#5A6672;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E141A; --surface:#161F28; --sunk:#1D2833; --ink:#E4EAF0; --muted:#95A2AF; --line:#34414F;
+    --accent:#5DA8E6; --accent-ink:#0B1621; --accent-soft:#16304A;
+    --b1:#5DA8E6; --b2:#C08BE0; --b3:#4FC48C; --b4:#F0995E; --b5:#EC7FAE; --b6:#5FC1D3; --b7:#E0C04A; --b8:#98A6F2; --b9:#A4B0BC;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E141A; --surface:#161F28; --sunk:#1D2833; --ink:#E4EAF0; --muted:#95A2AF; --line:#34414F;
+  --accent:#5DA8E6; --accent-ink:#0B1621; --accent-soft:#16304A;
+  --b1:#5DA8E6; --b2:#C08BE0; --b3:#4FC48C; --b4:#F0995E; --b5:#EC7FAE; --b6:#5FC1D3; --b7:#E0C04A; --b8:#98A6F2; --b9:#A4B0BC;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-inline:16px;padding-block:16px 24px;display:flex;flex-direction:column;gap:12px}
+header{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end;justify-content:space-between}
+h1{font:700 1.6rem/1.1 var(--display);margin:0;text-wrap:balance}
+.sub{color:var(--muted);font-size:.86rem;margin-top:4px;max-width:68ch}
+.controls{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.seg{display:inline-flex;background:var(--sunk);border-radius:8px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--muted);font:500 .85rem var(--body);padding:6px 12px;border-radius:6px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 .85rem var(--body);padding:6px 12px;border-radius:8px;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.legend button{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 .78rem var(--body);padding:4px 9px;border-radius:999px;cursor:pointer}
+.legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
+#mapwrap{position:relative;flex:1;min-height:520px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+#map{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#map:active{cursor:grabbing}
+.hint{position:absolute;left:12px;bottom:10px;font-size:.75rem;color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:6px}
+.node{cursor:pointer}
+.node rect{stroke-width:1.5;fill:var(--surface)}
+.node text{font-family:var(--body);fill:var(--ink)}
+.node .t-root{font:700 17px var(--display);fill:var(--accent-ink)}
+.node .t-b{font:600 14px var(--display)}
+.node .t-s{font:600 12.5px var(--body)}
+.node .t-f{font:400 12px var(--body);fill:var(--ink)}
+.node .cnt{font:500 10px var(--mono);fill:var(--muted)}
+.link{fill:none;stroke-width:1.6;stroke-opacity:.55}
+#outline{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto}
+#outline details{margin:2px 0}
+#outline summary{cursor:pointer;padding:3px 0;list-style:none}
+#outline summary::-webkit-details-marker{display:none}
+#outline summary::before{content:"▸";display:inline-block;width:1em;color:var(--muted);transition:transform .15s}
+#outline details[open]>summary::before{transform:rotate(90deg)}
+#outline .kids{margin-left:1.05em;border-left:2px solid var(--line);padding-left:12px}
+#outline .lvl1>summary{font:600 1.02rem var(--display)}
+#outline .lvl2>summary{font-weight:600}
+#outline .leaf{padding:2px 0 2px 1em;font-size:.92rem;position:relative}
+#outline .leaf::before{content:"";position:absolute;left:.15em;top:.75em;width:5px;height:5px;border-radius:50%;background:var(--muted)}
+footer{color:var(--muted);font-size:.78rem}
+footer a{color:var(--accent)}
+@media (max-width:640px){#mapwrap{min-height:440px} h1{font-size:1.35rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.sitenav{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sitenav a{font:500 .82rem var(--body);color:var(--muted);text-decoration:none;padding:4px 9px;border-radius:6px}
+.sitenav a:hover{background:var(--accent-soft);color:var(--ink)}
+.sitenav .brand{font:700 .95rem var(--display);color:var(--ink);padding-left:0}
+</style>
+</head>
+<body>
+<nav class="sitenav" aria-label="Site"><a class="brand" href="index.html#home">MFD Exam Prep</a><a href="index.html#home">Home</a><a href="index.html#learn">Learn</a><a href="index.html#practice">Practice</a><a href="index.html#progress">Progress</a></nav>
+<header>
+  <div>
+    <h1>Mutual Fund Structure Map</h1>
+    <div class="sub">Every player in an Indian mutual fund, from SEBI and the sponsor down to CRISIL, CAMS and NMF-II. Based on Chapter 3 of the NISM Series V-A workbook (March 2026 revision). Click a node to open or close it.</div>
+  </div>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="View">
+      <button id="v-map" aria-pressed="true">Map</button>
+      <button id="v-out" aria-pressed="false">Outline</button>
+    </div>
+    <button class="btn" id="expand">Expand all</button>
+    <button class="btn" id="collapse">Main players only</button>
+    <button class="btn" id="fit">Fit to screen</button>
+  </div>
+</header>
+<nav class="legend" id="legend" aria-label="Jump to a branch"></nav>
+<div id="mapwrap"><svg id="map" role="img" aria-label="Mind map of the mutual fund structure"></svg><span class="hint">Drag to move · scroll or pinch to zoom</span></div>
+<div id="outline" hidden></div>
+<footer><a href="index.html#learn">Back to Chapter 3 notes</a> · Independent study aid, not affiliated with NISM, SEBI or AMFI. Check the current workbook and SEBI circulars for the latest rules.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function(){
+// ---- content (nested to the nth level) ----
+const L=(n,...c)=>c.length?{n,c}:{n};
+const DATA = L("Mutual Fund (a Trust)",
+  L("Legal base",
+    L("SEBI (Mutual Funds) Regulations, 2026"),
+    L("Registration granted under Regulation 3"),
+    L("Indian Trusts Act, 1882 governs the trust"),
+    L("Trust deed registered under Indian Registration Act, 1908"),
+    L("MF = trust raising money by selling units, under one or more schemes",
+      L("Invests in securities, money market, gold, silver and other assets SEBI allows"))),
+  L("Regulators",
+    L("SEBI",
+      L("Registers the mutual fund"),
+      L("Prior approval: trustees, AMC, change in AMC control"),
+      L("Gives observations on SID/SAI (vets, never approves)"),
+      L("Complaints via SCORES")),
+    L("RBI",
+      L("Money market, forex, overseas investment rules")),
+    L("Stock exchanges",
+      L("Listing, trading and margin rules for listed units"))),
+  L("Sponsor",
+    L("Creates the trust; main person behind the MF"),
+    L("Applies to SEBI for registration"),
+    L("Invests in the AMC's capital"),
+    L("Eligibility",
+      L("≥ 5 years in financial services"),
+      L("Positive net worth in each of last 5 years"),
+      L("Net profit in each of last 5 years"),
+      L("Average net profit ≥ Rs 10 crore (5 yrs)"),
+      L("Liquid net worth > capital contribution to AMC"),
+      L("Fit and proper; sound track record")),
+    L("Must keep AMC net worth ≥ Rs 50 crore at all times"),
+    L("Liability limited to initial contribution"),
+    L("Categories (AMFI): banks, institutions, private sector (Indian, foreign, JV)")),
+  L("Trustees",
+    L("Form",
+      L("Individuals = Board of Trustees"),
+      L("Or a Trustee Company (acts via its Board of Directors)")),
+    L("Composition",
+      L("At least 2/3 independent directors"),
+      L("Independent = not associate of sponsor, AMC or trustee company"),
+      L("Prior SEBI approval to appoint")),
+    L("Eligibility (Regulation 11)",
+      L("Fit and proper (Schedule II, Intermediaries Regulations 2008)"),
+      L("Not a director, officer or employee of an AMC"),
+      L("Not a trustee of another mutual fund"),
+      L("Gives SEBI any information it asks for")),
+    L("Duties (6 heads)",
+      L("Appoint and terminate the AMC"),
+      L("Conflicts of interest and broker empanelment"),
+      L("Regulatory compliance"),
+      L("Oversight for investor interests"),
+      L("Additional oversight"),
+      L("Due diligence on matters SEBI specifies")),
+    L("Sign Investment Management Agreement with AMC"),
+    L("Appoint custodian and scheme auditor"),
+    L("Can remove AMC by majority (with SEBI + unitholder approval)")),
+  L("Asset Management Company (AMC)",
+    L("Appointment and rules",
+      L("Appointed by sponsor or trustees, with SEBI approval"),
+      L("Net worth ≥ Rs 50 crore (from 1 Jan 2024)"),
+      L("≥ 50% directors not associates of sponsor or trustees"),
+      L("Directors: finance experience; fit and proper"),
+      L("Director appointment needs trustee approval"),
+      L("AMC directors (incl. Chairman) can't sit on any MF trustee board"),
+      L("No one can be a director of more than one AMC"),
+      L("Change of control: trustees + SEBI approval",
+        L("Letter to each unitholder"),
+        L("Ads: English national daily + regional language"),
+        L("Exit at NAV, no load, ≥ 30 days")),
+      L("Removal: majority of trustees or 75% of unitholders")),
+    L("Fund management",
+      L("Analysts: find opportunities"),
+      L("Fund managers: decide; own scheme performance"),
+      L("Dealers: place orders with brokers")),
+    L("Compliance Officer",
+      L("Signs due diligence certificate on SID"),
+      L("Reports to AMC head"),
+      L("Flags non-compliance directly to trustees")),
+    L("Operations and customer service",
+      L("Front office and back office"),
+      L("RTA liaison: records, allotment, statements"),
+      L("Custody team: settlement with custodian"),
+      L("Fund accounting: books and daily NAV")),
+    L("Risk management (SEBI RMF)",
+      L("Investment risk"),L("Compliance risk"),L("Operational risk"),L("Cyber security")),
+    L("Sales and marketing",
+      L("Branding, advertising, events"),
+      L("Distributor relationships and training")),
+    L("Support functions",
+      L("Finance / Accounts (AMC's own books)"),
+      L("Administration"),L("HRD"),L("IT / technology"))),
+  L("Service providers",
+    L("Custodian",
+      L("Appointed by trustees"),
+      L("SEBI (Custodian) Regulations, 1996"),
+      L("Holds assets; settles trades"),
+      L("Tracks corporate actions: dividend, bonus, rights"),
+      L("Not if sponsor holds ≥ 50% voting rights or directors")),
+    L("Registrar and Transfer Agent (RTA)",
+      L("Appointed by AMC; optional (can be in-house)"),
+      L("Must register with SEBI"),
+      L("Folios, purchases, redemptions, account statements"),
+      L("Offices act as Investor Service Centres"),
+      L("CAMS and KFintech (QRTAs; run MITRA)")),
+    L("Fund accountant",
+      L("Calculates NAV"),
+      L("No SEBI registration needed; in-house or outsourced")),
+    L("Auditors",
+      L("Scheme auditor: appointed by trustees"),
+      L("AMC auditor: appointed by AMC"),
+      L("The two must be different")),
+    L("Collecting bankers and payment aggregators",
+      L("Appointed by AMC"),
+      L("Payment gateways, wallets, payment banks")),
+    L("KYC Registration Agencies (KRAs)",
+      L("SEBI KRA Regulations, 2011"),
+      L("One KYC across the securities market (PMLA)"),
+      L("Central KYC Records Registry: CERSAI")),
+    L("Valuation agencies",
+      L("At least 2, for non-traded or thinly traded debt"),
+      L("CRISIL and ICRA (appointed by AMFI)"),
+      L("AMCs use their valuation level")),
+    L("Credit rating agencies",
+      L("CRISIL, ICRA, CARE, India Ratings (Fitch)"),
+      L("Define corporate bond and credit risk funds"),
+      L("FMP: invest only at proposed rating or better")),
+    L("Depositories and DPs",
+      L("NSDL and CDSL"),
+      L("DP is like a bank branch; depository like head office"),
+      L("ETF units must be held in demat"))),
+  L("Distribution and platforms",
+    L("Distributors",
+      L("NISM Series V-A + ARN from AMFI"),
+      L("KYD: PAN, address proof, biometrics at CAMS PoS"),
+      L("Employees: EUIN under the firm's ARN"),
+      L("New cadre (limited schemes): NISM V-B"),
+      L("Individuals, banks, NBFCs, brokers, national distributors"),
+      L("Can be empanelled with many AMCs")),
+    L("Stock exchange platforms",
+      L("BSE StAR MF"),
+      L("NSE NMF-II"),
+      L("Order routing only; AMC handles settlement")),
+    L("MF Utilities (MFU)",
+      L("AMFI industry initiative"),
+      L("One CAN, one form, many AMCs")),
+    L("Execution Only Platforms (direct plans)",
+      L("Category 1: AMFI-registered, agent of AMCs"),
+      L("Category 2: SEBI stock broker, agent of investor")),
+    L("AMC websites and apps; RTA interoperable platform")),
+  L("AMFI",
+    L("Association of all registered AMCs"),
+    L("Issues ARN; can cancel it for code violations"),
+    L("Code of Ethics (AMCs) and AGNI code (distributors)"),
+    L("Investor awareness; represents industry to SEBI, RBI, Govt"),
+    L("Not a regulator, not an SRO")),
+  L("Unitholders (investors)",
+    L("Beneficiaries of the trust"),
+    L("Own the scheme's assets proportionately"),
+    L("Can sue trustees, not the trust (notional entity)"),
+    L("75% can remove the AMC or wind up a scheme"))
+);
+
+// ---- colors per branch ----
+const css=getComputedStyle(document.documentElement);
+const hue=i=>`var(--b${(i%9)+1})`;
+const root=d3.hierarchy(DATA,d=>d.c);
+root.children.forEach((b,i)=>b.each(d=>d.hue=hue(i)));
+root.hue='var(--accent)';
+let uid=0; root.each(d=>{d.id=++uid; d._c=d.children; });
+
+// legend
+const lg=document.getElementById('legend');
+root.children.forEach((b,i)=>{const btn=document.createElement('button'); btn.innerHTML=`<i style="background:${hue(i)}"></i>${b.data.n}`;
+  btn.onclick=()=>{ if(isOutline) {const el=document.getElementById('o'+b.id); if(el){el.open=true; el.scrollIntoView({behavior:'smooth',block:'start'});} return;}
+    b.each(d=>{ d.children=d._c; }); update(b); focus(b); };
+  lg.appendChild(btn);});
+
+// ---- map ----
+const svg=d3.select('#map'), g=svg.append('g');
+const zoom=d3.zoom().scaleExtent([.2,2.5]).on('zoom',e=>g.attr('transform',e.transform));
+svg.call(zoom).on('dblclick.zoom',null);
+const gl=g.append('g'), gn=g.append('g');
+const DX=38, DY=[0,150,285,290,300,300];
+const wrapW=d=>d.depth===0?16:d.depth===1?24:(d._c?28:36);
+function lines(d){const w=wrapW(d), words=d.data.n.split(' '), out=[]; let cur='';
+  words.forEach(x=>{ if((cur+' '+x).trim().length>w && cur){out.push(cur);cur=x;} else cur=(cur+' '+x).trim(); }); if(cur) out.push(cur); return out;}
+// balance branches left/right by size, keeping order
+(function(){ const sizes=root._c.map(b=>b.descendants().length); const total=sizes.reduce((a,b)=>a+b,0); let acc=0;
+  root._c.forEach((b,i)=>{ const side = acc < total/2 ? 1 : -1; acc+=sizes[i]; b.each(d=>d.side=side); }); root.side=0; })();
+function setDepthDefault(level){ root.each(d=>{ d.children = d.depth<level ? d._c : null; }); root.children=root._c; }
+setDepthDefault(2);
+const depthY=d=>{let y=0; for(let i=1;i<=d.depth;i++) y+=DY[Math.min(i,DY.length-1)]; return y;};
+const tree=d3.tree().nodeSize([DX,1]).separation((a,b)=>{const la=lines(a).length, lb=lines(b).length; return ((la+lb)/2)*0.6+(a.parent===b.parent?0.35:0.8);});
+function layout(){
+  [1,-1].forEach(s=>{ root.children=root._c.filter(b=>b.side===s); tree(root); const r=root.x;
+    root.descendants().forEach(d=>{ if(d===root) return; d.px=d.x-r; d.py=s*depthY(d); }); });
+  root.children=root._c; root.px=0; root.py=0;
+}
+function update(src){
+  layout();
+  const nodes=root.descendants(), links=root.links();
+  const t=svg.transition().duration(matchMedia('(prefers-reduced-motion: reduce)').matches?0:300);
+  const node=gn.selectAll('g.node').data(nodes,d=>d.id);
+  const enter=node.enter().append('g').attr('class','node')
+    .attr('transform',`translate(${src.py0??src.py??0},${src.px0??src.px??0})`).attr('opacity',0)
+    .on('click',(e,d)=>{ if(!d._c||d===root) return; d.children=d.children?null:d._c; update(d); })
+    .attr('tabindex',0).on('keydown',(e,d)=>{ if((e.key==='Enter'||e.key===' ')&&d._c&&d!==root){ e.preventDefault(); d.children=d.children?null:d._c; update(d);} });
+  enter.each(function(d){
+    const el=d3.select(this), ls=lines(d), lh=d.depth===0?20:d.depth===1?17:15, s=d.side;
+    const cls=d.depth===0?'t-root':d.depth===1?'t-b':d._c?'t-s':'t-f';
+    const tx=d.depth===0?0:s*12, anchor=d.depth===0?'middle':s>0?'start':'end';
+    const txt=el.append('text').attr('class',cls).attr('text-anchor',anchor);
+    ls.forEach((v,i)=>txt.append('tspan').attr('x',tx).attr('y',(i-(ls.length-1)/2)*lh+lh*0.32).text(v));
+    const bb=txt.node().getBBox();
+    if(d.depth===0){
+      el.insert('rect','text').attr('x',bb.x-14).attr('y',bb.y-8).attr('width',bb.width+28).attr('height',bb.height+16).attr('rx',10).style('fill','var(--accent)').style('stroke','var(--accent)');
+      d.w=(bb.width+28)/2;
+    } else if(d.depth===1 || d._c){
+      el.insert('rect','text').attr('x',bb.x-10).attr('y',bb.y-6).attr('width',bb.width+20).attr('height',bb.height+12).attr('rx',8).style('stroke',d.hue);
+      d.w=bb.width+22;
+    } else {
+      el.insert('circle','text').attr('cx',s*5).attr('cy',0).attr('r',3.2).style('fill',d.hue);
+      d.w=bb.width+14;
+    }
+    if(d._c && d.depth>0) el.append('text').attr('class','cnt').attr('text-anchor',s>0?'start':'end').attr('x',s*(d.w+7)).attr('y',4);
+  });
+  const all=enter.merge(node);
+  all.select('.cnt').text(d=>d.children?'−':'+'+d._c.length);
+  all.select('rect').style('fill',d=>d.depth===0?'var(--accent)':(d._c&&!d.children)?'var(--sunk)':'var(--surface)');
+  all.transition(t).attr('transform',d=>`translate(${d.py},${d.px})`).attr('opacity',1);
+  node.exit().transition(t).attr('transform',`translate(${src.py},${src.px})`).attr('opacity',0).remove();
+  const anchorOut=(s,side)=> s===root ? side*s.w : s.py + side*(s.w + (s._c?20:0));
+  const diag=(sx,sy,tx,ty)=>{const mx=(sx+tx)/2; return `M${sx},${sy}C${mx},${sy} ${mx},${ty} ${tx},${ty}`;};
+  const link=gl.selectAll('path.link').data(links,d=>d.target.id);
+  link.enter().append('path').attr('class','link').style('stroke',d=>d.target.hue)
+    .attr('d',d=>{const x=anchorOut(src,d.target.side), y=src.px0??src.px??0; return diag(x,y,x,y);})
+    .merge(link).transition(t).attr('d',d=>diag(anchorOut(d.source,d.target.side),d.source.px,d.target.py,d.target.px));
+  link.exit().transition(t).attr('d',d=>{const x=anchorOut(src,d.target.side); return diag(x,src.px,x,src.px);}).remove();
+  root.each(d=>{d.px0=d.px; d.py0=d.py;});
+}
+function fit(minK=0){
+  const b=g.node().getBBox(), W=svg.node().clientWidth, H=svg.node().clientHeight; if(!b.width) return;
+  let k=Math.min(1.1,.94*Math.min(W/b.width,H/b.height)), tr;
+  if(k<minK){ k=minK; tr=d3.zoomIdentity.translate(W/2-k*(b.x+b.width/2), 20-k*b.y).scale(k); }
+  else tr=d3.zoomIdentity.translate(W/2-k*(b.x+b.width/2), H/2-k*(b.y+b.height/2)).scale(k);
+  svg.transition().duration(350).call(zoom.transform,tr);
+}
+function focus(d){
+  setTimeout(()=>{const W=svg.node().clientWidth,H=svg.node().clientHeight,k=Math.max(.7,d3.zoomTransform(svg.node()).k);
+    const cx = d.side>0 ? W*0.15 - k*d.py : W*0.85 - k*d.py;
+    svg.transition().duration(400).call(zoom.transform,d3.zoomIdentity.translate(cx,H/2-k*d.px).scale(k));},330);
+}
+const afterAnim=f=>setTimeout(f,matchMedia('(prefers-reduced-motion: reduce)').matches?20:340);
+update(root); afterAnim(()=>fit());
+document.getElementById('expand').onclick=()=>{ if(isOutline){document.querySelectorAll('#outline details').forEach(x=>x.open=true);return;} root.each(d=>d.children=d._c); update(root); afterAnim(()=>fit(.5)); };
+document.getElementById('collapse').onclick=()=>{ if(isOutline){document.querySelectorAll('#outline details').forEach(x=>x.open=x.classList.contains('lvl0'));return;} setDepthDefault(2); update(root); afterAnim(()=>fit()); };
+document.getElementById('fit').onclick=()=>fit();
+addEventListener('resize',()=>{ if(!isOutline) fit(); });
+
+// ---- outline ----
+function outline(d){
+  if(!d.data.c) return `<div class="leaf">${d.data.n}</div>`;
+  const kids=(d._c||[]).map(outline).join('');
+  return `<details id="o${d.id}" class="lvl${d.depth}" ${d.depth<1?'open':''}><summary style="${d.depth===1?'color:'+d.hue:''}">${d.data.n}</summary><div class="kids">${kids}</div></details>`;
+}
+document.getElementById('outline').innerHTML=outline(root);
+let isOutline=false;
+function setView(o){ isOutline=o; document.getElementById('mapwrap').hidden=o; document.getElementById('outline').hidden=!o;
+  document.getElementById('v-map').setAttribute('aria-pressed',!o); document.getElementById('v-out').setAttribute('aria-pressed',o);
+  document.getElementById('fit').hidden=o; if(!o) setTimeout(fit,30); }
+document.getElementById('v-map').onclick=()=>setView(false);
+document.getElementById('v-out').onclick=()=>setView(true);
+if(matchMedia('(max-width:560px)').matches) setView(true);
+})();
+</script>
+</body>
+</html>

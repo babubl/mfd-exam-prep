@@ -12,6 +12,7 @@ One app, four tabs:
 | **Learn** | One-line, exam-focused revision notes for all 12 chapters: numbers, limits, timelines, formulas and traps. Mark each chapter as revised, then jump straight to its practice questions. |
 | **Practice** | 534 chapter-wise questions (about 25 per 5% of exam weight) and 5 full mock exams of 100 questions each, weighted like the real paper. Practice mode shows the answer after each question; exam mode runs a 2-hour timer and marks at the end. Retry only the ones you got wrong. |
 | **Progress** | Estimated exam score (latest chapter scores weighted by exam marks), chapters revised, mock history, recent attempts, plus export/import of your progress. |
+| **[Mind map](mindmap.html)** | Interactive map of every player in a mutual fund (Chapter 3): SEBI, sponsor, trustees, AMC and its teams, custodian, RTA, auditors, KRAs, CRISIL and ICRA, NSDL and CDSL, BSE StAR MF, NSE NMF-II, MF Utilities, EOPs and AMFI. Map and outline views. |
 
 **Progress saves automatically**: answers, position in a test, the exam timer, scores and history are kept in your browser. Close the tab and come back later to carry on where you left off. To move to another device or browser, use **Export** and **Import** on the Progress tab.
 
@@ -43,6 +44,7 @@ Plain static files, no build step and no server:
 - `index.html`: the app (Learn, Practice, Progress)
 - `data.js`: all questions (chapter drills and mocks)
 - `notes.js`: chapter notes used by the Learn tab
+- `mindmap.html`: the Chapter 3 structure mind map (uses d3 from cdnjs)
 - `notes.html` / `notes.md`: the same notes as a standalone page and as Markdown
 
 Progress is stored only in the visitor's browser (localStorage). Nothing is sent to a server. To run locally, open `index.html` in a browser.
