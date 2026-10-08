@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MFD Exam Prep</title>
-<meta name="description" content="Free NISM Series V-A (Mutual Fund Distributors) exam prep: chapter-wise revision notes, 534 practice questions and five timed 100-question mock exams, with saved progress.">
+<meta name="description" content="Free NISM Series V-A (Mutual Fund Distributors) exam prep: chapter-wise revision notes, 730 practice questions (including multi-statement questions in the real exam's style) and five timed 100-question mock exams, with saved progress.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -33,8 +33,9 @@
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body);padding-inline:16px;padding-block:20px 48px}
-.wrap{max-width:980px;margin:0 auto;display:grid;gap:18px}
-header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px}
+.wrap{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;min-width:0}
+header.top>*{min-width:0;max-width:100%}
 h1{font:700 1.7rem/1.1 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
 .sub{color:var(--muted);font-size:.85rem;margin-top:4px}
 .mode{display:inline-flex;background:var(--sunk);border-radius:8px;padding:3px}
@@ -52,7 +53,8 @@ h1{font:700 1.7rem/1.1 var(--display);margin:0;letter-spacing:-.01em;text-wrap:b
 .qhead{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}
 .qno{font:500 .8rem var(--mono);color:var(--muted);letter-spacing:.04em}
 .tag{font:500 .72rem var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:999px}
-.stem{font:600 1.08rem/1.45 var(--body);margin:0 0 16px;text-wrap:pretty}
+.stem{font:600 1.08rem/1.45 var(--body);margin:0 0 16px;text-wrap:pretty;white-space:pre-line}
+.qq{white-space:pre-line}
 .opts{display:grid;gap:8px}
 .opt{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:9px;padding:11px 12px;font:15px/1.45 var(--body);cursor:pointer}
 .opt:hover:not(:disabled){border-color:var(--accent)}
@@ -132,6 +134,7 @@ td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
 .chlist .rd{color:var(--ok)}
 .notes h2{font:700 1.45rem/1.2 var(--display);margin:0 0 4px;text-wrap:balance}
 .notes h3{font:600 .78rem var(--body);text-transform:uppercase;letter-spacing:.07em;color:var(--accent);margin:22px 0 6px}
+.notes ul.traps{background:var(--accent-soft);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:10px 14px 10px 30px;margin:0 0 14px}
 .notes ul{padding-left:1.2em;margin:6px 0}
 .notes li{margin:4px 0;line-height:1.55}
 .notes li::marker{color:var(--muted)}
@@ -319,6 +322,37 @@ blockquote.close cite{font-style:normal;font-size:.84rem;color:var(--muted)}
     </section>
 
     <section>
+      <h2>What the real paper feels like</h2>
+      <p class="lede">From a candidate who sat the exam in October 2026. The paper was harder than a recall drill suggests, because it tests whether you understand a rule, not just whether you have seen it.</p>
+      <div class="facts">
+        <div class="fact"><b>20 to 30</b><span>multi-statement questions: which is true, which is false</span></div>
+        <div class="fact"><b>Fewer than 10</b><span>questions needed any calculation</span></div>
+        <div class="fact"><b>Tweaks</b><span>e.g. what the numerator of a ratio stands for, not its value</span></div>
+      </div>
+      <div class="two">
+        <div>
+          <h3 style="font:700 1.05rem var(--display);margin:0 0 4px">How the traps work</h3>
+          <ul class="plain">
+            <li>A number nudged: 65% for 80%, 12 months for 24, 21 days for 30</li>
+            <li>A body swapped: trustees for the AMC, SEBI for AMFI, the sponsor for the trustees</li>
+            <li>A word slipped in or out: "only", "all", "except", "before"</li>
+            <li>Two related ideas confused: SD and beta, Sharpe and Treynor, SID and SAI</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font:700 1.05rem var(--display);margin:0 0 4px">How to prepare for it</h3>
+          <ul class="plain">
+            <li>Read the <b>Exam traps</b> box at the end of each chapter's notes</li>
+            <li>Work through the <b>Statement drill</b>: 196 questions in the paper's style</li>
+            <li>Judge every statement on its own before you look at the options</li>
+            <li>For each formula, know what the top and bottom of it measure</li>
+          </ul>
+          <div class="row" style="margin-top:10px"><button class="btn pri" data-go="stmt">Start the Statement drill</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
       <h2>From exam to your first client</h2>
       <p class="lede">The workbook (Chapter 6) sets out these steps for an individual distributor.</p>
       <ol class="steps">
@@ -361,7 +395,7 @@ blockquote.close cite{font-style:normal;font-size:.84rem;color:var(--muted)}
       <h2>How to use this site</h2>
       <div class="how">
         <div class="card"><h3>Learn</h3><p>One-line notes for every chapter, updated to the March 2026 workbook. Tick each chapter as you revise it.</p><button class="btn" data-go="learn">Open the notes</button></div>
-        <div class="card"><h3>Practise</h3><p>534 chapter questions with the answer and reason shown after each one.</p><button class="btn" data-go="practice">Practise a chapter</button></div>
+        <div class="card"><h3>Practise</h3><p>730 chapter questions with the answer and reason after each one, plus a Statement drill in the real paper's true/false style.</p><button class="btn" data-go="practice">Practise a chapter</button></div>
         <div class="card"><h3>Take mocks</h3><p>Five 100-question exams on a 2-hour timer, weighted like the real paper.</p><button class="btn" data-go="mock">Start Mock 1</button></div>
       </div>
     </section>
@@ -404,7 +438,7 @@ blockquote.close cite{font-style:normal;font-size:.84rem;color:var(--muted)}
 (function(){
 const PLAN = [
   ['ch1','Ch 1',8],['ch2','Ch 2',6],['ch3','Ch 3',4],['ch4','Ch 4',10],['ch5','Ch 5',10],['ch6','Ch 6',6],
-  ['ch7','Ch 7',8],['ch8','Ch 8',4],['ch9','Ch 9',15],['ch10','Ch 10',7],['ch11','Ch 11',7],['ch12','Ch 12',15],
+  ['ch7','Ch 7',8],['ch8','Ch 8',4],['ch9','Ch 9',15],['ch10','Ch 10',7],['ch11','Ch 11',7],['ch12','Ch 12',15],['stmt','Statement drill',0],
   ['mock1','Mock 1',0],['mock2','Mock 2',0],['mock3','Mock 3',0],['mock4','Mock 4',0],['mock5','Mock 5',0]
 ];
 const BANK = window.BANK || {}, NOTES = window.NOTES || [];
@@ -490,7 +524,7 @@ function renderHome(){
     return `<button data-ch="${id}" aria-label="${lab}, ${esc(n.title||'')}, ${w} marks"><span class="cn">${lab}</span><span class="nm">${esc(n.title||'')}</span><span class="br" aria-hidden="true"><i style="width:${w/max*100}%"></i></span><span class="mk2">${w}</span></button>`;}).join('');
   $('#syl').querySelectorAll('button').forEach(b=>b.onclick=()=>goLearn(b.dataset.ch));
   document.querySelectorAll('#v-home [data-go]').forEach(b=>b.onclick=()=>{const g=b.dataset.go;
-    if(g==='ch1') goLearn('ch1'); else if(g==='learn') location.hash='learn'; else if(g==='practice'){location.hash='practice';}
+    if(g==='ch1') goLearn('ch1'); else if(g==='learn') location.hash='learn'; else if(g==='practice'){location.hash='practice';} else if(g==='stmt'){open('stmt');location.hash='practice';}
     else if(g==='mock') goMock(); else if(g==='resume'){open(lastId);location.hash='practice';}});
 }
 
@@ -500,7 +534,7 @@ let tick=null;
 const sessKey=id=>'sess:'+id;
 function save(){
   if(!state.set) return;
-  store.set(sessKey(state.set.id),{order:state.order,ans:state.ans,i:state.i,done:state.done,mode:state.mode,
+  store.set(sessKey(state.set.id),{ver:state.set.ver||0,order:state.order,ans:state.ans,i:state.i,done:state.done,mode:state.mode,
     elapsed:elapsedNow(),limit:state.limit,onlyWrong:state.onlyWrong,score:state.score||null,updated:today()});
 }
 function elapsedNow(){return state.elapsed+(state.resumedAt?Date.now()-state.resumedAt:0)}
@@ -523,7 +557,7 @@ function open(id){
   const s=BANK[id]; if(!s) return;
   if(state.set&&state.set.id!==id){stopTick();save();}
   const saved=store.get(sessKey(id),null);
-  if(saved&&saved.order&&saved.order.every(k=>k<s.qs.length)){
+  if(saved&&saved.order&&saved.order.every(k=>k<s.qs.length)&&(saved.ver||0)===(s.ver||0)){
     stopTick();
     state={set:s,mode:saved.mode||state.mode,order:saved.order,ans:saved.ans||{},i:saved.i||0,done:!!saved.done,
       elapsed:saved.elapsed||0,resumedAt:0,limit:saved.limit||0,onlyWrong:saved.onlyWrong||null,score:saved.score,resumed:!saved.done&&Object.keys(saved.ans||{}).length>0,updated:saved.updated};
@@ -624,7 +658,7 @@ function renderResult(){
     return `<tr><td class="${p<70?'weak':''}">${esc(t)}</td><td class="n">${v.r}/${v.n}</td><td class="n">${p}%</td>${isMock?`<td>${p<70?`<button class="btn" data-learn="ch${v.c}" style="padding:4px 10px;font-size:.78rem">Revise Ch ${v.c}</button>`:''}</td>`:''}</tr>`;}).join('');
   const wrong=state.order.filter(k=>state.ans[k]!==state.set.qs[k].a);
   const items=wrong.map(k=>{const q=state.set.qs[k],a=state.ans[k];
-    return `<div class="item"><span class="tag">${esc(q.t)}</span><p><b>${esc(q.q)}</b></p>
+    return `<div class="item"><span class="tag">${esc(q.t)}</span><p class="qq"><b>${esc(q.q)}</b></p>
       <p class="muted">Your answer: ${a==null?'not answered':L[a]+'. '+esc(q.o[a])}</p>
       <p>Correct: <b>${L[q.a]}. ${esc(q.o[q.a])}</b></p><p class="note">${esc(q.e)}</p></div>`}).join('');
   const verdict=pct>=90?['pass','Excellent: 90% or above.']:pct>=50?['pass','Pass. Aim for 90% to be exam-safe.']:['fail','Below the 50% pass mark.'];

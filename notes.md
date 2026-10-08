@@ -5,20 +5,22 @@
 
 Target 90 of 100: the exam is 100 one-mark questions in 2 hours, pass mark 50, no negative marking, so never leave a question blank. These notes follow the March 2026 revised workbook, which reflects the SEBI (Mutual Funds) Regulations, 2026 and the new expense limits from 1 April 2026.
 
+**What the real paper feels like.** A candidate who sat the exam in October 2026 found it harder than recall drills suggest. About **20 to 30 questions** gave two or three statements and asked which is true or which is false. **Fewer than 10** needed any calculation. Several questions were "tweaks" that test whether you understand a concept, such as asking what the **numerator** of a ratio represents rather than its value. Learn each rule well enough to spot a near-miss: a swapped number, a swapped body (trustees vs AMC), or an added "only". Each chapter now ends with **Exam traps**, and Practice has a **Statement drill**.
+
 | Unit | Chapter | Exam weight | Practice Qs |
 | --- | --- | --- | --- |
-| 1 | Investment Landscape | 8 | 40 |
-| 2 | Concept and Role of a Mutual Fund | 6 | 30 |
-| 3 | Legal Structure of Mutual Funds | 4 | 20 |
-| 4 | Legal and Regulatory Framework | 10 | 50 |
-| 5 | Scheme Related Information | 10 | 50 |
-| 6 | Fund Distribution and Channel Management | 6 | 30 |
-| 7 | NAV, TER and Pricing of Units | 8 | 40 |
-| 8 | Taxation | 4 | 20 |
-| 9 | Investor Services | 15 | 75 |
-| 10 | Risk, Return and Performance of Funds | 7 | 35 |
-| 11 | Mutual Fund Scheme Performance | 7 | 35 |
-| 12 | Mutual Fund Scheme Selection | 15 | 75 |
+| 1 | Investment Landscape | 8 | 56 |
+| 2 | Concept and Role of a Mutual Fund | 6 | 52 |
+| 3 | Legal Structure of Mutual Funds | 4 | 43 |
+| 4 | Legal and Regulatory Framework | 10 | 75 |
+| 5 | Scheme Related Information | 10 | 68 |
+| 6 | Fund Distribution and Channel Management | 6 | 41 |
+| 7 | NAV, TER and Pricing of Units | 8 | 58 |
+| 8 | Taxation | 4 | 30 |
+| 9 | Investor Services | 15 | 101 |
+| 10 | Risk, Return and Performance of Funds | 7 | 53 |
+| 11 | Mutual Fund Scheme Performance | 7 | 53 |
+| 12 | Mutual Fund Scheme Selection | 15 | 100 |
 
 Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the paper sits in four chapters.
 
@@ -89,6 +91,17 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - Passive breach rebalancing: **30 business days**; excludes index funds/ETFs; **not applicable to overnight funds**.
 - DIY hidden costs: **time + mistakes**; 2% fee on Rs 10 lakh = **\~Rs 20,000/yr**.
 - A mutual fund is a **different way of investing**, not a different product.
+
+### Exam traps
+
+- An exit penalty hurts **returns**, not liquidity.
+- **Market-wide** risk cannot be diversified; only company-specific risk can.
+- Ability to take risk = **finances + horizon**; willingness = **psychology**, not finances.
+- Deciding first and seeking proof later = **confirmation** bias; 'known devil vs unknown angel' = **familiarity** bias; over-allocating after a bull run = **recency** bias.
+- A self-occupied home is an **expense**, not an investment.
+- REITs, InvITs and REMF = **Real Estate**, not equity; PPF, SSY, SCSS, POMIS and endowment policies = **Fixed Income**; coins, art, stamps = **Others**.
+- **Commodities** are the only asset class with no intermittent cash flow, not fixed income.
+- Credit risk is measured by **rating and spreads**; variance, SD, beta and modified duration measure **volatility**.
 
 ## Chapter 2 – Concept and Role of a Mutual Fund (6 marks)
 
@@ -166,6 +179,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - Monthly SIP flow: **Rs 8,055 cr** (Mar 2019) to **Rs 32,087 cr** (Mar 2026); SIP assets **Rs 15.11 lakh cr** (Mar 2026).
 - MF share of household financial investment: **10% → 14%** (2016–18); bank deposits **71% → 65%**.
 
+### Exam traps
+
+- Unit capital = units x **face value**; AUM = units x **NAV**.
+- Close-ended schemes are compulsorily listed **except ELSS**.
+- Credit risk fund: 65% in **AA and below** (AA+ excluded); corporate bond fund: 80% in **AA+ and above**.
+- Mid cap = **101-250**, not 101-200; small cap = **251 onwards**, by full market cap.
+- Focused fund: max **30** stocks, not 20, with 80% equity.
+- Large cap, dividend yield, value, contra, sectoral, thematic: **80%**; mid cap, small cap and flexi cap: **65%**.
+- ELSS: **80%** equity, not 65%, with a **3-year** lock-in; 80C deduction in the **Old** Tax Regime only.
+- Index funds, ETFs and FoFs: **95%**, not 80%.
+- Ultra-Short-Term = **3-6 months**; Ultra Short to Short Term (old low duration) = **6-12 months**.
+- Balanced Advantage = **dynamic** equity/debt; Balanced Hybrid = 40-60% equity with **no arbitrage**.
+
 **Workbook sample answers:** 1-b (NAV), 2-c (economies of scale), 3-c (close-ended), 4-c (no limit if overlap <50%), 5-b (equity down, debt up).
 
 ## Chapter 3 – Legal Structure of Mutual Funds (4 marks)
@@ -216,6 +242,17 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - **EOP Category 2**: registers as a **stock broker** in the exchange EOP segment, **agent of investor**.
 - **AMFI** = association of all AMCs; issues **ARN**; can **cancel ARN** for code violations.
 - **AMFI is neither a regulator nor an SRO**.
+
+### Exam traps
+
+- Custodian is appointed by the **trustees**, not the AMC; the RTA and collecting banker are appointed by the **AMC**.
+- Trust deed is between the **sponsor and trustees**; the Investment Management Agreement is between the **trustees and AMC**.
+- Sponsor eligibility uses **5 years** throughout (experience, net worth, profit), with average profit **≥ Rs 10 crore**.
+- Trustee board: **two-thirds** independent; AMC board: **50%** non-associate.
+- AMC net worth **≥ Rs 50 crore**, maintained continuously, is the **sponsor's** responsibility.
+- AMC removal: **majority of trustees** or **75% of unitholders**; any change needs SEBI + unitholder approval.
+- Fund accountant needs **no SEBI registration**; the RTA **must register** with SEBI but appointing one is **optional**.
+- **AMFI** is neither a regulator nor an SRO; CRISIL and ICRA are appointed by **AMFI**, not SEBI.
 
 **Workbook sample answers:** 1-c (unitholders), 2-b (custodian), 3-a (association of AMCs), 4-c (CRISIL and ICRA), 5-a (AMC).
 
@@ -305,6 +342,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - Can't call yourself **adviser, wealth manager or consultant** unless a **SEBI RIA**.
 - Tagline **"AMFI-registered Mutual Fund Distributor"**, font **≥12** in print.
 
+### Exam traps
+
+- Ad rules are in the **Fifth Schedule**; code of conduct for AMCs and trustees is the **Fourth**; investment restrictions are the **Sixth**.
+- AMC resolves complaints within **21 calendar days**, not 30.
+- Unclaimed money: within 3 years at **prevailing NAV**; after 3 years at the **NAV at the end of year 3**; liquid plan fee cap **0.50%**, not 1%.
+- Celebrity endorsement is **industry-level only**, with prior SEBI approval, paid from the **investor education** pool; never for a scheme or AMC brand.
+- Sue the **trustees** for breach of trust, not the trust (a notional entity).
+- Ad performance: under 6 months **none**; 6 to 12 months **simple annualised** 6-month return, not CAGR.
+- Additional benchmark: arbitrage and debt up to 1 year = **1-yr T-bill**; conservative hybrid and equity savings = **10-yr GoI**, not Sensex/Nifty.
+- AGNI is for **intermediaries**; the Fourth Schedule code is for **AMCs and trustees**.
+- Gold and silver ETFs are **exempt** from the Sixth Schedule; every other investment follows it.
+- 2008 reform banned the name **"liquid plus"**, not "liquid"; segregated portfolios came after the **2018** crisis; PRC uses **Macaulay** duration.
+
 **Workbook sample answers:** 1-a (SEBI), 2-a (True), 3-a (industry-level celebrity), 4-d (ten).
 
 ## Chapter 5 – Scheme Related Information (10 marks)
@@ -374,6 +424,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - **Factsheet** is **not mandatory** (voluntary); publishing it **monthly** is an **AMFI best practice**; SEBI disclosure rules still apply; shows PE, beta, SD, Sharpe, rating profile, maturity, duration.
 - MFs may use derivatives **to hedge**, but **can't take open derivative positions**.
 
+### Exam traps
+
+- SEBI gives **observations** on the SID; it does **not approve** or certify it (documents are vetted, not approved).
+- **One SAI** serves all schemes of a fund; the **SID** is per scheme; legally the SAI is part of the SID.
+- Drafts go on **SEBI's** website; final documents on **AMFI's** website and the MF's own site.
+- Risk-o-meter is reviewed **monthly**; commodity risk score is reviewed **quarterly** on **15 years** of prices.
+- SAI update: within **3 months** of FY end; SID and KIM: within **1 month** of each half-year.
+- Annual report within **4 months** of FY end; unaudited half-yearly results within **1 month**.
+- Debt portfolio: **fortnightly, within 5 days**, plus yield; all schemes: monthly and half-yearly within **10 days**.
+- Low = **Irish Green**, Low to Moderate = **Chartreuse**, Moderate = Neon Yellow, Moderately High = **Caramel**, High = Dark Orange, Very High = Red.
+- Factsheet is **voluntary**; monthly publication is an **AMFI best practice**, not a SEBI mandate.
+- **Fees** hit the NAV; **loads** are paid by the investor at exit. BER change needs **3 working days'** notice; BER sits under **Regulation 66(7)**, not 22(9)(c).
+
 **Workbook sample answers:** 1-d (SID + SAI), 2-c (SEBI format), 3-b (six months), 4-b (AMC), 5-a (factsheet).
 
 ## Chapter 6 – Fund Distribution and Channel Management (6 marks)
@@ -425,6 +488,17 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - Investor changes distributor: **no commission to either** the old or new distributor, **except** when the old distributor **voluntarily ceased business**.
 - Investor-initiated ARN change: the AMC **may** pay trail to the new distributor after a **12-month cooling-off** period.
 - Distributor-initiated code change allowed **only** for: change of **name/legal status**, **merger/acquisition within group**, **family AUM consolidation**, **transfer of business**; **entire AUM**, to a **valid KYD ARN**, **old ARN surrendered**.
+
+### Exam traps
+
+- **Multinational banks** entered MF distribution first; **PSU banks** give non-urban reach.
+- On exchanges, **DPs can only process redemptions**; exchanges are order-routing only, **don't replace RTAs**, and the **AMC** (not the exchange) is responsible for settlement.
+- KYD biometric = **right index finger** at a CAMS PoS; the new cadre (V-B) is **exempt** from KYD biometrics.
+- Employees get an **EUIN** under the firm's ARN, not a separate ARN; ARN minimum age is **18**.
+- Due diligence triggers on **any one** of: >20 locations, >Rs 100 cr AUM, >Rs 1 cr commission industry-wide, >Rs 50 lakh from **one AMC**.
+- Investor changes distributor: **no commission to either**, except when the old distributor voluntarily ceased business; investor-initiated ARN change → trail to new after a **12-month** cooling-off.
+- AUM transfer to a nominee: investors get **15 days**, not 30, to object; the nominee needs **valid ARN + KYD** for an AUM transfer but **no ARN** just to receive commission.
+- Additional commission is **on top of** trail, paid from the **2 bps** investor-education money, with **no dual incentive** for the same investor.
 
 **Workbook sample answers:** 1-b (False; institutions too), 2-b (NISM), 3-a (True).
 
@@ -509,6 +583,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - **Segregated portfolio**: **no management fee**; other TER only **pro-rata on recovery**; NAV declared **daily**.
 - Unrated debt can be segregated **only on actual default** (issuer with no rated debt).
 
+### Exam traps
+
+- If the fair valuation principles conflict with the Valuation Guidelines, the **principles** prevail, not the guidelines.
+- The valuation policy is approved by the **AMC Board**, not the trustees, and reviewed by an independent auditor at least **once a year**.
+- No trade for **30 days** = non-traded; non-traded equity is valued with an illiquidity **discount**, not a premium.
+- Gold ETF: LBMA **AM** fixing at **995.0** fineness (USD per troy ounce); Silver ETF: LBMA AM fixing at **999.0**.
+- NAV deducts liabilities **other than to unitholders**; net assets **include** unrealised gains.
+- Issuing units below NAV **lowers** NAV for existing investors; redeeming below NAV **raises** it.
+- Distributable surplus: valuation **gains ignored**, valuation **losses deducted**.
+- **Trustees** decide the IDCW amount and record date, not the AMC; notice within **1 day**, record date **5 calendar days** from notice.
+- Close-ended / interval TER: equity **1.00%**, others **0.80%**; index fund / ETF **0.90%**.
+- AT1 deemed maturity = **100 years** from issue; AT2 = **contractual** maturity; AT1 valued on yield to **call**, not maturity.
+
 **Workbook sample answers:** 1-a (SAI), 2-b (Rs 10.20), 3-a (0.90%; the workbook misprints it as "90 percent"), 4-c (distributable surplus).
 
 ## Chapter 8 – Taxation (4 marks)
@@ -553,6 +640,17 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - From **1 April 2026**: cost = **base expense ratio + brokerage (within limits) + statutory levies (e.g. GST)**. BER = advisory fees + other expenses + brokerage commission, **excluding statutory levies** and transaction cost; nothing else may be charged except **exit load**.
 - **GST on exit load** is deducted **from the load** before crediting the scheme.
 - **GST on distributor commission** can't be charged to the scheme.
+
+### Exam traps
+
+- A FoF investing in equity MFs is **non-equity** for tax, not equity-oriented; equity-oriented = **more than 65%** in **listed Indian** equity.
+- Hybrids with 35-65% domestic equity and other MFs (FoFs, international) turn long-term after **24 months**, not 12; equity funds after **12 months**.
+- Grandfathering cut-off is **31 Jan 2018**; cost = **higher** of actual cost or 31 Jan 2018 NAV, not lower.
+- Stamp duty: **0.005%** on issue, **0.015%** on transfer, from **1 Jul 2020**; units are allotted on the amount **after** stamp duty.
+- STCL sets off against **STCG or LTCG**; LTCL **only against LTCG**; neither against salary; carry forward **8 years**.
+- STT applies only on **sale/redemption** of **equity-oriented** funds and is paid by the **seller**; none on purchase, none on debt funds.
+- NRI TDS is at the **lower** of the IT Act rate or DTAA rate, not the higher; residents have **no TDS** on redemption.
+- GST on **management fee** is **over and above** TER; GST on other fees and brokerage is **within** TER; GST on distributor commission can't be charged to the scheme.
 
 **Workbook sample answers:** 1-b (MF income exempt), 2-a (multi-cap attracts STT).
 
@@ -714,6 +812,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - **DigiLocker** will hold MF statements and has its own **nominee** access.
 - **Voluntary lock-in / debit freeze** (SEBI, **March 2026**): investors can freeze demat and non-demat folios so **no units can be debited** until unlocked; first offered by RTAs on **MF Central**.
 
+### Exam traps
+
+- Late NFO refund interest at **15% p.a.** is paid by the **AMC**, not the scheme.
+- NFO stays open **min 3 working days, max 15 days**; **ELSS** is exempt from the maximum, not the minimum.
+- Only **open-ended** NFOs have a re-opening date (within **5 business days of allotment**); close-ended have none.
+- IDCW reinvestment is at the **ex-dividend** NAV, not the cum-dividend NAV; the reinvested amount is still **taxed at slab**.
+- Bonus **1:3** = **1** free unit for every **3** held, not 3 for 1; value is unchanged.
+- Liquid/overnight purchase cut-off is **1:30 pm**; redemption cut-off is **3 pm** for all, with overnight online at **7 pm**.
+- Instant Access Facility = the **lower** of Rs 50,000 or 90% of value, not the higher.
+- UBO: company **>25%**; partnership/body of individuals **>15%**; trust **≥15%**; not for listed companies.
+- Time stamp is at the **OPoA**, not when the distributor receives the form.
+- Nominee holds units **in trust for legal heirs**; a surviving joint holder takes them as **owner**, and ranks **above** the nominee.
+
 **Workbook sample answers:** 1-a (ex-dividend), 2-b (bonus free), 3-c (foreign investors after KYC), 4-b (guardian), 5-d (5), 6-c (both), 7-d (any of the above), 8-a (SIF).
 
 ## Chapter 10 – Risk, Return and Performance of Funds (7 marks)
@@ -818,6 +929,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - Workbook example: total NAV **1,000.1227** = main **876.2427** + segregated **123.88**.
 - Mitigants: **longer holding** (**10 yrs = almost no negative returns** historically); **match holding period to portfolio maturity**.
 
+### Exam traps
+
+- **SD** = total risk (debt and equity); **beta** = systematic risk only (equity only).
+- **Systematic** risk is non-diversifiable (e.g. inflation); **unsystematic** is diversifiable (e.g. a strike); investors are rewarded only for **systematic** risk.
+- Annualise SD with **√52** weekly, **√12** monthly, **√252** daily, not 52, 12 or 252.
+- **Technical** analysis suits the short term and timing; **fundamental** analysis suits the long term.
+- Dividend yield **falls** in bull markets and **rises** in bear markets.
+- Rates expected up: **shorten** duration or buy floaters; rates expected down: buy **long** duration.
+- Credit spread = corporate yield − **gilt** yield, not coupon − YTM.
+- CP: up to **1 year**; CDs: banks **7 days–1 year**, FIs **1–3 years**.
+- Gating only in **market-wide** crises, max **10 working days in any 90 days**; never for one bad security.
+- Weaker rupee = **higher** gold fund return; lower LTV = **safer** securitised pool.
+
 **Workbook sample answers:** 1-a (True), 2-c (technical), 3-c (12.5%), 4-a (variance).
 
 ## Chapter 11 – Mutual Fund Scheme Performance (7 marks)
@@ -868,6 +992,19 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - **Discrete annual returns** show **consistency** across market conditions.
 - Factsheet macro readings: high **fiscal deficit** pushes **interest rates up**; **inflation** above comfort brings **monetary tightening**; low **global rates** pull **flows into emerging markets**; **oil** prices move the **currency**.
 - **AMFI website** has performance data for **all schemes**; data vendors include **Morningstar and Value Research**.
+
+### Exam traps
+
+- **Sharpe** divides by **SD** (total risk); **Treynor** divides by **beta** (systematic risk); both share the numerator (scheme return − T-bill return).
+- Information Ratio = excess return over the **Tier-1 benchmark** ÷ SD of that excess return, not (scheme return − T-bill return).
+- **Tier 1 = category**, **Tier 2 = fund manager's style**, not the other way round.
+- TRI since **1 Feb 2018**; two-tier benchmarks effective **1 Jan 2022** (circular Oct 2021); debt Tier-1 on PRC from **1 Apr 2022**.
+- **Si-Bex 1–3 yrs**, **Mi-Bex 3–7 yrs**, **Li-Bex >7 yrs**.
+- IR is the **only mandatory** risk-adjusted measure, disclosed **daily** on AMC and AMFI sites, not Sharpe and not monthly.
+- Factsheet is **monthly but not mandatory**; the SID (with performance) is updated **twice a year**.
+- Single-fund FoF uses the **underlying's** benchmark; multi-fund FoF uses a **broad market index**.
+- **Lower** tracking error = more consistent outperformance; an index fund's tracking error is ideally **zero**.
+- Benchmark is chosen by the **AMC with the trustees**, never on **past returns**; a change must be justified and documented.
 
 **Workbook sample answers:** 1-d (Sharpe), 2-d (past returns), 3-a (TRI), 4-b (tracking error).
 
@@ -941,5 +1078,18 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - Don't: **chase past performance**.
 - Code of conduct for AMCs and trustees = **Fourth Schedule** (Appendix 1): **equitable treatment** of all unitholder classes (favouring one set is not fair), no excessive concentration with brokers or **few investors**.
 - Regulated entities and their agents (incl. **MFDs**) must show their **registered name and registration number** on their **social media home page** and at the **start of every video/content**.
+
+### Exam traps
+
+- Equity risk is **lowest in large cap**, then large & mid, multi, mid, and **highest in small cap**; large & mid is less risky than multi cap, not more.
+- Credit risk rises **gilt → banking & PSU → corporate bond → credit risk fund**; banking & PSU is below corporate bond, not above.
+- Concentration risk: diversified < focused < **thematic** < **sector**; thematic sits between diversified and sector, not above sector.
+- Hybrid risk starts at **arbitrage** (lowest), not conservative, and ends at **aggressive**, which is above balanced.
+- Long gilt is a satellite bet when rates are expected to **fall**; short duration (1-3 yrs) is used when rates are expected to **rise**.
+- Liquid funds are for parking **up to 91 days**, not longer; holding them longer wastes return.
+- **Growth** outperforms in **bull** markets; **value** outperforms in **falling** markets or over a long period, not in bull runs.
+- A **stronger** dollar helps an Indian investor in an international fund, not a weaker one; international funds are **satellite**, not core.
+- Turnover numerator = **lower** of purchases or sales, not the higher; 200% turnover = about **6 months** holding (too short for value, fine for momentum).
+- Look-back: equity **at least 5 yrs**, long-term debt **at least 3 yrs**; target top **3-5** in small categories, top **10-15%** in big ones, not the reverse.
 
 **Workbook sample answers:** 1-d (gilt), 2-a (risk-o-meter), 3-b (False), 4-a (multi-cap), 5-a (FMPs), 6-a (True), 7-c (both).
