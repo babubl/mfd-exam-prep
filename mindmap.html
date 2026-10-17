@@ -7,31 +7,28 @@
 <meta name="description" content="Interactive mind maps for all 12 chapters of the NISM Series V-A Mutual Fund Distributors workbook (March 2026): asset classes, SEBI categories, MF structure, regulations, disclosures, distribution, NAV and TER, taxation, investor services, risk and return, performance and scheme selection.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
 /* Layout: two-sided tree from the chapter title outward; each first-level branch keeps its own hue down to the leaves. Outline view for phones and revision. */
 :root{
-  --bg:#F3F5F7; --surface:#FFFFFF; --sunk:#E9EDF1; --ink:#15202B; --muted:#5A6672; --line:#C9D1D9;
-  --accent:#0E5A96; --accent-ink:#FFFFFF; --accent-soft:#E1ECF6;
-  --b1:#0E5A96; --b2:#7A3E9D; --b3:#1C7A4E; --b4:#B4531F; --b5:#A1295C; --b6:#2F6F7E; --b7:#8A6A00; --b8:#4B5BB0; --b9:#5A6672;
-  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
-  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-}
+  --bg:#F4FAF2; --surface:#FFFFFF; --sunk:#E8F3E5; --ink:#0E1A10; --muted:#55645A; --line:#D2E2CE;
+  --accent:#1B7F36; --accent-ink:#FFFFFF; --accent-soft:#E2F5DE;
+  --b1:#1B7F36; --b2:#7A3E9D; --b3:#0E5A96; --b4:#B4531F; --b5:#A1295C; --b6:#2F6F7E; --b7:#8A6A00; --b8:#4B5BB0; --b9:#5A6672;
+  --display:"Inter","Segoe UI",system-ui,sans-serif;
+  --body:"Inter","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; --brand:#2F9E4A; --brand-ink:#FFFFFF; --head:#000000; --head-ink:#FFFFFF; --cell:#F1FCEC; --grid:#B7C8B3;}
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     color-scheme:dark;
-    --bg:#0E141A; --surface:#161F28; --sunk:#1D2833; --ink:#E4EAF0; --muted:#95A2AF; --line:#34414F;
-    --accent:#5DA8E6; --accent-ink:#0B1621; --accent-soft:#16304A;
-    --b1:#5DA8E6; --b2:#C08BE0; --b3:#4FC48C; --b4:#F0995E; --b5:#EC7FAE; --b6:#5FC1D3; --b7:#E0C04A; --b8:#98A6F2; --b9:#A4B0BC;
-  }
+    --bg:#0B120D; --surface:#121C14; --sunk:#19271C; --ink:#E5F0E6; --muted:#98AC9C; --line:#26372A;
+    --accent:#55C972; --accent-ink:#06130A; --accent-soft:#143A1F;
+    --b1:#55C972; --b2:#C08BE0; --b3:#5DA8E6; --b4:#F0995E; --b5:#EC7FAE; --b6:#5FC1D3; --b7:#E0C04A; --b8:#98A6F2; --b9:#A4B0BC; --brand:#2E9C48; --brand-ink:#FFFFFF; --head:#000000; --head-ink:#FFFFFF; --cell:#13231A; --grid:#2F4433;}
 }
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --bg:#0E141A; --surface:#161F28; --sunk:#1D2833; --ink:#E4EAF0; --muted:#95A2AF; --line:#34414F;
-  --accent:#5DA8E6; --accent-ink:#0B1621; --accent-soft:#16304A;
-  --b1:#5DA8E6; --b2:#C08BE0; --b3:#4FC48C; --b4:#F0995E; --b5:#EC7FAE; --b6:#5FC1D3; --b7:#E0C04A; --b8:#98A6F2; --b9:#A4B0BC;
-}
+  --bg:#0B120D; --surface:#121C14; --sunk:#19271C; --ink:#E5F0E6; --muted:#98AC9C; --line:#26372A;
+  --accent:#55C972; --accent-ink:#06130A; --accent-soft:#143A1F;
+  --b1:#55C972; --b2:#C08BE0; --b3:#5DA8E6; --b4:#F0995E; --b5:#EC7FAE; --b6:#5FC1D3; --b7:#E0C04A; --b8:#98A6F2; --b9:#A4B0BC; --brand:#2E9C48; --brand-ink:#FFFFFF; --head:#000000; --head-ink:#FFFFFF; --cell:#13231A; --grid:#2F4433;}
 *{box-sizing:border-box}
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-inline:16px;padding-block:16px 24px;display:flex;flex-direction:column;gap:12px}

@@ -106,78 +106,186 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 ## Chapter 2 – Concept and Role of a Mutual Fund (6 marks)
 
 - You invest **through** a mutual fund, not **in** one; it is a **different way of investing**, not a different product.
-- A mutual fund is set up as a **trust**.
-- Profits and losses belong **only to unitholders**; everyone else earns a **fee or commission**.
-- MFs act as **market stabiliser**: in **2022 and 2025** MF inflows countered heavy **FPI** selling.
-- Each separate pool of money = a **scheme**, with a pre-announced **investment objective**.
-- Investment policy = **asset allocation + investment style**, disclosed in the **SID**.
-- Face value = typically **Rs 10** (can differ, e.g. **Rs 100**); unit capital = **units × face value**.
-- AUM = **NAV × units outstanding**; AMCs are ranked by **AUM**.
-- Dividend option is now **IDCW** (Income Distribution cum Capital Withdrawal).
-- NAV = **net realisable value per unit** if the scheme were liquidated.
-- **Mark to market** = valuing each security at market price, **daily**.
-- Recurring expenses are charged as a **% of AUM** and **lower the NAV**.
-- Diversification from as little as **Rs 500**.
-- Transparency sources: **SID, SAI, KIM + portfolio disclosures + NAV**; available to **prospective investors** too.
-- **Tax deferral**: MFs don't pay tax on income; growth option defers tax.
-- **ELSS**: deduction up to **Rs 1,50,000** under **Sec 80C**, **Old Tax Regime** only.
-- Systematic plans: **SIP** (invest), **SWP** (withdraw), **STP** (transfer).
-- Limitations: **no customisation** (PMS gives it), **choice overload**, **no control over costs**, **no guaranteed returns**.
-- SEBI **categorisation** was the answer to choice overload.
+- A mutual fund is set up as a **trust**. Profits and losses belong **only to unitholders**; everyone else earns a **fee or commission**.
+- Each separate pool of money = a **scheme**, with a pre-announced **investment objective**. Investment policy = **asset allocation + investment style**, disclosed in the **SID**.
+- MFs act as a **market stabiliser**: in **2022 and 2025** MF inflows countered heavy **FPI** selling.
 - MF is a **pass-through vehicle**; the fund manager controls only **his own skill**, not the market or securities.
-- **Open-ended**: buy/sell any time after NFO; **unit capital keeps changing**.
-- **Close-ended**: buy only in **NFO**; **fixed maturity**; **compulsorily listed** (except **ELSS**); **unit capital stays fixed**.
-- Close-ended units usually trade at a **discount to NAV** (buyer has the bargaining power).
-- **Interval fund**: close-ended, opens at intervals; **listed**; transaction period **min 2 days**; interval period **15 days** (workbook wording).
-- **ETFs** trade all day at multiple prices, need a **demat account**, and track NAV closely; **Silver ETF** now allowed.
-- **Active**: higher cost, aims to beat the market. **Passive/index**: tracks index, **low cost**, no fund-manager choice.
-- **MF Lite**: **Chapter X** of the MF Regulations 2026; a lighter framework for **passive** schemes only (index funds, ETFs, FoFs).
-- SEBI categorisation circular (**2026**): **5 categories**: Equity **13**, Debt **17**, Hybrid **7**, **Life Cycle Funds**, Other **2**.
-- Market cap: **Large 1–100**, **Mid 101–250**, **Small 251+** by **full market cap**.
-- Multi cap: equity **≥75%**, with **≥25% each** in large, mid, small.
-- Large cap **80%**; Large & Mid **35% + 35%**; Mid cap **65%**; Small cap **65%**.
-- Dividend yield **80%**.
-- Value **and** Contra are now **separate** categories, **80%** each; an AMC can offer **both** if portfolio overlap is **≤50%**.
-- Focused: **max 30 stocks**, **80%** equity.
-- **Sectoral** and **Thematic** are **separate** categories, **80%** each; overlap with other sectoral/thematic and other equity schemes **≤50%** (**except large cap**).
-- **ELSS – Tax Saver Fund**: **80%** + **3-year lock-in**; Flexi cap **65%**, any mix.
-- Equity schemes may put the **residual** in money market, **gold and silver** instruments and **InvITs**.
-- Overnight = **1 day**; can put **≤5%** in G-secs/T-bills (**≤30 days**) for margin.
-- Liquid = **up to 91 days**; Money market = **up to 1 year**.
-- New debt names (Macaulay duration): **Ultra-Short-Term** **3–6 m**; **Ultra Short to Short Term** (was low duration) **6–12 m**; **Short Term** **1–3 y**; **Medium Term** **3–4 y**; **Medium to Long Term** **4–7 y**; **Long Term** **>7 y**; **Dynamic Term** = **any**.
-- Corporate bond **80% in AA+ and above**; Credit risk **65% in AA and below** (AA+ excluded).
-- Credit-risk scheme names can't stress only return (**no "high yield", "credit opportunities"**).
-- **Banking and PSU Debt** **80%**; Gilt **80%** G-secs; **10-year constant maturity Gilt** **80%**, duration **= 10 yrs**; **Floating Interest Rates Fund** **65%**.
-- New **Sectoral (debt) Fund**: **80%** in one sector, **only AA+ and above**; sectors: **Financial Services, Energy, Infrastructure, Housing, Real Estate**.
-- Conservative hybrid: debt **75–90%**, equity **10–25%**.
-- Balanced hybrid: equity **40–60%**, **no arbitrage**. Aggressive hybrid: equity **65–80%**. Category is now "Balanced Hybrid **and** Aggressive Hybrid".
-- Balanced Advantage = **dynamic** equity/debt.
-- Multi asset: **≥3 asset classes**, **≥10% each**; **foreign securities are not a separate class**.
-- Arbitrage: **65%** equity; debt only in **G-secs under 1 year** and **G-sec repo**.
-- Equity savings: **65%** equity + **10%** debt; **net equity 15–40%**.
-- Hybrid schemes may put the **residual** in **InvITs** (not arbitrage funds), **ETCDs, Gold and Silver ETFs**.
-- **Life Cycle Fund**: **glide path** across equity, debt, InvITs, ETCDs, gold and silver ETFs (equity falls, debt rises as maturity nears); tenure **5–30 years** in **multiples of 5**; max **6** open for subscription per MF at a time.
-- Workbook illustration (15-year Life Cycle Fund), equity / debt / gold-silver-ETCD-InvIT: **10–15 yrs to maturity 65–80 / 5–25 / 0–10**; **5–10 yrs 50–65 / 5–25**; **3–5 yrs 35–50 / 25–50**; **1–3 yrs 20–35 / 25–65**; **<1 yr 5–20 / 25–65**.
-- Index/ETF **95%** in index securities; FoF **95%** in underlying fund.
-- One scheme per category, **except**: index funds/ETFs on different indices, FoFs with different underlyings, sector/thematic on different sectors.
-- **FMP**: close-ended debt; portfolio matches maturity; returns clearer but **not guaranteed**.
-- **Target Maturity Fund**: matures on a set date (**2–14 years**), **listed**, reduces **reinvestment risk**.
-- **Capital protection fund**: close-ended hybrid; e.g. **Rs 90 in debt grows to Rs 100**, rest in **equity derivatives**.
-- **IDF**: close-ended, **≥90%** in infra debt; IDF-MF sponsored by **banks and NBFCs**; IDF-NBFC by **banks and IFCs** only.
-- **REMF**: invests in real estate assets in cities named in the SEBI circular of **2 May 2008**; **close-ended, listed**.
-- **REITs/InvITs are not MF schemes**. REIT assets **≥Rs 500 cr**, offer **≥Rs 250 cr**; InvIT offer **≥Rs 250 cr**, assets **≥Rs 500 cr**; minimum lot **Rs 10,000–15,000**, traded lot **1 unit**.
-- **ESG** sits under **thematic** equity; 6 strategies: exclusion, integration, best-in-class, impact, sustainable objectives, transition.
-- **Smart beta**: index-based but **not market-cap weighted** (e.g. equal weight).
-- **Quant fund**: model-driven, **removes the human element**.
-- **SIF**: fills the gap **between MF and PMS**; minimum **Rs 10 lakh** across strategies **of the same AMC**.
-- SIF equity: Long-Short **≥80%** equity; Ex-Top 100 **≥65%**; Sector Rotation **≥80%**, **max 4 sectors**; redemptions **daily or less often**.
-- SIF debt (interval): Sectoral debt **≥2 sectors**, **max 75%** per sector; redemptions **weekly or less often**.
-- SIF hybrid (interval): Hybrid Long-Short **≥25% each** in equity and debt; redemptions **twice a week or less often**.
+
+#### Key terms
+
+| Term | What it means |
+| --- | --- |
+| Face value | Typically **Rs 10** (can differ, e.g. **Rs 100**) |
+| Unit capital | **Units × face value** |
+| AUM | **NAV × units outstanding**; AMCs are ranked by **AUM** |
+| NAV | **Net realisable value per unit** if the scheme were liquidated |
+| Mark to market | Valuing each security at market price, **daily** |
+| IDCW | Old "dividend" option, now **Income Distribution cum Capital Withdrawal** |
+| Recurring expenses | Charged as a **% of AUM**; they **lower the NAV** |
+
+#### Advantages and limitations
+
+| Advantages | Limitations |
+| --- | --- |
+| Diversification from as little as **Rs 500** | **No customisation** (PMS gives it) |
+| Transparency: **SID, SAI, KIM + portfolio + NAV**, open to **prospective investors** too | **Choice overload** (SEBI **categorisation** was the answer) |
+| **Tax deferral**: MFs don't pay tax on income; growth option defers tax | **No control over costs** |
+| **ELSS**: up to **Rs 1,50,000** under **Sec 80C**, **Old Tax Regime** only | **No guaranteed returns** |
+| **SIP** (invest), **SWP** (withdraw), **STP** (transfer) | |
+
+#### Open-ended, close-ended, interval and ETF
+
+| Structure | Buying and selling | Key points |
+| --- | --- | --- |
+| Open-ended | Buy or sell **any time after the NFO** | Unit capital **keeps changing** |
+| Close-ended | Buy **only in the NFO**; exit through the exchange | **Fixed maturity**; **compulsorily listed** (**except ELSS**); unit capital **fixed**; usually trades at a **discount to NAV** (the buyer has the bargaining power) |
+| Interval | Close-ended, but **opens at intervals** | **Listed**; transaction period **min 2 days**; interval period **15 days** (workbook wording) |
+| ETF | Trades **all day** at multiple prices; needs a **demat account** | Tracks NAV closely; **Silver ETF** now allowed |
+
+#### Active vs passive
+
+| | Active | Passive (index / ETF) |
+| --- | --- | --- |
+| Aim | Beat the market | Track the index |
+| Cost | Higher | **Low** |
+| Fund manager's choice | Yes | No |
+
+**MF Lite** = **Chapter X** of the MF Regulations 2026: a lighter framework for **passive** schemes only (index funds, ETFs, FoFs).
+
+#### SEBI categorisation (2026 circular)
+
+| Category | Number of schemes |
+| --- | --- |
+| Equity | **13** |
+| Debt | **17** |
+| Hybrid | **7** |
+| Life Cycle Funds | New category |
+| Other | **2** |
+
+- Market cap: **Large 1–100**, **Mid 101–250**, **Small 251+**, by **full market cap**.
+- One scheme per category, **except**: index funds/ETFs on different indices, FoFs with different underlyings, sector/thematic funds on different sectors.
+
+#### Equity schemes: mandate
+
+| Category | Minimum in equity / rule |
+| --- | --- |
+| Multi cap | **≥75%** equity, with **≥25% each** in large, mid and small |
+| Large cap | **80%** in large caps |
+| Large & Mid cap | **35% + 35%** |
+| Mid cap | **65%** in mid caps |
+| Small cap | **65%** in small caps |
+| Dividend yield | **80%** |
+| Value | **80%**; separate from contra |
+| Contra | **80%**; an AMC can offer both value and contra if portfolio overlap is **≤50%** |
+| Focused | **Max 30 stocks**, **80%** equity |
+| Sectoral | **80%**; separate from thematic |
+| Thematic | **80%**; overlap with other sectoral/thematic and equity schemes **≤50%** (**except large cap**) |
+| ELSS – Tax Saver Fund | **80%** + **3-year lock-in** |
+| Flexi cap | **65%**, any mix of market caps |
+
+Equity schemes may put the **residual** in money market, **gold and silver** instruments and **InvITs**.
+
+#### Debt schemes: mandate
+
+| Category | Rule (duration = Macaulay) |
+| --- | --- |
+| Overnight | **1 day**; may put **≤5%** in G-secs/T-bills (**≤30 days**) for margin |
+| Liquid | Up to **91 days** |
+| Ultra-Short-Term | **3–6 months** |
+| Ultra Short to Short Term (was low duration) | **6–12 months** |
+| Money market | Up to **1 year** |
+| Short Term | **1–3 years** |
+| Medium Term | **3–4 years** |
+| Medium to Long Term | **4–7 years** |
+| Long Term | **> 7 years** |
+| Dynamic Term | **Any** duration |
+| Corporate bond | **80% in AA+ and above** |
+| Credit risk | **65% in AA and below** (AA+ excluded); name can't stress return (**no "high yield", "credit opportunities"**) |
+| Banking and PSU Debt | **80%** |
+| Gilt | **80%** in G-secs |
+| 10-year constant maturity Gilt | **80%** in G-secs, duration **= 10 years** |
+| Floating Interest Rates Fund | **65%** |
+| Sectoral (debt) Fund | **80%** in one sector, **only AA+ and above**; Financial Services, Energy, Infrastructure, Housing, Real Estate |
+
+#### Hybrid schemes: mandate
+
+| Category | Mandate |
+| --- | --- |
+| Conservative hybrid | Debt **75–90%**, equity **10–25%** |
+| Balanced hybrid | Equity **40–60%**, **no arbitrage** |
+| Aggressive hybrid | Equity **65–80%** |
+| Balanced Advantage | **Dynamic** equity/debt |
+| Multi asset allocation | **≥3 asset classes**, **≥10% each**; **foreign securities are not a separate class** |
+| Arbitrage | **65%** equity; debt only in **G-secs under 1 year** and **G-sec repo** |
+| Equity savings | **65%** equity + **10%** debt; **net equity 15–40%** |
+
+- The category is now "Balanced Hybrid **and** Aggressive Hybrid".
+- Hybrid schemes may put the **residual** in **InvITs** (not arbitrage funds), **ETCDs, gold and silver ETFs**.
+
+#### How hybrid funds are taxed (from Chapter 8)
+
+| Hybrid | Usual tax treatment |
+| --- | --- |
+| Conservative hybrid | Debt-oriented: **slab rate**, whatever the holding period |
+| Balanced hybrid | 35–65% equity: **slab** up to 24 months, **12.5%** after 24 months |
+| Aggressive hybrid | Equity-oriented: **20%** up to 12 months, **12.5%** after; **Rs 1.25 lakh** exempt a year |
+| Arbitrage | Equity-oriented: **20% / 12.5%** after 12 months |
+| Equity savings | Equity-oriented: **20% / 12.5%** after 12 months |
+| Balanced Advantage, Multi asset | **Depends on the actual equity share**: above 65% = equity rules |
+
+Tax follows the scheme's equity share: **more than 65% listed Indian equity** = equity-oriented; **35–65%** = slab, then 12.5% after 24 months; **more than 65% debt** = slab rate.
+
+#### Life Cycle Funds
+
+- **Glide path** across equity, debt, InvITs, ETCDs, gold and silver ETFs: equity falls, debt rises as maturity nears.
+- Tenure **5–30 years** in **multiples of 5**; max **6** open for subscription per MF at a time.
+
+| Years to maturity (15-year fund) | Equity | Debt | Gold, silver, ETCD, InvIT |
+| --- | --- | --- | --- |
+| 10–15 | **65–80%** | 5–25% | 0–10% |
+| 5–10 | **50–65%** | 5–25% | |
+| 3–5 | **35–50%** | 25–50% | |
+| 1–3 | **20–35%** | 25–65% | |
+| Under 1 | **5–20%** | 25–65% | |
+
+#### Other schemes (2) and other fund types
+
+| Type | Key feature |
+| --- | --- |
+| Index fund / ETF | **95%** in index securities |
+| Fund of funds (FoF) | **95%** in the underlying fund |
+| FMP | Close-ended debt; portfolio matches maturity; returns clearer but **not guaranteed** |
+| Target Maturity Fund | Matures on a set date (**2–14 years**), **listed**, reduces **reinvestment risk** |
+| Capital protection fund | Close-ended hybrid; e.g. **Rs 90 in debt grows to Rs 100**, rest in **equity derivatives** |
+| IDF | Close-ended, **≥90%** in infra debt; IDF-MF sponsored by **banks and NBFCs**; IDF-NBFC by **banks and IFCs** only |
+| REMF | Real estate in cities named in the SEBI circular of **2 May 2008**; **close-ended, listed** |
+| REITs / InvITs | **Not MF schemes**; REIT assets **≥Rs 500 cr**, offer **≥Rs 250 cr**; InvIT offer **≥Rs 250 cr**, assets **≥Rs 500 cr**; minimum lot **Rs 10,000–15,000**, traded lot **1 unit** |
+| ESG | Under **thematic** equity; 6 strategies: exclusion, integration, best-in-class, impact, sustainable objectives, transition |
+| Smart beta | Index-based but **not market-cap weighted** (e.g. equal weight) |
+| Quant fund | Model-driven; **removes the human element** |
+
+#### Specialised Investment Fund (SIF)
+
+- Fills the gap **between MF and PMS**; minimum **Rs 10 lakh** across strategies **of the same AMC**.
 - **Every SIF strategy: max 25% unhedged short exposure**; only **one strategy per category**.
-- Industry AUM: **Rs 11.89 lakh cr** (Mar 2015) to **Rs 82.03 lakh cr** (Feb 2026), **19.3% p.a.** over 11 years.
-- Folios: **4.8 cr** (Mar 2010) to **27.39 cr** (Mar 2026).
-- Monthly SIP flow: **Rs 8,055 cr** (Mar 2019) to **Rs 32,087 cr** (Mar 2026); SIP assets **Rs 15.11 lakh cr** (Mar 2026).
-- MF share of household financial investment: **10% → 14%** (2016–18); bank deposits **71% → 65%**.
+
+| Strategy | Type | Rule | Redemptions |
+| --- | --- | --- | --- |
+| Equity Long-Short | Equity | **≥80%** equity | **Daily or less often** |
+| Equity Ex-Top 100 | Equity | **≥65%** | **Daily or less often** |
+| Sector Rotation | Equity | **≥80%**, **max 4 sectors** | **Daily or less often** |
+| Sectoral debt | Debt (interval) | **≥2 sectors**, **max 75%** per sector | **Weekly or less often** |
+| Hybrid Long-Short | Hybrid (interval) | **≥25% each** in equity and debt | **Twice a week or less often** |
+
+#### Industry growth
+
+| Measure | Then | Now |
+| --- | --- | --- |
+| Industry AUM | **Rs 11.89 lakh cr** (Mar 2015) | **Rs 82.03 lakh cr** (Feb 2026), **19.3% p.a.** over 11 years |
+| Folios | **4.8 cr** (Mar 2010) | **27.39 cr** (Mar 2026) |
+| Monthly SIP flow | **Rs 8,055 cr** (Mar 2019) | **Rs 32,087 cr** (Mar 2026) |
+| SIP assets | | **Rs 15.11 lakh cr** (Mar 2026) |
+| MF share of household financial investment | **10%** (2016) | **14%** (2018); bank deposits **71% → 65%** |
 
 ### Exam traps
 
@@ -610,13 +718,18 @@ Chapters 9 and 12 carry 30 marks between them, and 4 and 5 another 20. Half the 
 - **Grandfathering**: gains up to **31 Jan 2018** exempt; cost = **higher of actual cost or 31 Jan 2018 NAV**.
 - Grandfathering example: cost Rs 1 lakh, 31 Jan 2018 value Rs 2 lakh; sold at **Rs 1.8 lakh = zero gain**; at **Rs 2.2 lakh = Rs 20,000** gain.
 - Equity LTCG exempt up to **Rs 1.25 lakh** a year: Rs 90,000 gain = **no tax**; Rs 1.35 lakh = tax on **Rs 10,000**.
-- Workbook tax table (STCG / LTCG / LTCG holding period):
-  - **Equity-oriented** (incl. hybrids **>65% equity**): **20% / 12.5%**, after **12 months**, **Rs 1.25 lakh** exempt per FY
-  - **Debt-oriented** (incl. hybrids **>65% debt**): **marginal slab rate** (MSR)
-  - **Hybrid with 35–65% domestic equity**: **MSR / 12.5%**, after **24 months**
-  - **Other MFs** (FoFs, international funds/FoFs): **MSR / 12.5%**, after **24 months**
-  - **Equity ETFs** and **Gold ETFs**: **MSR / 12.5%**, after **12 months** (as printed)
-  - **Debt ETFs**: **MSR**
+
+#### Capital gains tax by scheme type
+
+| Scheme type | Short-term gains | Long-term gains | Long-term after |
+| --- | --- | --- | --- |
+| Equity-oriented (incl. hybrids **>65% equity**) | **20%** | **12.5%**; **Rs 1.25 lakh** exempt per FY | **12 months** |
+| Debt-oriented (incl. hybrids **>65% debt**) | **Slab rate** | **Slab rate** | — |
+| Hybrid with **35–65%** domestic equity | **Slab rate** | **12.5%** | **24 months** |
+| Other MFs (FoFs, international funds/FoFs) | **Slab rate** | **12.5%** | **24 months** |
+| Equity ETFs and Gold ETFs | **Slab rate** | **12.5%** | **12 months** (as printed) |
+| Debt ETFs | **Slab rate** | **Slab rate** | — |
+
 - **DDT abolished** by Budget **Feb 2020**; since **April 2020** IDCW is taxed at the investor's **slab rate**; tax-exempt investors pay **nil**.
 - IDCW **reduces NAV by more** than the investor's post-tax receipt.
 - **Growth option is more tax-efficient** because of **tax deferral**.
